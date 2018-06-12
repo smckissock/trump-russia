@@ -1,0 +1,10 @@
+C:\trump-russia\trump-russia\bin\Debug\trump-russia.exe.config
+C:\trump-russia\trump-russia\bin\Debug\trump-russia.exe
+C:\trump-russia\trump-russia\bin\Debug\trump-russia.pdb
+C:\trump-russia\trump-russia\obj\Debug\trump-russia.csproj.CoreCompileInputs.cache
+C:\trump-russia\trump-russia\obj\Debug\trump-russia.exe
+C:\trump-russia\trump-russia\obj\Debug\trump-russia.pdb
+C:\trump-russia\trump-russia\obj\Debug\trump-russia.csprojResolveAssemblyReference.cache
+C:\trump-russia\trump-russia\bin\Debug\Newtonsoft.Json.dll
+C:\trump-russia\trump-russia\bin\Debug\Newtonsoft.Json.xml
+C:\trump-russia\trump-russia\obj\Debug\trump-russia.csproj.CopyComplete
