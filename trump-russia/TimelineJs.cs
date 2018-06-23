@@ -11,8 +11,8 @@ namespace TrumpRussia {
         public string caption;
         public string credit;
 
-        public media(string url, string caption, string credit) {
-            this.ure = url;
+        public media(string url, string caption = "", string credit = "") {
+            this.url = url;
             this.caption = caption;
             this.credit = credit;
         }
@@ -29,20 +29,21 @@ namespace TrumpRussia {
             this.year = year;
         }
 
-        public start_date(datetime date) {
-            this.month = month;
-            this.day = day;
-            this.year = year;
+        public start_date(DateTime date) {
+            this.month = date.Month.ToString();
+            this.day = date.Day.ToString();
+            this.year = date.Year.ToString();
         }
     }
 
     class text {
         public string headline;
-        public string text;
+        [Newtonsoft.Json.JsonProperty("text")]
+        public string theText;
 
         public text(string headline, string text) {
             this.headline = headline;
-            this.text = text;
+            this.theText = text;
         }
     }
     
@@ -62,19 +63,19 @@ namespace TrumpRussia {
         public text text;
         public string group;
 
-        public Event(media media, start_date start_date, text text, string group) {
-            this.media = media;
-            this.start_date = start_date;
-            this.text = text;
+        public Event(string url, string link, DateTime date, string text, string group) {
+            this.media = new media(url);
+            this.start_date = new start_date(date);
+            this.text = new text(text, link);
             this.group = group;
         }
     }
 
     class TimelineJS {
-        public Title title;
+        private Title title;
         public List<Event> events;
 
-        public TimelineJS(Title title, List<Event> events) {
+        public TimelineJS(List<Event> events, Title title = null) {
             this.title = title;
             this.events = events;
         }

@@ -280,32 +280,45 @@ namespace TrumpRussia {
 
             string connectionString = "Server=SCOTT-PC\\SQLExpress;Database=TrumpRussia;Trusted_Connection=True;";
 
-            var topics = new List<Topic>();
+            var events = new List<Event>();
             int stories = 0;
-            string query = "SELECT * FROM TopicView ORDER BY TopicID, Date";
+            string query = "SELECT Image, Link, Date, Description, Topic FROM TopicView ORDER BY TopicID, Date";
             using (SqlConnection conn = new SqlConnection(connectionString)) {
                 using (SqlCommand cmd = new SqlCommand(query, conn)) {
                     cmd.CommandType = CommandType.Text;
                     conn.Open();
                     SqlDataReader reader = cmd.ExecuteReader();
 
-                    Topic currentTopic = null;
                     while (reader.Read()) {
-                        var topicName = reader["Topic"].ToString();
-                        if (currentTopic == null || (topicName != currentTopic.name)) {
-                            currentTopic = new Topic(topicName);
-                            topics.Add(currentTopic);
-                        }
-
-                        currentTopic.data.Add(Makedata(reader));
+                        var ev = new Event(
+                            reader["Image"].ToString(),
+                            reader["Link"].ToString(),
+                            DateTime.Parse(reader["Date"].ToString()),
+                            reader["Description"].ToString(),
+                            reader["Topic"].ToString()
+                        );
+                        events.Add(ev);
                         stories++;
                     }
                 }
             }
             Console.WriteLine("Topics: " + topics.Count().ToString());
 
-            WriteTopicsToJson(outputFileName, topics);
+            WriteTimelineJsToJson(outputFileName, events);
             return stories;
+        }
+
+
+        private static void WriteTimelineJsToJson(string outputFileName, List<Event> events) {
+
+            //Title = new Title()
+
+            var timeline = new TimelineJS(events);
+
+
+            string json = JsonConvert.SerializeObject(timeline);
+            var niceJson = Newtonsoft.Json.Linq.JToken.Parse(json).ToString();
+            System.IO.File.WriteAllText(outputFileName, niceJson);
         }
     }
 }
