@@ -310,11 +310,13 @@ namespace TrumpRussia {
 
 
         private static void WriteTimelineJsToJson(string outputFileName, List<Event> events) {
+            //"https://d3i6fh83elv35t.cloudfront.net/newshour/app/uploads/2014/10/LisaDesjardins_square-200x0-c-default.jpg"),
 
-            //Title = new Title()
+            var title = new Title(
+                new media("http://kvie.org/wp-content/uploads/2017/12/pbs-newshour.png"),
+                new text("The giant timeline of everything Russia, Trump and the investigations", "By Lisa Desjardins"));
 
-            var timeline = new TimelineJS(events);
-
+            var timeline = new TimelineJS(events, title);
 
             string json = JsonConvert.SerializeObject(timeline);
             var niceJson = Newtonsoft.Json.Linq.JToken.Parse(json).ToString();

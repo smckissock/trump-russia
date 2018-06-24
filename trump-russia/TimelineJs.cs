@@ -72,7 +72,7 @@ namespace TrumpRussia {
     }
 
     class TimelineJS {
-        private Title title;
+        public Title title;
         public List<Event> events;
 
         public TimelineJS(List<Event> events, Title title = null) {
