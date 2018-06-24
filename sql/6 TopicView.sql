@@ -14,12 +14,14 @@ SELECT
 	, t.Name Topic 
 	, s.Description
 	, s.Link
+	, s.Image
 	, s.Title
 	, s.Date
 	, s.DateDescription
+	, m.Name MediaOutlet
 FROM Story s
 JOIN Topic t ON s.TopicID = t.ID
-
+JOIN MediaOutlet m ON m.ID = s.MediaOutletID
 
 
 

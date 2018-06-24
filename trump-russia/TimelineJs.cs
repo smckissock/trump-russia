@@ -63,8 +63,8 @@ namespace TrumpRussia {
         public text text;
         public string group;
 
-        public Event(string url, string link, DateTime date, string text, string group) {
-            this.media = new media(url);
+        public Event(string url, string link, DateTime date, string text, string group, string mediaOutlet) {
+            this.media = new media(url, "", mediaOutlet);
             this.start_date = new start_date(date);
             this.text = new text(text, link);
             this.group = group;

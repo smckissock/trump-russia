@@ -282,7 +282,7 @@ namespace TrumpRussia {
 
             var events = new List<Event>();
             int stories = 0;
-            string query = "SELECT Image, Link, Date, Description, Topic FROM TopicView ORDER BY TopicID, Date";
+            string query = "SELECT Image, Link, Date, Description, Topic, MediaOutlet, Title FROM TopicView ORDER BY TopicID, Date";
             using (SqlConnection conn = new SqlConnection(connectionString)) {
                 using (SqlCommand cmd = new SqlCommand(query, conn)) {
                     cmd.CommandType = CommandType.Text;
@@ -292,10 +292,11 @@ namespace TrumpRussia {
                     while (reader.Read()) {
                         var ev = new Event(
                             reader["Image"].ToString(),
-                            reader["Link"].ToString(),
+                            ArticleLink(reader["MediaOutlet"].ToString(), reader["Link"].ToString(), reader["Title"].ToString()), 
                             DateTime.Parse(reader["Date"].ToString()),
                             reader["Description"].ToString(),
-                            reader["Topic"].ToString()
+                            reader["Topic"].ToString(),
+                            reader["MediaOutlet"].ToString()
                         );
                         events.Add(ev);
                         stories++;
@@ -306,6 +307,12 @@ namespace TrumpRussia {
 
             WriteTimelineJsToJson(outputFileName, events);
             return stories;
+        }
+
+        private static string ArticleLink(string mediaOutlet, string link, string headline) {
+            return 
+                "<a href='" + link + "' target='_blank'>" + mediaOutlet + " / " + headline + "</a>";
+            // "<a href='https://www.state.gov/e/eb/tfs/spi/ukrainerussia/' target='_blank'>Visit W3Schools.com!</a>"
         }
 
 
