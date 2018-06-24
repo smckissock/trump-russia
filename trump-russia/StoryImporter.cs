@@ -310,8 +310,14 @@ namespace TrumpRussia {
         }
 
         private static string ArticleLink(string mediaOutlet, string link, string headline) {
-            return 
-                "<a href='" + link + "' target='_blank'>" + mediaOutlet + " / " + headline + "</a>";
+
+            if (headline != "")
+                return  "<a href='" + link + "' target='_blank'>" + mediaOutlet + " / " + headline + "</a>";
+
+            if (link != "")
+                return "<a href='" + link + "' target='_blank'>" + mediaOutlet + "</a>";
+
+            return mediaOutlet;
             // "<a href='https://www.state.gov/e/eb/tfs/spi/ukrainerussia/' target='_blank'>Visit W3Schools.com!</a>"
         }
 
