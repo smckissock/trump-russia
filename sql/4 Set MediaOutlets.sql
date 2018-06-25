@@ -106,3 +106,4 @@ UPDATE Story SET MediaOutletID = (SELECT ID FROM MediaOutlet WHERE Name = 'US De
 UPDATE Story SET MediaOutletID = (SELECT ID FROM MediaOutlet WHERE Name = 'The Hill') WHERE CHARINDEX('thehill.com', link) > 0
 UPDATE Story SET MediaOutletID = (SELECT ID FROM MediaOutlet WHERE Name = 'Breitbart') WHERE CHARINDEX('breitbart.com', link) > 0
 UPDATE Story SET MediaOutletID = (SELECT ID FROM MediaOutlet WHERE Name = 'Yahoo') WHERE CHARINDEX('yahoo.com', link) > 0
+

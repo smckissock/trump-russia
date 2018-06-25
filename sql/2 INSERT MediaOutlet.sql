@@ -1,7 +1,8 @@
 USE TrumpRussia
 GO
 
-
+DELETE FROM Story
+GO
 
 /****** Object:  Index [NonClusteredIndex-20180623-214635]    Script Date: 6/23/2018 9:48:10 PM ******/
 CREATE UNIQUE NONCLUSTERED INDEX [NonClusteredIndex-20180623-214635] ON [dbo].[MediaOutlet]
