@@ -294,7 +294,7 @@ namespace TrumpRussia {
                             reader["Image"].ToString(),
                             ArticleLink(reader["MediaOutlet"].ToString(), reader["Link"].ToString(), reader["Title"].ToString()), 
                             DateTime.Parse(reader["Date"].ToString()),
-                            reader["Description"].ToString(),
+                            GetHeadline(reader["Description"].ToString(), reader["Topic"].ToString()),
                             reader["Topic"].ToString(),
                             reader["MediaOutlet"].ToString()
                         );
@@ -308,6 +308,13 @@ namespace TrumpRussia {
             WriteTimelineJsToJson(outputFileName, events);
             return stories;
         }
+
+        private static string GetHeadline(string description, string topic) {
+            if ((topic == "Major Events") || (topic == "Investigations"))
+                return description;
+
+            return description + " (" + topic + ")";
+        } 
 
         private static string ArticleLink(string mediaOutlet, string link, string headline) {
 

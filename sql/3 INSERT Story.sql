@@ -2,9 +2,8 @@ USE TrumpRussia
 GO
 
 DELETE FROM Story
-GO
 
-INSERT INTO Story VALUES ((SELECT ID FROM Topic WHERE Name = 'Manafort and Gates'), 'According to the AP, as early as this date, Paul Manafort pitched a plan to Russian oligarch Oleg Deripaska to consult for the Putin government. Manafort denies his work was pro-Russian. Deripaska sued for libel.', 'https://www.apnews.com/122ae0b5848345faa88108a03de40c5a', '6/1/2005 12:00:00 AM', '2005 June', 1, '', '', '', '', '')
+INSERT INTO Story VALUES ((SELECT ID FROM Topic WHERE Name = 'Manafort and Gates'), 'According to the AP, as early as this date, Paul Manafort pitched a plan to Russian oligarch Oleg Deripaska to consult for the Putin government. Manafort denies his work was pro-Russian. Deripaska sued for libel.', 'https://www.apnews.com/122ae0b5848345faa88108a03de40c5a                                                                                                                                                                                                                                                ', '6/1/2005 12:00:00 AM', '2005 June', 1, '', '', '', '', '')
 INSERT INTO Story VALUES ((SELECT ID FROM Topic WHERE Name = 'Cohen'), 'Cohen tells Page Six that Trump is considering presidential run, spent $1 million on research.', 'https://pagesix.com/2013/05/27/trump-researching-2016-run/', '5/27/2013 12:00:00 AM', '2013 May 27', 1, '', '', '', '', '')
 INSERT INTO Story VALUES ((SELECT ID FROM Topic WHERE Name = 'Trump'), 'Trump sends letter to Putin inviting him to the Miss Universe pageant, according to the Washington Post.', 'https://www.washingtonpost.com/world/national-security/in-a-personal-letter-trump-invited-putin-to-the-2013-miss-universe-pageant/2018/03/09/a3404358-23d2-11e8-a589-763893265565_story.html?utm_term=.e8d006b867ab', '6/1/2013 12:00:00 AM', '2013 June', 1, '', '', '', '', '')
 INSERT INTO Story VALUES ((SELECT ID FROM Topic WHERE Name = 'Trump'), 'Trump tells David Letterman: &quot;I&#39;ve done a lot of business with the Russians.&quot;', 'https://www.youtube.com/watch?v=PR_SoJpWzOA', '10/17/2013 12:00:00 AM', '2013 Oct. 17', 1, '', '', '', '', '')
