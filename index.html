@@ -12,9 +12,12 @@
 
   <!-- Popover depends on this (needs to be replaced with something else) -->
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-  
   <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+
+  <script src="data/data.js"></script>
+  <script src="lib/timeline-d3.js"></script>
+  <script src="lib/timeline-min.js"></script>  
+  <script src="js/script.js"></script>  
 
   <!-- This needs to go -->
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/patternfly/3.9.0/css/patternfly.min.css" />
@@ -22,6 +25,7 @@
 
   <link rel="stylesheet" href="css/timeline-d3.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/timeline-js.css">
   
 </head>
 
@@ -33,11 +37,19 @@
     <br/>
     
     <div id="legend"></div>
+
+    <div id="timeline"></div>
+    <!-- JavaScript-->
+    <!-- <script src="lib/timeline-min.js"></script> -->
+<!--     <script>
+      var timeline = new TL.Timeline('timeline', 'data.json', {
+      	ga_property_id: "UA-27829802-4",
+      	is_embed:true
+      });
+    </script> -->
 </body>
 
-<script src="data/data.js"></script>
-<script src="lib/timeline-d3.js"></script>
-<script src="js/script.js"></script>  
+
 
 
 </html>
