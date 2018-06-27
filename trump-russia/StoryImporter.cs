@@ -333,8 +333,8 @@ namespace TrumpRussia {
             //"https://d3i6fh83elv35t.cloudfront.net/newshour/app/uploads/2014/10/LisaDesjardins_square-200x0-c-default.jpg"),
 
             var title = new Title(
-                //new media("http://kvie.org/wp-content/uploads/2017/12/pbs-newshour.png"),
-                new media("/img/pbs-newshour.png"),
+                new media("http://kvie.org/wp-content/uploads/2017/12/pbs-newshour.png"),
+                //new media("/img/pbs-newshour.png"),
                 new text("The giant timeline of everything Russia, Trump and the investigations", "By Lisa Desjardins"));
 
             var timeline = new TimelineJS(events, title);
