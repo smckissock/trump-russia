@@ -270,6 +270,46 @@ namespace TrumpRussia {
             return stories; 
         }
 
+        public static int MakeDcJson(string outputFileName) {
+            var stories = new List<story>();
+            int storyCount = 0;
+
+            string connectionString = "Server=SCOTT-PC\\SQLExpress;Database=TrumpRussia;Trusted_Connection=True;";
+            string query = "SELECT * FROM TopicView ORDER BY Date";
+            using (SqlConnection conn = new SqlConnection(connectionString)) {
+                using (SqlCommand cmd = new SqlCommand(query, conn)) {
+                    cmd.CommandType = CommandType.Text;
+                    conn.Open();
+                    SqlDataReader reader = cmd.ExecuteReader();
+                                        
+                    while (reader.Read()) {
+                        var story = new story();
+                        story.description = reader["Description"].ToString();
+                        story.headline = reader["Title"].ToString();
+                        story.topic = reader["Topic"].ToString();
+                        story.image = reader["Image"].ToString();
+                        story.link = reader["Link"].ToString();
+                        story.mediaOutlet = reader["MediaOutlet"].ToString();
+                        story.date = reader["Date"].ToString();
+
+                        stories.Add(story);
+                        storyCount++;
+                    }
+                }
+            }
+            Console.WriteLine("Stories for DC: " + topics.Count().ToString());
+
+            WriteStoriesToJson(outputFileName, stories);
+            return storyCount;
+        }
+
+        private static void WriteStoriesToJson(string outputFileName, List<story> stories) {
+            string json = JsonConvert.SerializeObject(stories);
+            var niceJson = Newtonsoft.Json.Linq.JToken.Parse(json).ToString();
+            System.IO.File.WriteAllText(outputFileName, niceJson);
+        }
+
+
         private static data Makedata(SqlDataReader reader) {
             return new data(
                 reader["date"].ToString()

@@ -17,9 +17,12 @@ namespace TrumpRussia {
             // .. Now run sql scripts ..
             
             // Query db and Make Json
-            int stories2 = StoryImporter.MakeJson("c:\\trump-russia\\data\\data.js");
-            //int stories2 = StoryImporter.MakeTimelineJsJson("c:\\trump-russia\\data.json");
-            Console.WriteLine("JSON Created for " + stories2.ToString() + " stories.");
+            //int stories = StoryImporter.MakeJson("c:\\trump-russia\\data\\data.js"); // for TimelineJs
+            //int stories = StoryImporter.MakeTimelineJsJson("c:\\trump-russia\\data.json");
+            
+            int stories = StoryImporter.MakeDcJson("c:\\trump-russia\\data\\stories.json");
+
+            Console.WriteLine("JSON Created for " + stories.ToString() + " stories.");
             
             Console.ReadLine();
         }
