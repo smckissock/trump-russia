@@ -108,15 +108,27 @@ namespace TrumpRussia {
             if (!txt.Contains(">"))
                 return txt;
 
-            return txt.Substring(txt.LastIndexOf(">") + 1);
+            //txt = txt.Substring(txt.LastIndexOf(">") + 1);
+            if (txt.Contains("</span>"))
+                txt = txt.Substring(txt.LastIndexOf("</span>") - 4);
+            txt = txt.Replace("</span>", ""); 
+            return txt;
         }
 
         private static string Day(string txt) {
+            var originaltxt = txt;
+
             // class="s10"></td>
             txt = txt.Replace("</td>", "");
             txt = txt.Substring(txt.LastIndexOf("\">") + 2);
+
+            if (txt.Contains("</span>"))
+                txt = txt.Substring(txt.LastIndexOf(@";\>") + 1);
+            txt = txt.Replace("</span>", "");
+
             if (txt.Contains(">"))
                 Console.WriteLine("ERROR" + txt);
+            txt = txt.Trim();
             return txt;
         }
 

@@ -200,7 +200,7 @@
     },
     {
       "media": {
-        "url": "http://www.foxnews.com/content/dam/fox-news/logo/og-fn-foxnews.jpg",
+        "url": "http://static.foxnews.com/static/orion/styles/img/fox-news/og/og-fox-news.png",
         "caption": "",
         "credit": "Fox News"
       },
@@ -302,6 +302,57 @@
     },
     {
       "media": {
+        "url": "https://cdn.theatlantic.com/assets/media/img/mt/2016/12/RTX1SYBB/facebook.jpg?1522787760",
+        "caption": "",
+        "credit": "The Atlantic"
+      },
+      "start_date": {
+        "month": "12",
+        "day": "29",
+        "year": "2016"
+      },
+      "text": {
+        "headline": "U.S. announces new Russia sanctions.",
+        "text": "<a href='https://www.theatlantic.com/news/archive/2016/12/obama-announces-russia-sanctions/511862/' target='_blank'>The Atlantic / The U.S. Retaliation Against Russian Hackers</a>"
+      },
+      "group": "Major Events"
+    },
+    {
+      "media": {
+        "url": "",
+        "caption": "",
+        "credit": "Reuters"
+      },
+      "start_date": {
+        "month": "12",
+        "day": "30",
+        "year": "2016"
+      },
+      "text": {
+        "headline": "Russia says it will not retaliate for sanctions.",
+        "text": "<a href='http://www.reuters.com/article/us-usa-russia-cyber-idUSKBN14I1TY' target='_blank'>Reuters</a>"
+      },
+      "group": "Major Events"
+    },
+    {
+      "media": {
+        "url": "https://cdn.cnn.com/cnnnext/dam/assets/170214165412-trump-putin-split-super-tease.jpg",
+        "caption": "",
+        "credit": "CNN"
+      },
+      "start_date": {
+        "month": "2",
+        "day": "14",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "New York Times, CNN report Trump  aides communicated with Russians during campaign.",
+        "text": "<a href='http://www.cnn.com/2017/02/14/politics/donald-trump-aides-russians-campaign/index.html' target='_blank'>CNN / Trump aides were in constant touch with senior Russian officials during campaign</a>"
+      },
+      "group": "Major Events"
+    },
+    {
+      "media": {
         "url": "https://cdn.cnn.com/cnnnext/dam/assets/170509181301-james-comey-fired-letter-trump-super-tease.png",
         "caption": "",
         "credit": "CNN"
@@ -314,6 +365,40 @@
       "text": {
         "headline": "Trump fires Comey.",
         "text": "<a href='http://www.cnn.com/2017/05/09/politics/fbi-james-comey-fired-letter/' target='_blank'>CNN / Trump's letter firing FBI Director James Comey</a>"
+      },
+      "group": "Major Events"
+    },
+    {
+      "media": {
+        "url": "http://assets.realclear.com/images/41/413670.jpg",
+        "caption": "",
+        "credit": "Real Clear Politics"
+      },
+      "start_date": {
+        "month": "5",
+        "day": "11",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "Trump suggests Comey firing was related to Russia probe.",
+        "text": "<a href='http://www.realclearpolitics.com/video/2017/05/11/president_trumps_full_interview_with_lester_holt.html' target='_blank'>Real Clear Politics / President Trump's Full Interview With Lester Holt: Firing Of James Comey</a>"
+      },
+      "group": "Major Events"
+    },
+    {
+      "media": {
+        "url": "https://static01.nyt.com/images/2017/05/30/us/18mueller/18mueller-facebookJumbo-v2.jpg",
+        "caption": "",
+        "credit": "New York Times"
+      },
+      "start_date": {
+        "month": "5",
+        "day": "17",
+        "year": "2017"
+      },
+      "text": {
+        "headline": " Bob Mueller named special counsel, takes over FBI's Russia investigation.",
+        "text": "<a href='https://www.nytimes.com/2017/05/17/us/politics/robert-mueller-special-counsel-russia-investigation.html' target='_blank'>New York Times / Robert Mueller, Former F.B.I. Director, Is Named Special Counsel for Russia Investigation</a>"
       },
       "group": "Major Events"
     },
@@ -421,7 +506,7 @@
     },
     {
       "media": {
-        "url": "https://i.guim.co.uk/img/media/a011ff8df8beae7838c6f4439059a5cac58e3f71/0_60_4668_2801/master/4668.jpg?w=1200&h=630&q=55&auto=format&usm=12&fit=crop&crop=faces%2Centropy&bm=normal&ba=bottom%2Cleft&blend64=aHR0cHM6Ly91cGxvYWRzLmd1aW0uY28udWsvMjAxOC8wMS8zMS9mYWNlYm9va19kZWZhdWx0LnBuZw&s=f12fb6be40a38b89cc275e3bdd598168",
+        "url": "https://i.guim.co.uk/img/media/a011ff8df8beae7838c6f4439059a5cac58e3f71/0_60_4668_2801/master/4668.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&crop=faces%2Centropy&bm=normal&ba=bottom%2Cleft&blend64=aHR0cHM6Ly9hc3NldHMuZ3VpbS5jby51ay9pbWFnZXMvb3ZlcmxheXMvZDM1ODZhNWVmNTc4MTc1NmQyMWEzYjYzNWU1MTcxNDEvdGctZGVmYXVsdC5wbmc&s=9b5385f6a3a46e71a28463b67316ae7d",
         "caption": "",
         "credit": "The Guardian"
       },
@@ -449,7 +534,58 @@
       },
       "text": {
         "headline": "New U.S. sanctions against Russian oligarchs.",
-        "text": "<a href='https://home.treasury.gov/news/press-releases/sm0338' target='_blank'>US Department of Treasury / Treasury Designates Russian Oligarchs, Officials, and Entities in Response to Worldwide Malign Activity</a>"
+        "text": "<a href='https://home.treasury.gov/news/press-releases/sm0338' target='_blank'>US Department of Treasury / U.S. Department of the Treasury</a>"
+      },
+      "group": "Major Events"
+    },
+    {
+      "media": {
+        "url": "https://d3i6fh83elv35t.cloudfront.net/static/2018/07/RTX6BN5H-1024x610.jpg",
+        "caption": "",
+        "credit": "PBS"
+      },
+      "start_date": {
+        "month": "7",
+        "day": "16",
+        "year": "2018"
+      },
+      "text": {
+        "headline": "At summit, Putin denies Russian election meddling. Trump says \"I don't see any reason why\" Russia would interfere. ",
+        "text": "<a href='https://www.pbs.org/newshour/politics/watch-trump-sees-no-reason-why-russia-would-meddle-in-2016-election-every-u-s-intel-agency-concluded-that-it-did' target='_blank'>PBS / WATCH: Trump refuses to acknowledge that Russia meddled in U.S. elections</a>"
+      },
+      "group": "Major Events"
+    },
+    {
+      "media": {
+        "url": "https://pbs.twimg.com/profile_images/893600318025474048/CbCbznYp_400x400.jpg",
+        "caption": "",
+        "credit": "Twitter"
+      },
+      "start_date": {
+        "month": "7",
+        "day": "19",
+        "year": "2018"
+      },
+      "text": {
+        "headline": "Trump asks National Security Advisor John Bolton to invite Putin to the U.S. this fall.",
+        "text": "<a href='https://twitter.com/PressSec/status/1020033303351619584' target='_blank'>Twitter / Sarah Sanders on Twitter</a>"
+      },
+      "group": "Major Events"
+    },
+    {
+      "media": {
+        "url": "https://d3i6fh83elv35t.cloudfront.net/static/2018/07/TP_RandPaul-1024x696.jpg",
+        "caption": "",
+        "credit": "PBS"
+      },
+      "start_date": {
+        "month": "7",
+        "day": "25",
+        "year": "2018"
+      },
+      "text": {
+        "headline": "Bolton says Putin's U.S. trip is postponed to 2019 because president believes it \"should take place after the Russia witch hunt is over.\"",
+        "text": "<a href='https://www.pbs.org/newshour/politics/trump-delays-proposed-putin-meeting-until-2019' target='_blank'>PBS / Trump delays proposed Putin meeting until 2019</a>"
       },
       "group": "Major Events"
     },
@@ -506,6 +642,23 @@
     },
     {
       "media": {
+        "url": "https://static01.nyt.com/images/2016/08/30/us/30cyber/30cyber-facebookJumbo.jpg",
+        "caption": "",
+        "credit": "New York Times"
+      },
+      "start_date": {
+        "month": "6",
+        "day": "28",
+        "year": "2016"
+      },
+      "text": {
+        "headline": "Arizona freezes voter registration site for a week after FBI hacking warning.",
+        "text": "<a href='https://www.nytimes.com/2016/08/30/us/politics/harry-reid-russia-tampering-election-fbi.html' target='_blank'>New York Times / Harry Reid Cites Evidence of Russian Tampering in U.S. Vote, and Seeks F.B.I. Inquiry</a>"
+      },
+      "group": "Investigations"
+    },
+    {
+      "media": {
         "url": "https://www.fbi.gov/@@site-logo/fbisealitunes-small.jpg",
         "caption": "",
         "credit": "Federal Bureau of Investigation"
@@ -523,7 +676,7 @@
     },
     {
       "media": {
-        "url": "http://www.foxnews.com/content/dam/fox-news/logo/og-fn-foxnews.jpg",
+        "url": "http://static.foxnews.com/static/orion/styles/img/fox-news/og/og-fox-news.png",
         "caption": "",
         "credit": "Fox News"
       },
@@ -608,7 +761,41 @@
     },
     {
       "media": {
-        "url": "https://www.gannett-cdn.com/-mm-/423c51a153ecb476309072871a79dc219e4b3090/c=0-296-2992-1986&r=x1683&c=3200x1680/local/-/media/2016/12/12/USATODAY/USATODAY/636171522513190047-GTY-629313484.jpg",
+        "url": "https://nunes.house.gov/images/img1.png",
+        "caption": "",
+        "credit": "House of Representatives"
+      },
+      "start_date": {
+        "month": "11",
+        "day": "11",
+        "year": "2016"
+      },
+      "text": {
+        "headline": "House Intelligence Committee chair Devin Nunes named to Trump transition team.",
+        "text": "<a href='https://nunes.house.gov/news/documentsingle.aspx?DocumentID=398673' target='_blank'>House of Representatives / Nunes Named to Trump Transition Team</a>"
+      },
+      "group": "Investigations"
+    },
+    {
+      "media": {
+        "url": "https://pbs.twimg.com/media/CxVcBQUUoAA2K9x.jpg",
+        "caption": "",
+        "credit": "Twitter"
+      },
+      "start_date": {
+        "month": "11",
+        "day": "15",
+        "year": "2016"
+      },
+      "text": {
+        "headline": "NSA chief says email leak was \"conscious\" national attack.",
+        "text": "<a href='https://twitter.com/i/web/status/798647324687929344' target='_blank'>Twitter / The Wall Street Journal on Twitter</a>"
+      },
+      "group": "Investigations"
+    },
+    {
+      "media": {
+        "url": "https://www.gannett-cdn.com/-mm-/c5e04bf00eec74fa0806b1042017c1e5c29c08e5/c=0-296-2992-1986/local/-/media/2016/12/12/USATODAY/USATODAY/636171522513190047-GTY-629313484.jpg?width=3200&height=1680&fit=crop",
         "caption": "",
         "credit": "USA Today"
       },
@@ -620,6 +807,40 @@
       "text": {
         "headline": "Congressional Republican leaders announce they will investigate Russian attempts to disrupt the election.",
         "text": "<a href='https://www.usatoday.com/story/news/politics/elections/2016/12/12/mcconnell-says-congress-probe-russian-election-hack/95331688/' target='_blank'>USA Today / Republican leaders join outrage at Russia, will investigate hacks</a>"
+      },
+      "group": "Investigations"
+    },
+    {
+      "media": {
+        "url": "",
+        "caption": "",
+        "credit": "US Computer Emergency Readiness Team"
+      },
+      "start_date": {
+        "month": "12",
+        "day": "29",
+        "year": "2016"
+      },
+      "text": {
+        "headline": "DHS and FBI publish report about \"Grizzly Steppe\" or Russian hacking operation. ",
+        "text": "<a href='https://www.us-cert.gov/sites/default/files/publications/JAR_16-20296A_GRIZZLY%20STEPPE-2016-1229.pdf' target='_blank'>US Computer Emergency Readiness Team</a>"
+      },
+      "group": "Investigations"
+    },
+    {
+      "media": {
+        "url": "",
+        "caption": "",
+        "credit": "N/A"
+      },
+      "start_date": {
+        "month": "1",
+        "day": "6",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "Intel chiefs say Russia ordered campaign to influence U.S. elections and help Trump.",
+        "text": "<a href='https://www.dni.gov/files/documents/ICA_2017_01.pdf' target='_blank'>N/A</a>"
       },
       "group": "Investigations"
     },
@@ -710,6 +931,23 @@
     },
     {
       "media": {
+        "url": "https://s.abcnews.com/images/Politics/gty-yates-testimony-hb-170508_16x9_992.jpg",
+        "caption": "",
+        "credit": "ABC News"
+      },
+      "start_date": {
+        "month": "1",
+        "day": "27",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "Yates has second meeting with McGahn about Flynn.",
+        "text": "<a href='https://abcnews.go.com/Politics/timeline-sally-yates-warnings-white-house-mike-flynn/story?id=47272979' target='_blank'>ABC News / A timeline of Sally Yates’ warnings to the White House about Mike Flynn</a>"
+      },
+      "group": "Investigations"
+    },
+    {
+      "media": {
         "url": "",
         "caption": "",
         "credit": "US Senate"
@@ -727,6 +965,23 @@
     },
     {
       "media": {
+        "url": "https://www.gannett-cdn.com/-mm-/8838375d06647351abaeb4c5dbb7cb81d1cf916b/c=0-78-3435-2019/local/-/media/2017/01/10/USATODAY/USATODAY/636196560867563044-XXX-CONGRESS-ELECTION-HACKING-87765612.JPG?width=3200&height=1680&fit=crop",
+        "caption": "",
+        "credit": "USA Today"
+      },
+      "start_date": {
+        "month": "2",
+        "day": "2",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "Senate Judiciary subcommittee launches election/Russia investigation.",
+        "text": "<a href='https://www.usatoday.com/story/news/politics/onpolitics/2017/02/02/senate-panel-investigate-russian-election-interference/97411482/' target='_blank'>USA Today / Senate panel to investigate Russian election interference</a>"
+      },
+      "group": "Investigations"
+    },
+    {
+      "media": {
         "url": "",
         "caption": "",
         "credit": "US Department of Justice"
@@ -739,6 +994,23 @@
       "text": {
         "headline": "The FBI interviews Papadopoulos a second time.",
         "text": "<a href='https://www.justice.gov/file/1007346/download' target='_blank'>US Department of Justice</a>"
+      },
+      "group": "Investigations"
+    },
+    {
+      "media": {
+        "url": "https://www.washingtonpost.com/rf/image_1484w/2010-2019/WashingtonPost/2017/02/14/Others/Images/2017-02-14/HILL_201702140396.jpg?t=20170517",
+        "caption": "",
+        "credit": "Washington Post"
+      },
+      "start_date": {
+        "month": "2",
+        "day": "27",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "Nunes tells reporters that Trump, Flynn didn't coordinate over Russia sanctions.",
+        "text": "<a href='https://www.washingtonpost.com/news/the-fix/wp/2017/02/27/rep-devin-nuness-strange-defense-of-trump-he-was-too-busy-to-tell-flynn-to-talk-sanctions/?utm_term=.4d97080c3419' target='_blank'>Washington Post / Rep. Devin Nunes’s strange defense of Trump: He was too busy to tell Flynn to talk sanctions</a>"
       },
       "group": "Investigations"
     },
@@ -829,6 +1101,57 @@
     },
     {
       "media": {
+        "url": "https://ichef.bbci.co.uk/news/1024/branded_news/11F10/production/_95488437_4a04f704-489b-4561-8022-14d63a770292.jpg",
+        "caption": "",
+        "credit": "BBC"
+      },
+      "start_date": {
+        "month": "4",
+        "day": "6",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "Nunes steps down as chair of House Russia probe,amid ethics questions.",
+        "text": "<a href='http://www.bbc.com/news/world-us-canada-39515098' target='_blank'>BBC / Nunes steps down from US election Russian hacking probe</a>"
+      },
+      "group": "Investigations"
+    },
+    {
+      "media": {
+        "url": "https://media.npr.org/assets/img/2017/05/03/gettyimages-677692504_wide-94e8b8748bc256bcf345d14dbb0940a365617963.jpg?s=1400",
+        "caption": "",
+        "credit": "NPR"
+      },
+      "start_date": {
+        "month": "5",
+        "day": "3",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "Comey defends his Clinton probe decisions before Senate Judiciary.",
+        "text": "<a href='http://www.npr.org/2017/05/03/526720922/fbi-director-comey-testifies-before-senate-judiciary-committee' target='_blank'>NPR / FBI Director Comey Says He Is 'Mildly Nauseous' About Potential Impact On Election</a>"
+      },
+      "group": "Investigations"
+    },
+    {
+      "media": {
+        "url": "https://theintercept.com/wp-uploads/sites/1/2017/06/nsa-russia-hacking-election-1496690590.jpg",
+        "caption": "",
+        "credit": "The Intercept"
+      },
+      "start_date": {
+        "month": "5",
+        "day": "5",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "NSA report concludes Russia hacked voting software company, targeted local election officials.",
+        "text": "<a href='https://theintercept.com/2017/06/05/top-secret-nsa-report-details-russian-hacking-effort-days-before-2016-election/' target='_blank'>The Intercept / Top-Secret NSA Report Details Russian Hacking Effort Days Before 2016 Election</a>"
+      },
+      "group": "Investigations"
+    },
+    {
+      "media": {
         "url": "https://cdn.cnn.com/cnnnext/dam/assets/170509181301-james-comey-fired-letter-trump-super-tease.png",
         "caption": "",
         "credit": "CNN"
@@ -841,6 +1164,74 @@
       "text": {
         "headline": "Trump fires Comey.",
         "text": "<a href='http://www.cnn.com/2017/05/09/politics/fbi-james-comey-fired-letter/' target='_blank'>CNN / Trump's letter firing FBI Director James Comey</a>"
+      },
+      "group": "Investigations"
+    },
+    {
+      "media": {
+        "url": "https://static01.nyt.com/images/2017/05/17/us/17comey/17comey-facebookJumbo-v2.jpg",
+        "caption": "",
+        "credit": "New York Times"
+      },
+      "start_date": {
+        "month": "5",
+        "day": "16",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "New York Times reports existence of Comey memos. ",
+        "text": "<a href='https://www.nytimes.com/2017/05/16/us/politics/james-comey-trump-flynn-russia-investigation.html?action=Click&amp;contentCollection=BreakingNews&amp;contentID=65307641&amp;pgtype=Homepage&amp;_r=0' target='_blank'>New York Times / Comey Memo Says Trump Asked Him to End Flynn Investigation</a>"
+      },
+      "group": "Investigations"
+    },
+    {
+      "media": {
+        "url": "https://static01.nyt.com/images/2017/05/30/us/18mueller/18mueller-facebookJumbo-v2.jpg",
+        "caption": "",
+        "credit": "New York Times"
+      },
+      "start_date": {
+        "month": "5",
+        "day": "17",
+        "year": "2017"
+      },
+      "text": {
+        "headline": " Bob Mueller named special counsel by Rosenstein, takes over FBI's Russia investigation.",
+        "text": "<a href='https://www.nytimes.com/2017/05/17/us/politics/robert-mueller-special-counsel-russia-investigation.html' target='_blank'>New York Times / Robert Mueller, Former F.B.I. Director, Is Named Special Counsel for Russia Investigation</a>"
+      },
+      "group": "Investigations"
+    },
+    {
+      "media": {
+        "url": "https://assets.documentcloud.org/documents/3766950/pages/NSA-Report-on-Russia-Spearphishing-p1-normal.gif",
+        "caption": "",
+        "credit": "DocumentCloud"
+      },
+      "start_date": {
+        "month": "6",
+        "day": "6",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "The Intercept publishes NSA analysis from May that says Russia targeted U.S. voting software company and sent phishing emails to more than 100 local officials before 2016 election.",
+        "text": "<a href='https://www.documentcloud.org/documents/3766950-NSA-Report-on-Russia-Spearphishing.html#document/p1' target='_blank'>DocumentCloud / NSA Report on Russia Spearphishing</a>"
+      },
+      "group": "Investigations"
+    },
+    {
+      "media": {
+        "url": "https://d3i6fh83elv35t.cloudfront.net/newshour/app/uploads/2017/06/RTX39P4Y-1024x598.jpg",
+        "caption": "",
+        "credit": "PBS"
+      },
+      "start_date": {
+        "month": "6",
+        "day": "8",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "Comey testifies before Senate Intelligence Committee.",
+        "text": "<a href='http://www.pbs.org/newshour/bb/comeys-testimony-mean-russia-probe/' target='_blank'>PBS / What does Comey’s testimony mean for the Russia probe?</a>"
       },
       "group": "Investigations"
     },
@@ -914,7 +1305,7 @@
     },
     {
       "media": {
-        "url": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iFL8GDf1fXY8/v0/1200x675.jpg",
+        "url": "",
         "caption": "",
         "credit": "Bloomberg"
       },
@@ -925,7 +1316,7 @@
       },
       "text": {
         "headline": "Report: Mueller expands investigation to include Trump business dealings.",
-        "text": "<a href='https://www.bloomberg.com/news/articles/2017-07-20/mueller-is-said-to-expand-probe-to-trump-business-transactions' target='_blank'>Bloomberg / Mueller Expands Probe to Trump Business Transactions</a>"
+        "text": "<a href='https://www.bloomberg.com/news/articles/2017-07-20/mueller-is-said-to-expand-probe-to-trump-business-transactions' target='_blank'>Bloomberg / Are you a robot?</a>"
       },
       "group": "Investigations"
     },
@@ -982,7 +1373,7 @@
     },
     {
       "media": {
-        "url": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/icjrRhD1JeeA/v0/1200x800.jpg",
+        "url": "",
         "caption": "",
         "credit": "Bloomberg"
       },
@@ -993,13 +1384,13 @@
       },
       "text": {
         "headline": "Trump campaign turns over 20,000 pages of documents to Senate Judiciary Committee.",
-        "text": "<a href='https://www.bloomberg.com/news/articles/2017-08-08/trump-campaign-turns-over-thousands-of-documents-in-russia-probe' target='_blank'>Bloomberg / Trump Campaign Turns Over Thousands of Documents in Russia Probe</a>"
+        "text": "<a href='https://www.bloomberg.com/news/articles/2017-08-08/trump-campaign-turns-over-thousands-of-documents-in-russia-probe' target='_blank'>Bloomberg / Are you a robot?</a>"
       },
       "group": "Investigations"
     },
     {
       "media": {
-        "url": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/icjrRhD1JeeA/v0/1200x800.jpg",
+        "url": "",
         "caption": "",
         "credit": "Bloomberg"
       },
@@ -1010,13 +1401,13 @@
       },
       "text": {
         "headline": "Donald Trump Jr. turns over 250 pages of documents to Senate Judiciary Committee.",
-        "text": "<a href='https://www.bloomberg.com/news/articles/2017-08-08/trump-campaign-turns-over-thousands-of-documents-in-russia-probe' target='_blank'>Bloomberg / Trump Campaign Turns Over Thousands of Documents in Russia Probe</a>"
+        "text": "<a href='https://www.bloomberg.com/news/articles/2017-08-08/trump-campaign-turns-over-thousands-of-documents-in-russia-probe' target='_blank'>Bloomberg / Are you a robot?</a>"
       },
       "group": "Investigations"
     },
     {
       "media": {
-        "url": "http://a57.foxnews.com/images.foxnews.com/content/fox-news/politics/2017/08/30/trump-attorney-delivers-point-by-point-rebuttal-totally-false-dossier/_jcr_content/par/featured_image/media-0.img.jpg/0/0/1504117733425.jpg?ve=1",
+        "url": "https://static.foxnews.com/foxnews.com/content/uploads/2018/09/michael-cohen-trump.jpg",
         "caption": "",
         "credit": "Fox News"
       },
@@ -1203,7 +1594,7 @@
     },
     {
       "media": {
-        "url": "https://i.guim.co.uk/img/media/26a1d89386052fefba3acbb51a33e5c3c69a6372/0_0_3500_2101/master/3500.jpg?w=1200&h=630&q=55&auto=format&usm=12&fit=crop&crop=faces%2Centropy&bm=normal&ba=bottom%2Cleft&blend64=aHR0cHM6Ly91cGxvYWRzLmd1aW0uY28udWsvMjAxOC8wMi8xNi9mYWNlYm9va19saXZlLnBuZw&s=3b485f97c58d91740683a5004f34f939",
+        "url": "https://i.guim.co.uk/img/media/26a1d89386052fefba3acbb51a33e5c3c69a6372/0_0_3500_2101/master/3500.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&crop=faces%2Centropy&bm=normal&ba=bottom%2Cleft&blend64=aHR0cHM6Ly9hc3NldHMuZ3VpbS5jby51ay9pbWFnZXMvb3ZlcmxheXMvZmQ2MTg4YTJlMWFhNThmNWM5Y2VkODlkNjQxOWU1OTgvdGctbGl2ZS5wbmc&s=3722c618a664073a3abf2ede39ba541a",
         "caption": "",
         "credit": "The Guardian"
       },
@@ -1407,7 +1798,7 @@
     },
     {
       "media": {
-        "url": "http://a57.foxnews.com/media2.foxnews.com/BrightCove/694940094001/2018/03/29/0/0/694940094001_5760373832001_5760348222001-vs.jpg?ve=1",
+        "url": "http://media2.foxnews.com/BrightCove/694940094001/2018/03/29/694940094001_5760373832001_5760348222001-vs.jpg",
         "caption": "",
         "credit": "Fox News"
       },
@@ -1504,6 +1895,91 @@
       "text": {
         "headline": "Mueller drops a new obstruction of justice indictment against Manafort and his associate Konstantin Kilimnik. They are the first charges against Kilimnik.",
         "text": "<a href='https://www.nytimes.com/2018/06/08/us/politics/manafort-obstruction-kilimnik-charges.html?hp&amp;action=click&amp;pgtype=Homepage&amp;clickSource=story-heading&amp;module=first-column-region&amp;region=top-news&amp;WT.nav=top-news' target='_blank'>New York Times / Mueller Adds Obstruction Charge on Manafort and Indicts His Right-Hand Man</a>"
+      },
+      "group": "Investigations"
+    },
+    {
+      "media": {
+        "url": "https://d3i6fh83elv35t.cloudfront.net/static/2018/07/rosenstein-1024x699.jpg",
+        "caption": "",
+        "credit": "PBS"
+      },
+      "start_date": {
+        "month": "7",
+        "day": "13",
+        "year": "2018"
+      },
+      "text": {
+        "headline": " A new Mueller indictment accuses 12 Russians of hacking into computers used by Clinton's campaign, Democratic organizations and state elections officials, among others.",
+        "text": "<a href='https://www.pbs.org/newshour/nation/read-muellers-full-indictment-against-12-russian-officers-for-election-interference' target='_blank'>PBS / Read Mueller’s full indictment against 12 Russian officers for election interference</a>"
+      },
+      "group": "Investigations"
+    },
+    {
+      "media": {
+        "url": "",
+        "caption": "",
+        "credit": "Judicial Watch"
+      },
+      "start_date": {
+        "month": "7",
+        "day": "21",
+        "year": "2018"
+      },
+      "text": {
+        "headline": "The FBI releases more than 400 pages of documents related to Carter Page wiretaps, showing agents believed Page was recruited by Russia.",
+        "text": "<a href='http://www.judicialwatch.org/wp-content/uploads/2018/07/Carter-Page-FISA-Documents.FOIA-Release-1.pdf' target='_blank'>Judicial Watch</a>"
+      },
+      "group": "Investigations"
+    },
+    {
+      "media": {
+        "url": "https://cdn.cnn.com/cnnnext/dam/assets/171030172858-papadopoulos-thumbnail-super-tease.jpg",
+        "caption": "",
+        "credit": "CNN"
+      },
+      "start_date": {
+        "month": "8",
+        "day": "17",
+        "year": "2018"
+      },
+      "text": {
+        "headline": "Mueller's team asks judge to sentence Papadopolous to up to six months for lying to them.",
+        "text": "<a href='https://www.cnn.com/2018/08/17/politics/papadopoulos-jail-time-special-counsel/' target='_blank'>CNN / Mueller team wants George Papadopoulos jailed 6 months</a>"
+      },
+      "group": "Investigations"
+    },
+    {
+      "media": {
+        "url": "https://media.npr.org/assets/img/2018/08/19/gettyimages-1017246258_wide-f9d6a53f2f287a8bfb4d307512c397e5bd767d67.jpg?s=1400",
+        "caption": "",
+        "credit": "NPR"
+      },
+      "start_date": {
+        "month": "8",
+        "day": "18",
+        "year": "2018"
+      },
+      "text": {
+        "headline": "WH counsel McGahn's attorney confirms NYT report that he spoke with Mueller's investigators.",
+        "text": "<a href='https://www.npr.org/2018/08/19/640038769/president-trump-attacks-report-on-white-house-counsels-cooperation-with-mueller' target='_blank'>NPR / President Trump Attacks Report On White House Counsel's Cooperation With Mueller</a>"
+      },
+      "group": "Investigations"
+    },
+    {
+      "media": {
+        "url": "https://static01.nyt.com/images/2018/08/21/us/politics/21dc-cyber-print/21dc-cyber-facebookJumbo.jpg",
+        "caption": "",
+        "credit": "New York Times"
+      },
+      "start_date": {
+        "month": "8",
+        "day": "21",
+        "year": "2018"
+      },
+      "text": {
+        "headline": "Microsoft announces Russian hackers attempted to target conservative think tanks that advocated tougher action against Russia.",
+        "text": "<a href='https://www.nytimes.com/2018/08/21/us/politics/russia-cyber-hack.html?emc=edit_th_180821&amp;nl=todaysheadlines&amp;nlid=678426250821' target='_blank'>New York Times / New Russian Hacking Targeted Republican Groups, Microsoft Says</a>"
       },
       "group": "Investigations"
     },
@@ -1628,6 +2104,23 @@
     },
     {
       "media": {
+        "url": "",
+        "caption": "",
+        "credit": "US Department of Justice"
+      },
+      "start_date": {
+        "month": "3",
+        "day": "21",
+        "year": "2016"
+      },
+      "text": {
+        "headline": "Russian hackers steal 50,000 of Podesta's emails, according to indictment. (Russians, Hacking)",
+        "text": "<a href='https://www.justice.gov/file/1080281/download' target='_blank'>US Department of Justice</a>"
+      },
+      "group": "Russians, Hacking"
+    },
+    {
+      "media": {
         "url": "https://static01.nyt.com/images/2016/12/14/us/14hack-top1-sub/14hack-top1-sub-facebookJumbo.jpg",
         "caption": "",
         "credit": "New York Times"
@@ -1640,6 +2133,91 @@
       "text": {
         "headline": "Another Clinton staffer falls for phishing scam. (Russians, Hacking)",
         "text": "<a href='https://www.nytimes.com/2016/12/13/us/politics/russia-hack-election-dnc.html' target='_blank'>New York Times / The Perfect Weapon: How Russian Cyberpower Invaded the U.S.</a>"
+      },
+      "group": "Russians, Hacking"
+    },
+    {
+      "media": {
+        "url": "",
+        "caption": "",
+        "credit": "US Department of Justice"
+      },
+      "start_date": {
+        "month": "4",
+        "day": "6",
+        "year": "2016"
+      },
+      "text": {
+        "headline": "Russians create fake email account and use it to target more than 30 Clinton campaign staffers, according to indictment.  (Russians, Hacking)",
+        "text": "<a href='https://www.justice.gov/file/1080281/download' target='_blank'>US Department of Justice</a>"
+      },
+      "group": "Russians, Hacking"
+    },
+    {
+      "media": {
+        "url": "",
+        "caption": "",
+        "credit": "US Department of Justice"
+      },
+      "start_date": {
+        "month": "4",
+        "day": "18",
+        "year": "2016"
+      },
+      "text": {
+        "headline": "Russians hack into the DNC computer network via the DCCC network, according to indictment. (Russians, Hacking)",
+        "text": "<a href='https://www.justice.gov/file/1080281/download' target='_blank'>US Department of Justice</a>"
+      },
+      "group": "Russians, Hacking"
+    },
+    {
+      "media": {
+        "url": "",
+        "caption": "",
+        "credit": "US Department of Justice"
+      },
+      "start_date": {
+        "month": "4",
+        "day": "19",
+        "year": "2016"
+      },
+      "text": {
+        "headline": "Russian goverment hackers register the website domain \"DCLeaks,\" according to indictment. (Russians, Hacking)",
+        "text": "<a href='https://www.justice.gov/file/1080281/download' target='_blank'>US Department of Justice</a>"
+      },
+      "group": "Russians, Hacking"
+    },
+    {
+      "media": {
+        "url": "",
+        "caption": "",
+        "credit": "US Department of Justice"
+      },
+      "start_date": {
+        "month": "4",
+        "day": "20",
+        "year": "2016"
+      },
+      "text": {
+        "headline": "Russian hackers prompt malware placed on DCCC computers to start taking directions from the hackers, according to indictment. (Russians, Hacking)",
+        "text": "<a href='https://www.justice.gov/file/1080281/download' target='_blank'>US Department of Justice</a>"
+      },
+      "group": "Russians, Hacking"
+    },
+    {
+      "media": {
+        "url": "",
+        "caption": "",
+        "credit": "US Department of Justice"
+      },
+      "start_date": {
+        "month": "4",
+        "day": "22",
+        "year": "2016"
+      },
+      "text": {
+        "headline": "Russian hackers steal gigabytes of DNC data, moving it to a computer they leased in Illinois, according to indictment. (Russians, Hacking)",
+        "text": "<a href='https://www.justice.gov/file/1080281/download' target='_blank'>US Department of Justice</a>"
       },
       "group": "Russians, Hacking"
     },
@@ -1667,6 +2245,40 @@
         "credit": "Washington Post"
       },
       "start_date": {
+        "month": "5",
+        "day": "13",
+        "year": "2016"
+      },
+      "text": {
+        "headline": "Russian hackers clear DNC computer logs that documented their presence, according to indictment. (Russians, Hacking)",
+        "text": "<a href='https://www.washingtonpost.com/world/national-security/russian-government-hackers-penetrated-dnc-stole-opposition-research-on-trump/2016/06/14/cf006cb4-316e-11e6-8ff7-7b6c1998b7a0_story.html?utm_term=.e9542fd203d5' target='_blank'>Washington Post / Russian government hackers penetrated DNC, stole opposition research on Trump</a>"
+      },
+      "group": "Russians, Hacking"
+    },
+    {
+      "media": {
+        "url": "https://www.washingtonpost.com/rf/image_1484w/2010-2019/WashingtonPost/2016/06/14/National-Security/Images/2016-06-13T194832Z_01_BKS02_RTRIDSP_3_USA-ELECTION-TRUMP.jpg?t=20170517",
+        "caption": "",
+        "credit": "Washington Post"
+      },
+      "start_date": {
+        "month": "6",
+        "day": "8",
+        "year": "2016"
+      },
+      "text": {
+        "headline": "Russian hackers launch the website \"DCLeaks\" where they release stolen emails, according to indictment. (Russians, Hacking)",
+        "text": "<a href='https://www.washingtonpost.com/world/national-security/russian-government-hackers-penetrated-dnc-stole-opposition-research-on-trump/2016/06/14/cf006cb4-316e-11e6-8ff7-7b6c1998b7a0_story.html?utm_term=.e9542fd203d5' target='_blank'>Washington Post / Russian government hackers penetrated DNC, stole opposition research on Trump</a>"
+      },
+      "group": "Russians, Hacking"
+    },
+    {
+      "media": {
+        "url": "https://www.washingtonpost.com/rf/image_1484w/2010-2019/WashingtonPost/2016/06/14/National-Security/Images/2016-06-13T194832Z_01_BKS02_RTRIDSP_3_USA-ELECTION-TRUMP.jpg?t=20170517",
+        "caption": "",
+        "credit": "Washington Post"
+      },
+      "start_date": {
         "month": "6",
         "day": "14",
         "year": "2016"
@@ -1679,9 +2291,9 @@
     },
     {
       "media": {
-        "url": "http://www.thesmokinggun.com/sites/default/files/photos/djtdnc.jpg",
+        "url": "",
         "caption": "",
-        "credit": "The Smoking Gun"
+        "credit": "US Department of Justice"
       },
       "start_date": {
         "month": "6",
@@ -1689,8 +2301,42 @@
         "year": "2016"
       },
       "text": {
-        "headline": "Guccifer 2.0 claims DNC hack, leaks report on Trump. (Russians, Hacking)",
-        "text": "<a href='http://www.thesmokinggun.com/documents/crime/dnc-hacker-leaks-trump-oppo-report-647293' target='_blank'>The Smoking Gun / DNC Hacker Releases Trump Oppo Report</a>"
+        "headline": "In response to DNC announcment, Russian hackers create and launch \"Guccifer 2.0,\" according to indictment. (Russians, Hacking)",
+        "text": "<a href='https://www.justice.gov/file/1080281/download' target='_blank'>US Department of Justice</a>"
+      },
+      "group": "Russians, Hacking"
+    },
+    {
+      "media": {
+        "url": "",
+        "caption": "",
+        "credit": "Bloomberg"
+      },
+      "start_date": {
+        "month": "6",
+        "day": "17",
+        "year": "2016"
+      },
+      "text": {
+        "headline": "Putin says he does not have a preference for who wins U.S. election, though he welcomes Trump's pledge to restore U.S.-Russia ties. \"We never interfere in other countries’ internal politics, especially the U.S.\" (Russians, Hacking)",
+        "text": "<a href='https://www.bloomberg.com/news/articles/2016-06-17/putin-sticks-to-praise-for-trump-s-pledge-to-mend-russia-ties' target='_blank'>Bloomberg / Are you a robot?</a>"
+      },
+      "group": "Russians, Hacking"
+    },
+    {
+      "media": {
+        "url": "",
+        "caption": "",
+        "credit": "US Department of Justice"
+      },
+      "start_date": {
+        "month": "6",
+        "day": "20",
+        "year": "2016"
+      },
+      "text": {
+        "headline": "Russian government hackers are blocked by a U.S. security company from further DNC hacks. The hackers delete more computer logs, according to indictment. (Russians, Hacking)",
+        "text": "<a href='https://www.justice.gov/file/1080281/download' target='_blank'>US Department of Justice</a>"
       },
       "group": "Russians, Hacking"
     },
@@ -1713,6 +2359,40 @@
     },
     {
       "media": {
+        "url": "",
+        "caption": "",
+        "credit": "US Department of Justice"
+      },
+      "start_date": {
+        "month": "6",
+        "day": "22",
+        "year": "2016"
+      },
+      "text": {
+        "headline": "\"Organization 1\" reaches out to Guccifer 2.0 asking for any new Clinton docs, according to indictment. \"Organization 1\" is now believed to be Wikileaks. (Russians, Hacking)",
+        "text": "<a href='https://www.justice.gov/file/1080281/download' target='_blank'>US Department of Justice</a>"
+      },
+      "group": "Russians, Hacking"
+    },
+    {
+      "media": {
+        "url": "",
+        "caption": "",
+        "credit": "US Department of Justice"
+      },
+      "start_date": {
+        "month": "7",
+        "day": "14",
+        "year": "2016"
+      },
+      "text": {
+        "headline": "Hackers, posing as Guccifer 2.0, send \"Organization 1\" - suspected to be Wikileaks - an archive of stolen DNC documents, according to indictment. (Russians, Hacking)",
+        "text": "<a href='https://www.justice.gov/file/1080281/download' target='_blank'>US Department of Justice</a>"
+      },
+      "group": "Russians, Hacking"
+    },
+    {
+      "media": {
         "url": "https://static01.nyt.com/images/2016/07/23/us/23emails_web1/23emails_web1-facebookJumbo.jpg",
         "caption": "",
         "credit": "New York Times"
@@ -1730,7 +2410,24 @@
     },
     {
       "media": {
-        "url": "https://static01.nyt.com/images/icons/t_logo_291_black.png",
+        "url": "https://d3i6fh83elv35t.cloudfront.net/static/2018/07/rosenstein-1024x699.jpg",
+        "caption": "",
+        "credit": "PBS"
+      },
+      "start_date": {
+        "month": "7",
+        "day": "27",
+        "year": "2016"
+      },
+      "text": {
+        "headline": "On or around this date, Russian military intelligence officers begin to target email addresses associated with Hillary Clinton’s personal and campaign offices.  (Russians, Hacking)",
+        "text": "<a href='https://www.pbs.org/newshour/nation/read-muellers-full-indictment-against-12-russian-officers-for-election-interference' target='_blank'>PBS / Read Mueller’s full indictment against 12 Russian officers for election interference</a>"
+      },
+      "group": "Russians, Hacking"
+    },
+    {
+      "media": {
+        "url": "https://static01.nyt.com/newsgraphics/images/icons/defaultPromoCrop.png",
         "caption": "",
         "credit": "New York Times"
       },
@@ -1747,7 +2444,41 @@
     },
     {
       "media": {
-        "url": "https://cdn01.theintercept.com/wp-uploads/sites/1/2017/06/nsa-russia-hacking-election-1496690590.jpg",
+        "url": "",
+        "caption": "",
+        "credit": "US Department of Justice"
+      },
+      "start_date": {
+        "month": "8",
+        "day": "15",
+        "year": "2016"
+      },
+      "text": {
+        "headline": "An unnamed candidate for U.S. Congress reaches out to Russian hackers posing as  \"Guccifer 2.0\" to request stolen documents on their opponent, according to indictment. The hackers provide those documents. (Russians, Hacking)",
+        "text": "<a href='https://www.justice.gov/file/1080281/download' target='_blank'>US Department of Justice</a>"
+      },
+      "group": "Russians, Hacking"
+    },
+    {
+      "media": {
+        "url": "",
+        "caption": "",
+        "credit": "US Department of Justice"
+      },
+      "start_date": {
+        "month": "8",
+        "day": "22",
+        "year": "2016"
+      },
+      "text": {
+        "headline": "Russian hackers send stolen DCCC data to a lobbyist and unnamed online news source. Same day, the hackers send stolen documents about the Black Lives Matter movement to an unnamed reporter, according to indictment. (Russians, Hacking)",
+        "text": "<a href='https://www.justice.gov/file/1080281/download' target='_blank'>US Department of Justice</a>"
+      },
+      "group": "Russians, Hacking"
+    },
+    {
+      "media": {
+        "url": "https://theintercept.com/wp-uploads/sites/1/2017/06/nsa-russia-hacking-election-1496690590.jpg",
         "caption": "",
         "credit": "The Intercept"
       },
@@ -1764,7 +2495,7 @@
     },
     {
       "media": {
-        "url": "http://static.politifact.com.s3.amazonaws.com/rulings/tom-true.png",
+        "url": "https://s3.amazonaws.com/static.politifact.com/rulings/tom-true.png",
         "caption": "",
         "credit": "Politifact"
       },
@@ -1798,7 +2529,7 @@
     },
     {
       "media": {
-        "url": "https://cdn01.theintercept.com/wp-uploads/sites/1/2017/06/nsa-russia-hacking-election-1496690590.jpg",
+        "url": "https://theintercept.com/wp-uploads/sites/1/2017/06/nsa-russia-hacking-election-1496690590.jpg",
         "caption": "",
         "credit": "The Intercept"
       },
@@ -1900,6 +2631,74 @@
     },
     {
       "media": {
+        "url": "https://d3i6fh83elv35t.cloudfront.net/static/2018/07/RTX6BN5H-1024x610.jpg",
+        "caption": "",
+        "credit": "PBS"
+      },
+      "start_date": {
+        "month": "7",
+        "day": "16",
+        "year": "2018"
+      },
+      "text": {
+        "headline": "Putin says Russia \"has never interfered and will never interfere\" in U.S elections. He adds that he had hoped Trump would win \"because he talked about bringing the U.S.-Russia relationship back to normal.\"  (Russians, Hacking)",
+        "text": "<a href='https://www.pbs.org/newshour/politics/watch-trump-sees-no-reason-why-russia-would-meddle-in-2016-election-every-u-s-intel-agency-concluded-that-it-did' target='_blank'>PBS / WATCH: Trump refuses to acknowledge that Russia meddled in U.S. elections</a>"
+      },
+      "group": "Russians, Hacking"
+    },
+    {
+      "media": {
+        "url": "",
+        "caption": "",
+        "credit": "The Aspen Institute"
+      },
+      "start_date": {
+        "month": "7",
+        "day": "19",
+        "year": "2018"
+      },
+      "text": {
+        "headline": "Microsoft's security chief says \"earlier this year\" they saw attempted phishing attacks against three congressional candidates. (One is later identified as Sen. Claire McCaskill.) (Russians, Hacking)",
+        "text": "<a href='https://aspensecurityforum.org/wp-content/uploads/2018/07/ASF-2018-Defending-Democratic-Institutions-Election-2018-and-Beyond.pdf' target='_blank'>The Aspen Institute</a>"
+      },
+      "group": "Russians, Hacking"
+    },
+    {
+      "media": {
+        "url": "https://www.mccaskill.senate.gov/styles/img/senator.png",
+        "caption": "",
+        "credit": "US Senate"
+      },
+      "start_date": {
+        "month": "7",
+        "day": "26",
+        "year": "2018"
+      },
+      "text": {
+        "headline": "Sen. Claire McCaskill, D-Mo., says Russian hackers unsuccessfully tried to infiltrate her Senate computer network.\" (Russians, Hacking)",
+        "text": "<a href='https://www.mccaskill.senate.gov/media-center/news-releases/mccaskill-statement-on-report-of-attempted-russian-hacking' target='_blank'>US Senate / U.S. Senator Claire McCaskill of Missouri</a>"
+      },
+      "group": "Russians, Hacking"
+    },
+    {
+      "media": {
+        "url": "https://i2.cdn.turner.com/money/dam/assets/160727154759-maison-de-lamitie-mansion-780x439.jpg",
+        "caption": "",
+        "credit": "CNN"
+      },
+      "start_date": {
+        "month": "7",
+        "day": "15",
+        "year": "2008"
+      },
+      "text": {
+        "headline": "Trump sells Florida mansion to Russian billionaire for $95 million. (Trump)",
+        "text": "<a href='http://money.cnn.com/2016/07/27/news/donald-trump-russian-deal-mansion/index.html' target='_blank'>CNN / That time a Russian billionaire paid Trump $95 million for a mansion</a>"
+      },
+      "group": "Trump"
+    },
+    {
+      "media": {
         "url": "https://www.washingtonpost.com/resizer/gQq-lmSOEg2M2j4f-otf4ySnJu8=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/JAG3RVBD5QI6ROW5PSPSTJKYCU.jpg",
         "caption": "",
         "credit": "Washington Post"
@@ -1934,7 +2733,7 @@
     },
     {
       "media": {
-        "url": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i1paJs2ZMhI0/v3/1200x862.jpg",
+        "url": "",
         "caption": "",
         "credit": "Bloomberg"
       },
@@ -1945,7 +2744,7 @@
       },
       "text": {
         "headline": "Trump holds Miss Universe (which he owns) in Moscow, meets Russian entrepreneurs. (Trump)",
-        "text": "<a href='https://www.bloomberg.com/news/articles/2016-12-21/the-day-trump-came-to-moscow-oligarchs-miss-universe-and-nobu' target='_blank'>Bloomberg / The Day Trump Came to Moscow: Oligarchs, Miss Universe and Nobu</a>"
+        "text": "<a href='https://www.bloomberg.com/news/articles/2016-12-21/the-day-trump-came-to-moscow-oligarchs-miss-universe-and-nobu' target='_blank'>Bloomberg / Are you a robot?</a>"
       },
       "group": "Trump"
     },
@@ -2002,6 +2801,23 @@
     },
     {
       "media": {
+        "url": "https://timedotcom.files.wordpress.com/2015/11/gettyimages-496590844.jpg?quality=85",
+        "caption": "",
+        "credit": "Time"
+      },
+      "start_date": {
+        "month": "11",
+        "day": "10",
+        "year": "2015"
+      },
+      "text": {
+        "headline": "Trump said he got to know Putin \"very well\" because they were both on the same episode of 60 Minutes. Several media outlets reported that the leaders were not at the same location. (Trump)",
+        "text": "<a href='http://time.com/4108198/donald-trump-60-minutes-putin/' target='_blank'>Time / Here's the Deal With That Putin 60 Minutes Episode Trump Mentioned</a>"
+      },
+      "group": "Trump"
+    },
+    {
+      "media": {
         "url": "https://s.yimg.com/os/mit/media/m/social/images/social_default_logo-1481777.png",
         "caption": "",
         "credit": "Yahoo"
@@ -2048,6 +2864,23 @@
       "text": {
         "headline": "Trump meets Russian ambassador Sergey Kislyak. (Trump)",
         "text": "<a href='http://www.independent.co.uk/news/world/americas/us-politics/donald-trump-russian-ambassador-sergey-kislyak-meeting-election-campaign-a7617261.html' target='_blank'>The Independent / Donald Trump met Russian ambassador Sergey Kislyak during election campaign</a>"
+      },
+      "group": "Trump"
+    },
+    {
+      "media": {
+        "url": "https://mediadc.brightspotcdn.com/dims4/default/3e6d91d/2147483647/strip/true/crop/1200x630+0+0/resize/1200x630!/quality/90/?url=https%3A%2F%2Fmediadc.brightspotcdn.com%2F80%2F4d%2F15ab671348bb890291f90fdcda46%2Ftws-logo-1200x630.png",
+        "caption": "",
+        "credit": "Weekly Standard"
+      },
+      "start_date": {
+        "month": "6",
+        "day": "7",
+        "year": "2016"
+      },
+      "text": {
+        "headline": "Trump announces he will give a \"major speech\" within days to discuss things that have happened with the Clintons. (Trump)",
+        "text": "<a href='http://www.weeklystandard.com/trump-to-give-major-hillary-speech-monday/article/2002733' target='_blank'>Weekly Standard / Trump to Give Major Hillary Speech Monday</a>"
       },
       "group": "Trump"
     },
@@ -2104,7 +2937,7 @@
     },
     {
       "media": {
-        "url": "http://a57.foxnews.com/media2.foxnews.com/2016/06/20/0/0/062116_kurtz_lewandowski_1280.jpg?ve=1",
+        "url": "http://a57.foxnews.com/media2.foxnews.com/2016/06/20/640/360/062116_kurtz_lewandowski_1280.jpg",
         "caption": "",
         "credit": "Fox News"
       },
@@ -2206,7 +3039,7 @@
     },
     {
       "media": {
-        "url": "http://thehill.com/sites/default/files/trumpdonald_080216gn.jpg",
+        "url": "https://thehill.com/sites/default/files/trumpdonald_080216gn.jpg",
         "caption": "",
         "credit": "The Hill"
       },
@@ -2218,6 +3051,23 @@
       "text": {
         "headline": "Trump team says Page made \"no contribution\" to the campaign. (Trump)",
         "text": "<a href='http://thehill.com/homenews/campaign/297599-trump-campaign-backs-away-from-adviser-suspected-of-ties-to-kremlin' target='_blank'>The Hill / Trump camp backs away from adviser suspected of Kremlin ties</a>"
+      },
+      "group": "Trump"
+    },
+    {
+      "media": {
+        "url": "https://www.washingtonpost.com/pbox.php?url=http://www.washingtonpost.com/blogs/the-fix/files/2016/09/2016-09-27T011544Z_01_CB102_RTRIDSP_3_USA-ELECTION-DEBATE.jpg&w=1484&op=resize&opt=1&filter=antialias&t=20170517",
+        "caption": "",
+        "credit": "Washington Post"
+      },
+      "start_date": {
+        "month": "9",
+        "day": "26",
+        "year": "2016"
+      },
+      "text": {
+        "headline": "\"I don’t think anybody knows it was Russia that broke into the DNC,\" Trump says at first presidential debate. (Trump)",
+        "text": "<a href='https://www.washingtonpost.com/news/the-fix/wp/2016/09/26/the-first-trump-clinton-presidential-debate-transcript-annotated/?utm_term=.7a0a6750a365' target='_blank'>Washington Post / The first Trump-Clinton presidential debate transcript, annotated</a>"
       },
       "group": "Trump"
     },
@@ -2240,6 +3090,23 @@
     },
     {
       "media": {
+        "url": "https://timedotcom.files.wordpress.com/2016/10/161009_debate_manterruptions.jpg?quality=85",
+        "caption": "",
+        "credit": "Time"
+      },
+      "start_date": {
+        "month": "10",
+        "day": "9",
+        "year": "2016"
+      },
+      "text": {
+        "headline": "Trump says he doesn't know Putin at second presidential debate. (Trump)",
+        "text": "<a href='http://time.com/4523325/read-the-transcript-of-the-second-presidential-debate/' target='_blank'>Time / Read the Transcript of the Second Presidential Debate</a>"
+      },
+      "group": "Trump"
+    },
+    {
+      "media": {
         "url": "https://media4.s-nbcnews.com/j/newscms/2017_01/1854386/170104-trump_iraq-1630_3335d542d005910f6d8d359025f82497.1200;630;7;70;5.jpg",
         "caption": "",
         "credit": "NBC News"
@@ -2250,14 +3117,14 @@
         "year": "2016"
       },
       "text": {
-        "headline": "Trump doubts U.S. intel on Russia. (Trump)",
+        "headline": "Trump doubts U.S. intel on Russia, saying \"our country has no idea\" whether Russia was involved. (Trump)",
         "text": "<a href='http://www.nbcnews.com/politics/first-read/trump-has-been-strikingly-consistent-denying-russian-hacking-role-n703866' target='_blank'>NBC News / Trump Has Been Strikingly Consistent in Denying Russian Hacking Role</a>"
       },
       "group": "Trump"
     },
     {
       "media": {
-        "url": "https://i.guim.co.uk/img/media/ba49fc9e93531bbdbb48ec7e975adb31963e7ae2/0_106_5066_3039/master/5066.jpg?w=1200&h=630&q=55&auto=format&usm=12&fit=crop&crop=faces%2Centropy&bm=normal&ba=bottom%2Cleft&blend64=aHR0cHM6Ly91cGxvYWRzLmd1aW0uY28udWsvMjAxOC8wMS8zMS9mYWNlYm9va19kZWZhdWx0LnBuZw&s=64a3fa6e668301b5470613574fbc2f00",
+        "url": "https://i.guim.co.uk/img/media/ba49fc9e93531bbdbb48ec7e975adb31963e7ae2/0_106_5066_3039/master/5066.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&crop=faces%2Centropy&bm=normal&ba=bottom%2Cleft&blend64=aHR0cHM6Ly9hc3NldHMuZ3VpbS5jby51ay9pbWFnZXMvb3ZlcmxheXMvZDM1ODZhNWVmNTc4MTc1NmQyMWEzYjYzNWU1MTcxNDEvdGctZGVmYXVsdC5wbmc&s=9719e49d2bc673c7c362ebc1c41c6fa0",
         "caption": "",
         "credit": "The Guardian"
       },
@@ -2269,6 +3136,40 @@
       "text": {
         "headline": "Trump praises Comey for reopening Clinton email probe. (Trump)",
         "text": "<a href='https://www.theguardian.com/us-news/video/2016/oct/31/donald-trump-fbi-james-comey-congress-video' target='_blank'>The Guardian / Donald Trump praises FBI director for letter to Congress – video</a>"
+      },
+      "group": "Trump"
+    },
+    {
+      "media": {
+        "url": "https://www.washingtonpost.com/rf/image_1484w/2010-2019/WashingtonPost/2016/11/09/National-Politics/Images/JEB_48231478679611.jpg?t=20170517",
+        "caption": "",
+        "credit": "Washington Post"
+      },
+      "start_date": {
+        "month": "11",
+        "day": "8",
+        "year": "2016"
+      },
+      "text": {
+        "headline": "Trump wins the presidency. (Trump)",
+        "text": "<a href='https://www.washingtonpost.com/politics/election-day-an-acrimonious-race-reaches-its-end-point/2016/11/08/32b96c72-a557-11e6-ba59-a7d93165c6d4_story.html' target='_blank'>Washington Post / Donald Trump wins the presidency in stunning upset over Clinton</a>"
+      },
+      "group": "Trump"
+    },
+    {
+      "media": {
+        "url": "https://static01.nyt.com/images/2017/05/09/us/09obama/09obama-facebookJumbo.jpg",
+        "caption": "",
+        "credit": "New York Times"
+      },
+      "start_date": {
+        "month": "11",
+        "day": "10",
+        "year": "2016"
+      },
+      "text": {
+        "headline": "Obama warns Trump about Flynn. (Trump)",
+        "text": "<a href='https://www.nytimes.com/2017/05/08/us/politics/obama-flynn-trump.html' target='_blank'>New York Times / Obama Warned Trump About Hiring Flynn, Officials Say</a>"
       },
       "group": "Trump"
     },
@@ -2308,7 +3209,41 @@
     },
     {
       "media": {
-        "url": "https://i.guim.co.uk/img/media/238d315ec12a0283daede58583f5ed550c2a0f4f/0_81_4096_2459/master/4096.jpg?w=1200&h=630&q=55&auto=format&usm=12&fit=crop&crop=faces%2Centropy&bm=normal&ba=bottom%2Cleft&blend64=aHR0cHM6Ly91cGxvYWRzLmd1aW0uY28udWsvMjAxOC8wMS8zMS9mYWNlYm9va19kZWZhdWx0LnBuZw&s=9ae04a7ba898f1fd584b1c809e88dba7",
+        "url": "https://pbs.twimg.com/profile_images/874276197357596672/kUuht00m_400x400.jpg",
+        "caption": "",
+        "credit": "Twitter"
+      },
+      "start_date": {
+        "month": "1",
+        "day": "4",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "Trump quotes Assange, who said a 14-year-old could have hacked the DNC. 'Why was the DNC so careless?' Trump asks. (Trump)",
+        "text": "<a href='https://twitter.com/realDonaldTrump/status/816620855958601730' target='_blank'>Twitter / Donald J. Trump on Twitter</a>"
+      },
+      "group": "Trump"
+    },
+    {
+      "media": {
+        "url": "",
+        "caption": "",
+        "credit": "US Senate"
+      },
+      "start_date": {
+        "month": "1",
+        "day": "6",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "Comey meets Trump in New York at a briefing on Russia and tells him he is not under investigation. (Trump)",
+        "text": "<a href='https://www.intelligence.senate.gov/sites/default/files/documents/os-jcomey-060817.pdf' target='_blank'>US Senate</a>"
+      },
+      "group": "Trump"
+    },
+    {
+      "media": {
+        "url": "https://i.guim.co.uk/img/media/238d315ec12a0283daede58583f5ed550c2a0f4f/0_81_4096_2459/master/4096.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&crop=faces%2Centropy&bm=normal&ba=bottom%2Cleft&blend64=aHR0cHM6Ly9hc3NldHMuZ3VpbS5jby51ay9pbWFnZXMvb3ZlcmxheXMvZDM1ODZhNWVmNTc4MTc1NmQyMWEzYjYzNWU1MTcxNDEvdGctZGVmYXVsdC5wbmc&s=e56da7b87de70a0209278d8fc39fc2df",
         "caption": "",
         "credit": "The Guardian"
       },
@@ -2325,7 +3260,24 @@
     },
     {
       "media": {
-        "url": "http://www.latimes.com/resizer/qbotZ5WxWXx6ICRsHAtLbGNgFNs=/1200x0/www.trbimg.com/img-5885402e/turbine/la-trump-comey-20170122/600",
+        "url": "https://static01.nyt.com/images/2017/01/12/us/12transitionbriefing-ALTSUBALT/12transitionbriefing-ALTSUBALT-facebookJumbo.jpg",
+        "caption": "",
+        "credit": "New York Times"
+      },
+      "start_date": {
+        "month": "1",
+        "day": "11",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "In a news conference, Trump says for the first time he believes Russia was behind the DNC hack. (Trump)",
+        "text": "<a href='https://www.nytimes.com/2017/01/11/us/politics/donald-trump-press-conference.html' target='_blank'>New York Times / Trump Says ‘I Think It Was Russia’ That Hacked the Democrats</a>"
+      },
+      "group": "Trump"
+    },
+    {
+      "media": {
+        "url": "https://www.latimes.com/resizer/qbotZ5WxWXx6ICRsHAtLbGNgFNs=/1200x0/www.trbimg.com/img-5885402e/turbine/la-trump-comey-20170122/600",
         "caption": "",
         "credit": "LA Times"
       },
@@ -2337,6 +3289,40 @@
       "text": {
         "headline": "Trump calls Comey over to shake hands during a White House reception. (Trump)",
         "text": "<a href='http://www.latimes.com/nation/politics/trailguide/la-na-trailguide-updates-at-white-house-reception-a-pat-on-the-1485128431-htmlstory.html' target='_blank'>LA Times / At a White House reception, Trump has a pat on the back for FBI Director James Comey</a>"
+      },
+      "group": "Trump"
+    },
+    {
+      "media": {
+        "url": "",
+        "caption": "",
+        "credit": "US Senate"
+      },
+      "start_date": {
+        "month": "1",
+        "day": "27",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "Trump and Comey have a private White House dinner. Comey says Trump asked for his loyalty. (Trump)",
+        "text": "<a href='https://www.intelligence.senate.gov/sites/default/files/documents/os-jcomey-060817.pdf' target='_blank'>US Senate</a>"
+      },
+      "group": "Trump"
+    },
+    {
+      "media": {
+        "url": "https://www.whitehouse.gov/wp-content/uploads/2017/12/wh.gov-share-img_03-1024x538.png",
+        "caption": "",
+        "credit": "House of Representatives"
+      },
+      "start_date": {
+        "month": "1",
+        "day": "28",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "Putin calls Trump to congratulate him on win. (Trump)",
+        "text": "<a href='https://www.whitehouse.gov/the-press-office/2017/01/28/readout-presidents-call-russian-president-vladimir-putin' target='_blank'>House of Representatives / Readout of the President’s Call with Russian President Vladimir Putin</a>"
       },
       "group": "Trump"
     },
@@ -2359,6 +3345,40 @@
     },
     {
       "media": {
+        "url": "https://static01.nyt.com/images/2017/05/17/us/17comey/17comey-facebookJumbo-v2.jpg",
+        "caption": "",
+        "credit": "New York Times"
+      },
+      "start_date": {
+        "month": "2",
+        "day": "14",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "In Oval Office, Trump allegedly dismisses other leaders from briefing and says privately to Comey: \"I hope you can see your way clear ... to letting Flynn go.\" (Trump)",
+        "text": "<a href='https://www.nytimes.com/2017/05/16/us/politics/james-comey-trump-flynn-russia-investigation.html' target='_blank'>New York Times / Comey Memo Says Trump Asked Him to End Flynn Investigation</a>"
+      },
+      "group": "Trump"
+    },
+    {
+      "media": {
+        "url": "https://cdn.cnn.com/cnnnext/dam/assets/160707134848-james-comey-july-7-2016-super-tease.jpg",
+        "caption": "",
+        "credit": "CNN"
+      },
+      "start_date": {
+        "month": "2",
+        "day": "15",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "White House officials allegedly ask FBI to dispute media reports about contact between Trump campaign and Russians. (Trump)",
+        "text": "<a href='http://www.cnn.com/2017/02/23/politics/fbi-refused-white-house-request-to-knock-down-recent-trump-russia-stories/index.html' target='_blank'>CNN / FBI refused White House request to knock down recent Trump-Russia stories</a>"
+      },
+      "group": "Trump"
+    },
+    {
+      "media": {
         "url": "https://static01.nyt.com/images/2018/01/05/us/politics/05dc-obstruct-1/05dc-obstruct-1-facebookJumbo.jpg",
         "caption": "",
         "credit": "New York Times"
@@ -2376,7 +3396,7 @@
     },
     {
       "media": {
-        "url": "http://static.politifact.com/rulings/og/logo-meter.png",
+        "url": "http://s3.amazonaws.com/static.politifact.com/rulings/og/logo-meter.png",
         "caption": "",
         "credit": "Politifact"
       },
@@ -2461,6 +3481,40 @@
     },
     {
       "media": {
+        "url": "",
+        "caption": "",
+        "credit": "US Senate"
+      },
+      "start_date": {
+        "month": "4",
+        "day": "11",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "Comey says Trump called again to ask him to \"get out\" that the president was not under investigation. (Trump)",
+        "text": "<a href='https://www.intelligence.senate.gov/sites/default/files/documents/os-jcomey-060817.pdf' target='_blank'>US Senate</a>"
+      },
+      "group": "Trump"
+    },
+    {
+      "media": {
+        "url": "https://www.washingtonpost.com/rf/image_1484w/2010-2019/WashingtonPost/2017/04/07/Editorial-Opinion/Images/APTOPIX_Trump_US_Syria_38683-4f2dc.jpg?t=20170517",
+        "caption": "",
+        "credit": "Washington Post"
+      },
+      "start_date": {
+        "month": "4",
+        "day": "12",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "Trump tells Fox Business Network he still has confidence in Comey. (Trump)",
+        "text": "<a href='https://www.washingtonpost.com/news/the-fix/wp/2017/04/12/president-trumps-throughly-confusing-fox-business-interview-annotated/?utm_term=.999b5552e017' target='_blank'>Washington Post / President Trump’s thoroughly confusing Fox Business interview, annotated</a>"
+      },
+      "group": "Trump"
+    },
+    {
+      "media": {
         "url": "https://pbs.twimg.com/profile_images/874276197357596672/kUuht00m_400x400.jpg",
         "caption": "",
         "credit": "Twitter"
@@ -2512,6 +3566,74 @@
     },
     {
       "media": {
+        "url": "https://static01.nyt.com/images/2017/05/20/us/20russiameeting/20russiameeting-facebookJumbo-v2.jpg",
+        "caption": "",
+        "credit": "New York Times"
+      },
+      "start_date": {
+        "month": "5",
+        "day": "10",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "Trump meets with Kislyak and Foreign Minister Sergei Lavrov in the Oval Office, reportedly reiterates he is not under investigation and criticizes Comey. (Trump)",
+        "text": "<a href='https://www.nytimes.com/2017/05/19/us/politics/trump-russia-comey.html' target='_blank'>New York Times / Trump Told Russians That Firing ‘Nut Job’ Comey Eased Pressure From Investigation</a>"
+      },
+      "group": "Trump"
+    },
+    {
+      "media": {
+        "url": "http://assets.realclear.com/images/41/413670.jpg",
+        "caption": "",
+        "credit": "Real Clear Politics"
+      },
+      "start_date": {
+        "month": "5",
+        "day": "11",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "Trump tells NBC's Lester Holt that he was thinking of Russia when he decided to fire Comey. (Trump)",
+        "text": "<a href='http://www.realclearpolitics.com/video/2017/05/11/president_trumps_full_interview_with_lester_holt.html' target='_blank'>Real Clear Politics / President Trump's Full Interview With Lester Holt: Firing Of James Comey</a>"
+      },
+      "group": "Trump"
+    },
+    {
+      "media": {
+        "url": "https://pbs.twimg.com/profile_images/874276197357596672/kUuht00m_400x400.jpg",
+        "caption": "",
+        "credit": "Twitter"
+      },
+      "start_date": {
+        "month": "5",
+        "day": "12",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "Trump tweets Comey better hope there are no \"tapes\" of their conversations. (Trump)",
+        "text": "<a href='https://twitter.com/realDonaldTrump/status/863007411132649473' target='_blank'>Twitter / Donald J. Trump on Twitter</a>"
+      },
+      "group": "Trump"
+    },
+    {
+      "media": {
+        "url": "",
+        "caption": "",
+        "credit": "House of Representatives"
+      },
+      "start_date": {
+        "month": "5",
+        "day": "18",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "Trump says 'no' when reporters ask whether he urged Comey to back down on the Flynn investigation. (Trump)",
+        "text": "<a href='https://www.whitehouse.gov/the-press-office/2017/05/18/remarks-president-trump-and-president-santos-colombia-joint-press' target='_blank'>House of Representatives</a>"
+      },
+      "group": "Trump"
+    },
+    {
+      "media": {
         "url": "https://s4.reutersmedia.net/resources_v2/images/rcom-default.png",
         "caption": "",
         "credit": "Reuters"
@@ -2524,6 +3646,40 @@
       "text": {
         "headline": "Trump retains adviser Marc Kasowitz as his private attorney for Russia probe. (Trump)",
         "text": "<a href='http://www.reuters.com/article/us-usa-trump-russia-counsel-idUSKBN18J30W' target='_blank'>Reuters / Trump retains Marc Kasowitz as private attorney for Russia probe: source</a>"
+      },
+      "group": "Trump"
+    },
+    {
+      "media": {
+        "url": "https://pbs.twimg.com/profile_images/874276197357596672/kUuht00m_400x400.jpg",
+        "caption": "",
+        "credit": "Twitter"
+      },
+      "start_date": {
+        "month": "6",
+        "day": "7",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "Trump tweets that he intends to name Christopher Wray as new FBI director. (Trump)",
+        "text": "<a href='https://twitter.com/realDonaldTrump/status/872419018799550464' target='_blank'>Twitter / Donald J. Trump on Twitter</a>"
+      },
+      "group": "Trump"
+    },
+    {
+      "media": {
+        "url": "https://i.ytimg.com/vi/mjDNe9A0QfI/maxresdefault.jpg",
+        "caption": "",
+        "credit": "You Tube"
+      },
+      "start_date": {
+        "month": "6",
+        "day": "8",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "Trump's lawyer disputes Comey's testimony. (Trump)",
+        "text": "<a href='https://www.youtube.com/watch?v=mjDNe9A0QfI' target='_blank'>You Tube / President Trump's lawyer responds to Comey testimony</a>"
       },
       "group": "Trump"
     },
@@ -2648,7 +3804,7 @@
     },
     {
       "media": {
-        "url": "https://i.guim.co.uk/img/media/e3d1e4945689b7bebef741ebf6410a29e269bf0a/0_18_3500_2099/master/3500.jpg?w=1200&h=630&q=55&auto=format&usm=12&fit=crop&crop=faces%2Centropy&bm=normal&ba=bottom%2Cleft&blend64=aHR0cHM6Ly91cGxvYWRzLmd1aW0uY28udWsvMjAxOC8wMS8zMS9mYWNlYm9va19kZWZhdWx0LnBuZw&s=a1b8bd288623e096857d7610977605d7",
+        "url": "https://i.guim.co.uk/img/media/e3d1e4945689b7bebef741ebf6410a29e269bf0a/0_18_3500_2099/master/3500.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&crop=faces%2Centropy&bm=normal&ba=bottom%2Cleft&blend64=aHR0cHM6Ly9hc3NldHMuZ3VpbS5jby51ay9pbWFnZXMvb3ZlcmxheXMvZDM1ODZhNWVmNTc4MTc1NmQyMWEzYjYzNWU1MTcxNDEvdGctZGVmYXVsdC5wbmc&s=a979acc80e54dadd6049afafaab5706f",
         "caption": "",
         "credit": "The Guardian"
       },
@@ -2796,6 +3952,23 @@
       "text": {
         "headline": "White House says Trump did weigh in on son's statement to NYT. (Trump)",
         "text": "<a href='http://www.cnn.com/2017/08/01/politics/trump-russia-meeting-statement/index.html' target='_blank'>CNN / Trump 'weighed in' on son's statement about Russia meeting, White House says</a>"
+      },
+      "group": "Trump"
+    },
+    {
+      "media": {
+        "url": "https://cdn.cnn.com/cnnnext/dam/assets/160815081224-01-manafort-trump-0720-super-tease.jpg",
+        "caption": "",
+        "credit": "CNN"
+      },
+      "start_date": {
+        "month": "8",
+        "day": "10",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "Trump says he was surprised by July FBI raid at Manafort's home and has always found Manafort to be a good man. (Trump)",
+        "text": "<a href='http://www.cnn.com/2017/08/10/politics/trump-paul-manafort-russia/index.html' target='_blank'>CNN / Trump 'surprised' by Manafort raid in Russia probe</a>"
       },
       "group": "Trump"
     },
@@ -2954,7 +4127,7 @@
     },
     {
       "media": {
-        "url": "https://static01.nyt.com/images/2018/03/23/us/politics/23dc-dowd/23dc-dowd-facebookJumbo.jpg",
+        "url": "https://static01.nyt.com/images/2018/07/07/us/politics/07dc-investigate-print-3/23dc-dowd-facebookJumbo.jpg",
         "caption": "",
         "credit": "New York Times"
       },
@@ -3005,7 +4178,7 @@
     },
     {
       "media": {
-        "url": "https://static01.nyt.com/images/2018/03/23/us/politics/23dc-dowd/23dc-dowd-facebookJumbo.jpg",
+        "url": "https://static01.nyt.com/images/2018/07/07/us/politics/07dc-investigate-print-3/23dc-dowd-facebookJumbo.jpg",
         "caption": "",
         "credit": "New York Times"
       },
@@ -3141,6 +4314,142 @@
     },
     {
       "media": {
+        "url": "https://pbs.twimg.com/profile_images/874276197357596672/kUuht00m_400x400.jpg",
+        "caption": "",
+        "credit": "Twitter"
+      },
+      "start_date": {
+        "month": "7",
+        "day": "16",
+        "year": "2018"
+      },
+      "text": {
+        "headline": "Before meeting with Putin, Trump blames past administrations and the \"rigged witch hunt\" for what he says are poor relations with Russia. (Trump)",
+        "text": "<a href='https://twitter.com/realDonaldTrump/status/1018738368753078273' target='_blank'>Twitter / Donald J. Trump on Twitter</a>"
+      },
+      "group": "Trump"
+    },
+    {
+      "media": {
+        "url": "https://d3i6fh83elv35t.cloudfront.net/static/2018/07/trumprussia-1024x683.jpg",
+        "caption": "",
+        "credit": "PBS"
+      },
+      "start_date": {
+        "month": "7",
+        "day": "17",
+        "year": "2018"
+      },
+      "text": {
+        "headline": "Trump says he misspoke, meant to say he didn't see why Russia \"wouldn't\" have meddled in the election. (Trump)",
+        "text": "<a href='https://www.pbs.org/newshour/politics/trump-now-says-he-misspoke-on-russian-meddling-believes-election-interference-took-place' target='_blank'>PBS / Trump now says he misspoke on Russian meddling, believes election interference took place</a>"
+      },
+      "group": "Trump"
+    },
+    {
+      "media": {
+        "url": "https://d3i6fh83elv35t.cloudfront.net/static/2018/07/RTX6BY76-1024x659.jpg",
+        "caption": "",
+        "credit": "PBS"
+      },
+      "start_date": {
+        "month": "7",
+        "day": "18",
+        "year": "2018"
+      },
+      "text": {
+        "headline": "Trump says \"no\" when asked whether Russia was still targeting the U.S. Hours later, his press secretary says Trump said \"no\" to more questions. (Trump)",
+        "text": "<a href='https://www.pbs.org/newshour/politics/trump-says-no-russia-not-still-targeting-u-s' target='_blank'>PBS / Trump says 'no,' Russia not still targeting U.S.</a>"
+      },
+      "group": "Trump"
+    },
+    {
+      "media": {
+        "url": "https://pbs.twimg.com/profile_images/893600318025474048/CbCbznYp_400x400.jpg",
+        "caption": "",
+        "credit": "Twitter"
+      },
+      "start_date": {
+        "month": "7",
+        "day": "19",
+        "year": "2018"
+      },
+      "text": {
+        "headline": "Trump asks National Security Advisor John Bolton to invite Putin to the U.S. this fall. (Trump)",
+        "text": "<a href='https://twitter.com/PressSec/status/1020033303351619584' target='_blank'>Twitter / Sarah Sanders on Twitter</a>"
+      },
+      "group": "Trump"
+    },
+    {
+      "media": {
+        "url": "https://pbs.twimg.com/profile_images/874276197357596672/kUuht00m_400x400.jpg",
+        "caption": "",
+        "credit": "Twitter"
+      },
+      "start_date": {
+        "month": "7",
+        "day": "22",
+        "year": "2018"
+      },
+      "text": {
+        "headline": "Trump tweets that the Mueller investigation is a hoax and incorrectly claims it was sparked by the \"whole FISA scam.\" (Trump)",
+        "text": "<a href='https://twitter.com/realDonaldTrump/status/1021007656511852544' target='_blank'>Twitter / Donald J. Trump on Twitter</a>"
+      },
+      "group": "Trump"
+    },
+    {
+      "media": {
+        "url": "https://d3i6fh83elv35t.cloudfront.net/static/2018/07/trumprussia1-1024x689.jpg",
+        "caption": "",
+        "credit": "PBS"
+      },
+      "start_date": {
+        "month": "7",
+        "day": "24",
+        "year": "2018"
+      },
+      "text": {
+        "headline": "Trump claims without evidence that Russia will be \"pushing very hard\" to help Democrats in the midterms. (Trump)",
+        "text": "<a href='https://www.pbs.org/newshour/politics/trump-says-without-evidence-that-russia-will-be-pushing-very-hard-to-help-democrats-win-in-2018' target='_blank'>PBS / Trump says without evidence that Russia will be ‘pushing very hard’ to help Democrats win in 2018</a>"
+      },
+      "group": "Trump"
+    },
+    {
+      "media": {
+        "url": "https://pbs.twimg.com/profile_images/874276197357596672/kUuht00m_400x400.jpg",
+        "caption": "",
+        "credit": "Twitter"
+      },
+      "start_date": {
+        "month": "8",
+        "day": "18",
+        "year": "2018"
+      },
+      "text": {
+        "headline": "As NYT reports that WH Counsel McGahn spoke with Mueller's team, Trump tweets that he allowed those interviews. (Trump)",
+        "text": "<a href='https://twitter.com/realDonaldTrump/status/1030940529037651968' target='_blank'>Twitter / Donald J. Trump on Twitter</a>"
+      },
+      "group": "Trump"
+    },
+    {
+      "media": {
+        "url": "https://pbs.twimg.com/profile_images/874276197357596672/kUuht00m_400x400.jpg",
+        "caption": "",
+        "credit": "Twitter"
+      },
+      "start_date": {
+        "month": "8",
+        "day": "19",
+        "year": "2018"
+      },
+      "text": {
+        "headline": "The president writes that the Mueller investigation makes Joseph McCarthy look like a baby. (Trump)",
+        "text": "<a href='https://twitter.com/realDonaldTrump/status/1031154974942810114' target='_blank'>Twitter / Donald J. Trump on Twitter</a>"
+      },
+      "group": "Trump"
+    },
+    {
+      "media": {
         "url": "https://nyppagesix.files.wordpress.com/2016/10/campaign_2016_trump.jpg?quality=90&strip=all&w=1200",
         "caption": "",
         "credit": "Page Six"
@@ -3209,6 +4518,23 @@
     },
     {
       "media": {
+        "url": "http://media.businessinsider.com/public/assets/BI/US/favicons/apple-touch-icon.png",
+        "caption": "",
+        "credit": "Business Insider"
+      },
+      "start_date": {
+        "month": "1",
+        "day": "27",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "Cohen meets with businessman Felix Sater and Ukrainian Andrey Artemenko, where they pitch a plan for Russia to lease Crimea and sanctions to be dropped.  (Cohen)",
+        "text": "<a href='http://www.businessinsider.com/andrey-artemenko-ukraine-russia-michael-cohen-flynn-plan-2017-2' target='_blank'>Business Insider / Lawmaker: 'I got confirmation' my Russia-Ukraine plan was delivered to White House, despite what Trump lawyer says</a>"
+      },
+      "group": "Cohen"
+    },
+    {
+      "media": {
         "url": "https://static01.nyt.com/images/2017/02/20/us/20trumpukraine-1/20trumpukraine-1-facebookJumbo.jpg",
         "caption": "",
         "credit": "New York Times"
@@ -3226,7 +4552,7 @@
     },
     {
       "media": {
-        "url": "http://a57.foxnews.com/images.foxnews.com/content/fox-news/politics/2017/08/30/trump-attorney-delivers-point-by-point-rebuttal-totally-false-dossier/_jcr_content/par/featured_image/media-0.img.jpg/0/0/1504117733425.jpg?ve=1",
+        "url": "https://static.foxnews.com/foxnews.com/content/uploads/2018/09/michael-cohen-trump.jpg",
         "caption": "",
         "credit": "Fox News"
       },
@@ -3322,7 +4648,7 @@
       },
       "text": {
         "headline": "According to the AP, as early as this date, Paul Manafort pitched a plan to Russian oligarch Oleg Deripaska to consult for the Putin government. Manafort denies his work was pro-Russian. Deripaska sued for libel. (Manafort and Gates)",
-        "text": "<a href='https://www.apnews.com/122ae0b5848345faa88108a03de40c5a' target='_blank'>Associated Press / AP Exclusive: Before Trump job, Manafort worked to aid Putin</a>"
+        "text": "<a href='https://www.apnews.com/122ae0b5848345faa88108a03de40c5a                                                                                                                                                                                                                                                ' target='_blank'>Associated Press / AP Exclusive: Before Trump job, Manafort worked to aid Putin</a>"
       },
       "group": "Manafort and Gates"
     },
@@ -3498,6 +4824,23 @@
     },
     {
       "media": {
+        "url": "",
+        "caption": "",
+        "credit": "N/A"
+      },
+      "start_date": {
+        "month": "9",
+        "day": "20",
+        "year": "2016"
+      },
+      "text": {
+        "headline": "Mortgage company moves to foreclose on Manafort property in Brooklyn. (Manafort and Gates)",
+        "text": "<a href='https://docs.google.com/viewerng/viewer?url=https://dl.dropboxusercontent.com/s/rfi8csjgwy699md/Genesis+Capital+Foreclosure+(1).pdf?dl%3D0' target='_blank'>N/A / Genesis Capital Foreclosure (1).pdf</a>"
+      },
+      "group": "Manafort and Gates"
+    },
+    {
+      "media": {
         "url": "https://assets.documentcloud.org/documents/3259984/pages/Trump-Intelligence-Allegations-p1-normal.gif",
         "caption": "",
         "credit": "DocumentCloud"
@@ -3510,6 +4853,23 @@
       "text": {
         "headline": "Christopher Steele writes in his dossier that a Kremlin insider told him Manafort had led efforts for a secret Trump-campaign relationship with Russians, until his ouster. (Manafort and Gates)",
         "text": "<a href='https://www.documentcloud.org/documents/3259984-Trump-Intelligence-Allegations.html' target='_blank'>DocumentCloud / Trump Intelligence Allegations</a>"
+      },
+      "group": "Manafort and Gates"
+    },
+    {
+      "media": {
+        "url": "https://www.nydailynews.com/resizer/z_pNOwaHRymUEq8BLr0JCxZ4MmA=/1200x0/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/OHRA6C447JR4ZB5YQYQ23Y4KGI.jpg",
+        "caption": "",
+        "credit": "NY Daily News"
+      },
+      "start_date": {
+        "month": "11",
+        "day": "17",
+        "year": "2016"
+      },
+      "text": {
+        "headline": "Legal complaint alleges Manafort's son-in-law,  Jeffrey Yohai, operated real estate Ponzi scheme. (Manafort and Gates)",
+        "text": "<a href='http://www.nydailynews.com/new-york/nyc-crime/ex-trump-aide-paul-manafort-son-in-law-accused-ponzi-scheme-article-1.2879263' target='_blank'>NY Daily News / Ex-Trump aide Paul Manafort's son-in-law sued over alleged Ponzi scheme</a>"
       },
       "group": "Manafort and Gates"
     },
@@ -3549,7 +4909,24 @@
     },
     {
       "media": {
-        "url": "http://static.politifact.com.s3.amazonaws.com/rulings/tom-false.png",
+        "url": "https://si.wsj.net/public/resources/images/BN-SR589_MANAFO_TOP_20170328124011.jpg",
+        "caption": "",
+        "credit": "Wall Street Journal"
+      },
+      "start_date": {
+        "month": "1",
+        "day": "17",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "Manafort received $16 million in loans from November to Jan. from bank led by another Trump campaign official. (Manafort and Gates)",
+        "text": "<a href='https://www.wsj.com/articles/paul-manafort-received-loans-from-another-former-trump-advisers-bank-1490779800' target='_blank'>Wall Street Journal / Paul Manafort Received Loans From Another Former Trump Adviser’s Bank</a>"
+      },
+      "group": "Manafort and Gates"
+    },
+    {
+      "media": {
+        "url": "https://s3.amazonaws.com/static.politifact.com/rulings/tom-false.png",
         "caption": "",
         "credit": "Politifact"
       },
@@ -3583,7 +4960,24 @@
     },
     {
       "media": {
-        "url": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iqTUXa12RLQs/v2/1200x675.jpg",
+        "url": "https://storage.googleapis.com/afs-prod/media/media:5a6cc43968484fa68164e2c99c48add9/800.jpeg",
+        "caption": "",
+        "credit": "Associated Press"
+      },
+      "start_date": {
+        "month": "4",
+        "day": "12",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "The Associated Press publishes a story with evidence that Manafort received two payments laid out in the so-called \"Black Ledger\" in Ukraine. (Manafort and Gates)",
+        "text": "<a href='https://www.apnews.com/20cfc75c82eb4a67b94e624e97207e23' target='_blank'>Associated Press / AP Exclusive: Manafort firm received Ukraine ledger payout</a>"
+      },
+      "group": "Manafort and Gates"
+    },
+    {
+      "media": {
+        "url": "",
         "caption": "",
         "credit": "Bloomberg"
       },
@@ -3594,7 +4988,7 @@
       },
       "text": {
         "headline": "Report: NY attorney general and Manhattan's district attorney have opened investigations into Manafort real estate transactions. (Manafort and Gates)",
-        "text": "<a href='https://www.bloomberg.com/news/articles/2017-05-14/manafort-s-real-estate-deals-said-to-be-probed-by-n-y-s-top-cop' target='_blank'>Bloomberg / Manafort's Real-Estate Deals Said to Be Probed by N.Y.'s Top Cop</a>"
+        "text": "<a href='https://www.bloomberg.com/news/articles/2017-05-14/manafort-s-real-estate-deals-said-to-be-probed-by-n-y-s-top-cop' target='_blank'>Bloomberg / Are you a robot?</a>"
       },
       "group": "Manafort and Gates"
     },
@@ -3610,7 +5004,7 @@
         "year": "2017"
       },
       "text": {
-        "headline": "NYT: Around this date, Putin ally and ex-Manafort associate Oleg Deripaska asks for immunity deal with Congres, but no deal is made. (Manafort and Gates)",
+        "headline": "NYT: Around this date, Putin ally and ex-Manafort associate Oleg Deripaska asks for immunity deal with Congress, but no deal is made. (Manafort and Gates)",
         "text": "<a href='https://www.nytimes.com/2017/05/26/us/politics/oleg-deripaska-paul-manafort.html' target='_blank'>New York Times / Russian Once Tied to Trump Aide Seeks Immunity to Cooperate With Congress</a>"
       },
       "group": "Manafort and Gates"
@@ -3644,7 +5038,7 @@
         "year": "2017"
       },
       "text": {
-        "headline": "Manafort registers retroactively as a foreign agent for his previous work in Urkaine. (Manafort and Gates)",
+        "headline": "Manafort registers retroactively as a foreign agent for his previous work in Ukraine. (Manafort and Gates)",
         "text": "<a href='http://www.npr.org/2017/06/28/534765010/paul-manaforts-firm-received-17-1-million-from-ukrainian-political-party' target='_blank'>NPR / Former Trump Campaign Manager Paul Manafort Registers As A Foreign Agent</a>"
       },
       "group": "Manafort and Gates"
@@ -3702,7 +5096,7 @@
     },
     {
       "media": {
-        "url": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/icjrRhD1JeeA/v0/1200x800.jpg",
+        "url": "",
         "caption": "",
         "credit": "Bloomberg"
       },
@@ -3713,7 +5107,24 @@
       },
       "text": {
         "headline": "Manafort turns over about 400 pages of documents to Senate Judiciary Committee. (Manafort and Gates)",
-        "text": "<a href='https://www.bloomberg.com/news/articles/2017-08-08/trump-campaign-turns-over-thousands-of-documents-in-russia-probe' target='_blank'>Bloomberg / Trump Campaign Turns Over Thousands of Documents in Russia Probe</a>"
+        "text": "<a href='https://www.bloomberg.com/news/articles/2017-08-08/trump-campaign-turns-over-thousands-of-documents-in-russia-probe' target='_blank'>Bloomberg / Are you a robot?</a>"
+      },
+      "group": "Manafort and Gates"
+    },
+    {
+      "media": {
+        "url": "https://cdn.cnn.com/cnnnext/dam/assets/160815081224-01-manafort-trump-0720-super-tease.jpg",
+        "caption": "",
+        "credit": "CNN"
+      },
+      "start_date": {
+        "month": "8",
+        "day": "10",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "Trump says he was surprised by July FBI raid at Manafort's home and has always found Manafort to be a good man. (Manafort and Gates)",
+        "text": "<a href='http://www.cnn.com/2017/08/10/politics/trump-paul-manafort-russia/index.html' target='_blank'>CNN / Trump 'surprised' by Manafort raid in Russia probe</a>"
       },
       "group": "Manafort and Gates"
     },
@@ -3872,6 +5283,57 @@
     },
     {
       "media": {
+        "url": "https://www.washingtonpost.com/rf/image_1484w/2010-2019/WashingtonPost/2016/12/05/National-Security/Images/624188348.jpg?t=20170517",
+        "caption": "",
+        "credit": "Washington Post"
+      },
+      "start_date": {
+        "month": "1",
+        "day": "9",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "Kushner joins White House as special adviser. (Kushner)",
+        "text": "<a href='https://www.washingtonpost.com/news/post-politics/wp/2017/01/09/tumps-son-in-law-jared-kushner-expected-to-join-white-house-as-a-senior-adviser/?utm_term=.4310154917c1' target='_blank'>Washington Post / Trump’s son-in-law, Jared Kushner, to join White House as senior adviser; no formal role for Ivanka Trump</a>"
+      },
+      "group": "Kushner"
+    },
+    {
+      "media": {
+        "url": "https://static01.nyt.com/images/2017/04/07/us/07Kushner1/07Kushner1-facebookJumbo.jpg",
+        "caption": "",
+        "credit": "New York Times"
+      },
+      "start_date": {
+        "month": "1",
+        "day": "18",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "Kushner leaves out meetings with Russians on security clearance disclosure. (Kushner)",
+        "text": "<a href='https://www.nytimes.com/2017/04/06/us/politics/jared-kushner-russians-security-clearance.html?_r=0' target='_blank'>New York Times / Kushner Omitted Meeting With Russians on Security Clearance Forms</a>"
+      },
+      "group": "Kushner"
+    },
+    {
+      "media": {
+        "url": "https://s.yimg.com/ny/api/res/1.2/_tHcRb3rcyokVQFLMTUxew--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyODA7aD02MDkuNzc3Nzc3Nzc3Nzc3OA--/https://s.yimg.com/uu/api/res/1.2/NDJ4Ps2.T_l_3gMh9Y2FGA--~B/aD0zNDM7dz03MjA7c209MTthcHBpZD15dGFjaHlvbg--/http://media.zenfs.com/en/homerun/feed_manager_auto_publish_494/9d845b41d1d2f956abbfc66937c427ff",
+        "caption": "",
+        "credit": "Yahoo"
+      },
+      "start_date": {
+        "month": "5",
+        "day": "11",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "Kushner submits revised security form with Kislyak and Gorkov meetings but not 2016 meeting with Russian lawyer. (Kushner)",
+        "text": "<a href='https://www.yahoo.com/amphtml/news/sources-trump-lawyers-knew-russia-emails-back-june-000320831.html' target='_blank'>Yahoo / Sources: Trump lawyers knew of Russia emails three weeks ago</a>"
+      },
+      "group": "Kushner"
+    },
+    {
+      "media": {
         "url": "https://s.yimg.com/ny/api/res/1.2/_tHcRb3rcyokVQFLMTUxew--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyODA7aD02MDkuNzc3Nzc3Nzc3Nzc3OA--/https://s.yimg.com/uu/api/res/1.2/NDJ4Ps2.T_l_3gMh9Y2FGA--~B/aD0zNDM7dz03MjA7c209MTthcHBpZD15dGFjaHlvbg--/http://media.zenfs.com/en/homerun/feed_manager_auto_publish_494/9d845b41d1d2f956abbfc66937c427ff",
         "caption": "",
         "credit": "Yahoo"
@@ -4025,6 +5487,23 @@
     },
     {
       "media": {
+        "url": "https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1440,w_2560,x_0,y_0/dpr_2.0/c_limit,w_740/fl_lossy,q_auto/v1508363368/171017-collins-russia-propaganda-tease_j185bs",
+        "caption": "",
+        "credit": "The Daily Beast"
+      },
+      "start_date": {
+        "month": "11",
+        "day": "8",
+        "year": "2016"
+      },
+      "text": {
+        "headline": "Donald Trump Jr. again retweets @Ten_GOP account later blocked by Twitter and reportedly run by Russian trolls. (Trump Jr.)",
+        "text": "<a href='https://www.thedailybeast.com/trump-campaign-staffers-pushed-russian-propaganda-days-before-the-election' target='_blank'>The Daily Beast / Trump Campaign Staffers Pushed Russian Propaganda Days Before the Election</a>"
+      },
+      "group": "Trump Jr."
+    },
+    {
+      "media": {
         "url": "https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2017/07/09/104575720-GettyImages-631589614.1910x1000.jpg",
         "caption": "",
         "credit": "CNBC"
@@ -4059,7 +5538,7 @@
     },
     {
       "media": {
-        "url": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/id3MxF7sDIeY/v0/1200x675.jpg",
+        "url": "",
         "caption": "",
         "credit": "Bloomberg"
       },
@@ -4070,7 +5549,7 @@
       },
       "text": {
         "headline": "Over this weekend, incoming White House Chief of Staff John Kelly reportedly tells Sessions his job is safe. (Trump Jr.)",
-        "text": "<a href='https://www.bloomberg.com/news/articles/2017-08-03/kelly-is-said-to-assure-sessions-he-can-stay-as-attorney-general' target='_blank'>Bloomberg / Kelly Assures Sessions He Can Stay as Attorney General</a>"
+        "text": "<a href='https://www.bloomberg.com/news/articles/2017-08-03/kelly-is-said-to-assure-sessions-he-can-stay-as-attorney-general' target='_blank'>Bloomberg / Are you a robot?</a>"
       },
       "group": "Trump Jr."
     },
@@ -4127,7 +5606,7 @@
     },
     {
       "media": {
-        "url": "http://thehill.com/sites/default/files/flynnmichael_020117getty_lead.jpg",
+        "url": "https://thehill.com/sites/default/files/flynnmichael_020117getty_lead.jpg",
         "caption": "",
         "credit": "The Hill"
       },
@@ -4156,6 +5635,23 @@
       "text": {
         "headline": "Flynn and his son meet with Russian ambassador Kislyak, seemingly at Flynn's request. (Flynn)",
         "text": "<a href='https://intelligence.house.gov/uploadedfiles/final_russia_investigation_report.pdf' target='_blank'>House of Representatives</a>"
+      },
+      "group": "Flynn"
+    },
+    {
+      "media": {
+        "url": "https://www.washingtonpost.com/rf/image_1484w/2010-2019/WashingtonPost/2017/03/02/Others/Images/2017-03-02/AP_17045804138589.JPG?t=20170517",
+        "caption": "",
+        "credit": "Washington Post"
+      },
+      "start_date": {
+        "month": "12",
+        "day": "10",
+        "year": "2015"
+      },
+      "text": {
+        "headline": "Flynn is paid $45,000 to appear at Russian TV (RT) gala in Moscow. (Flynn)",
+        "text": "<a href='https://www.washingtonpost.com/politics/new-details-released-on-russia-related-payments-to-flynn-before-he-joined-trump-campaign/2017/03/16/52a4205a-0a55-11e7-a15f-a58d4a988474_story.html?utm_term=.9bdc5f0b5537' target='_blank'>Washington Post / Trump adviser Flynn paid by multiple Russia-related entities, new records show</a>"
       },
       "group": "Flynn"
     },
@@ -4195,6 +5691,40 @@
     },
     {
       "media": {
+        "url": "https://thehill.com/sites/default/files/blogs/gulen_use.jpg",
+        "caption": "",
+        "credit": "The Hill"
+      },
+      "start_date": {
+        "month": "11",
+        "day": "8",
+        "year": "2016"
+      },
+      "text": {
+        "headline": "Flynn posts a pro-Turkey op-ed. (Flynn)",
+        "text": "<a href='http://thehill.com/blogs/pundits-blog/foreign-policy/305021-our-ally-turkey-is-in-crisis-and-needs-our-support' target='_blank'>The Hill / Our ally Turkey is in crisis and needs our support</a>"
+      },
+      "group": "Flynn"
+    },
+    {
+      "media": {
+        "url": "https://cdn.cnn.com/cnnnext/dam/assets/160718191848-michael-flynn-super-tease.jpg",
+        "caption": "",
+        "credit": "CNN"
+      },
+      "start_date": {
+        "month": "11",
+        "day": "17",
+        "year": "2016"
+      },
+      "text": {
+        "headline": "Flynn picked as Trump's national security advisor. (Flynn)",
+        "text": "<a href='http://www.cnn.com/2016/11/17/politics/trump-offers-flynn-job-of-national-security-adviser/' target='_blank'>CNN / Trump offers Flynn job of national security advisor</a>"
+      },
+      "group": "Flynn"
+    },
+    {
+      "media": {
         "url": "",
         "caption": "",
         "credit": "CNN"
@@ -4207,6 +5737,57 @@
       "text": {
         "headline": "Flynn texts \"Merry Christmas\" to Kislyak. (Flynn)",
         "text": "<a href='http://www.cnn.com/TRANSCRIPTS/1701/13/cnr.05.html' target='_blank'>CNN / Transcripts</a>"
+      },
+      "group": "Flynn"
+    },
+    {
+      "media": {
+        "url": "https://s4.reutersmedia.net/resources/r/?m=02&d=20170113&t=2&i=1168660623&w=1200&r=LYNXMPED0C10W",
+        "caption": "",
+        "credit": "Reuters"
+      },
+      "start_date": {
+        "month": "12",
+        "day": "29",
+        "year": "2016"
+      },
+      "text": {
+        "headline": "Flynn held five phone calls with Kislyak, discussing new sanctions.  (Flynn)",
+        "text": "<a href='http://www.reuters.com/article/us-usa-trump-russia-idUSKBN14X1YX' target='_blank'>Reuters / Trump adviser had five calls with Russian envoy on day of sanctions: sources</a>"
+      },
+      "group": "Flynn"
+    },
+    {
+      "media": {
+        "url": "https://static01.nyt.com/images/2017/05/18/us/18intel/18intel-facebookJumbo-v5.jpg",
+        "caption": "",
+        "credit": "New York Times"
+      },
+      "start_date": {
+        "month": "1",
+        "day": "4",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "Flynn tells transition team lawyer his work as a secret paid lobbyist for Turkey is under investigation. (Flynn)",
+        "text": "<a href='https://www.nytimes.com/2017/05/17/us/politics/michael-flynn-donald-trump-national-security-adviser.html?action=Click&amp;contentCollection=BreakingNews&amp;contentID=65315008&amp;pgtype=Homepage&amp;_r=0' target='_blank'>New York Times / Trump Team Knew Flynn Was Under Investigation Before He Came to White House</a>"
+      },
+      "group": "Flynn"
+    },
+    {
+      "media": {
+        "url": "https://cbsnews1.cbsistatic.com/hub/i/r/2017/12/12/77e5d36d-5915-46ce-b496-218c87d98c5d/thumbnail/1200x630/15dcb72c6fdec4125306ed9638345480/cbsnews-1600x900.jpg",
+        "caption": "",
+        "credit": "CBS News"
+      },
+      "start_date": {
+        "month": "1",
+        "day": "15",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "Pence tells 'Face the Nation' that Flynn did not talk sanctions with the Russians. (Pence later learns this isn't true.) (Flynn)",
+        "text": "<a href='http://www.cbsnews.com/news/face-the-nation-transcript-january-15-2017-pence-manchin-gingrich/' target='_blank'>CBS News / Face the Nation transcript January 15, 2017: Pence, Manchin, Gingrich</a>"
       },
       "group": "Flynn"
     },
@@ -4280,7 +5861,24 @@
     },
     {
       "media": {
-        "url": "http://a57.foxnews.com/media2.foxnews.com/BrightCove/694940094001/2017/04/01/0/0/694940094001_5381649146001_5381646907001-vs.jpg?ve=1",
+        "url": "https://www.washingtonpost.com/rf/image_1484w/2010-2019/Wires/Images/2017-02-14/AP/Trump_US_Canada_66607.jpg-b6af5.jpg?t=20170517",
+        "caption": "",
+        "credit": "Washington Post"
+      },
+      "start_date": {
+        "month": "2",
+        "day": "9",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "Pence is told Flynn misled him. (Flynn)",
+        "text": "<a href='https://www.washingtonpost.com/news/post-politics/wp/2017/02/14/trump-was-told-weeks-ago-that-flynn-misled-vice-president-about-russia-contacts-white-house-says/?utm_term=.36c8595b0b68' target='_blank'>Washington Post / Pence did not learn that Flynn misled him on Russia until last week</a>"
+      },
+      "group": "Flynn"
+    },
+    {
+      "media": {
+        "url": "http://media2.foxnews.com/BrightCove/694940094001/2017/04/01/694940094001_5381649146001_5381646907001-vs.jpg",
         "caption": "",
         "credit": "Fox News"
       },
@@ -4292,6 +5890,40 @@
       "text": {
         "headline": "Flynn files financial disclosure form without citing Russian payments for speeches. (Flynn)",
         "text": "<a href='http://www.foxnews.com/politics/2017/04/02/flynn-initially-failed-to-disclose-russia-linked-payments-on-ethics-form.html' target='_blank'>Fox News / Flynn initially failed to disclose Russia-linked payments on ethics form</a>"
+      },
+      "group": "Flynn"
+    },
+    {
+      "media": {
+        "url": "https://static01.nyt.com/images/2017/02/15/us/15flynn/15flynn-facebookJumbo-v2.jpg",
+        "caption": "",
+        "credit": "New York Times"
+      },
+      "start_date": {
+        "month": "2",
+        "day": "13",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "Flynn resigns.  (Flynn)",
+        "text": "<a href='https://www.nytimes.com/2017/02/13/us/politics/donald-trump-national-security-adviser-michael-flynn.html' target='_blank'>New York Times / Michael Flynn Resigns as National Security Adviser</a>"
+      },
+      "group": "Flynn"
+    },
+    {
+      "media": {
+        "url": "",
+        "caption": "",
+        "credit": "House of Representatives"
+      },
+      "start_date": {
+        "month": "2",
+        "day": "14",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "White House Press Secretary Sean Spicer says Flynn was let go because of a \"trust issue.\" (Flynn)",
+        "text": "<a href='https://www.whitehouse.gov/the-press-office/2017/02/14/press-briefing-press-secretary-sean-spicer-2142017-12' target='_blank'>House of Representatives</a>"
       },
       "group": "Flynn"
     },
@@ -4314,7 +5946,7 @@
     },
     {
       "media": {
-        "url": "https://www.gannett-cdn.com/-mm-/2eff5e419abdd4370429e8780baaef1ff5ee69aa/c=0-43-735-459&r=x1683&c=3200x1680/local/-/media/2017/08/05/USATODAY/USATODAY/636375207188126459-Kislyak.jpg",
+        "url": "https://www.gannett-cdn.com/-mm-/c15a5e560baa9442bdf3dcea0814ca66fd91d0ec/c=0-43-735-459/local/-/media/2017/08/05/USATODAY/USATODAY/636375207188126459-Kislyak.jpg?width=3200&height=1680&fit=crop",
         "caption": "",
         "credit": "USA Today"
       },
@@ -4659,6 +6291,23 @@
         "credit": "US Department of Justice"
       },
       "start_date": {
+        "month": "1",
+        "day": "27",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "The FBI interviews former Trump advisor George Papadopoulos for the first time. (Papadopolous)",
+        "text": "<a href='https://www.justice.gov/file/1007346/download' target='_blank'>US Department of Justice</a>"
+      },
+      "group": "Papadopolous"
+    },
+    {
+      "media": {
+        "url": "",
+        "caption": "",
+        "credit": "US Department of Justice"
+      },
+      "start_date": {
         "month": "2",
         "day": "16",
         "year": "2017"
@@ -4739,6 +6388,23 @@
     },
     {
       "media": {
+        "url": "https://cdn.cnn.com/cnnnext/dam/assets/171030172858-papadopoulos-thumbnail-super-tease.jpg",
+        "caption": "",
+        "credit": "CNN"
+      },
+      "start_date": {
+        "month": "8",
+        "day": "17",
+        "year": "2018"
+      },
+      "text": {
+        "headline": "Mueller's team asks judge to sentence Papadopolous to up to six months for lying to them. (Papadopolous)",
+        "text": "<a href='https://www.cnn.com/2018/08/17/politics/papadopoulos-jail-time-special-counsel/' target='_blank'>CNN / Mueller team wants George Papadopoulos jailed 6 months</a>"
+      },
+      "group": "Papadopolous"
+    },
+    {
+      "media": {
         "url": "https://static.politico.com/2a/c5/316e6bbf4fdfa166b4db50b23639/20160321-donald-trump-1-ap-1160.jpg",
         "caption": "",
         "credit": "Politico"
@@ -4807,7 +6473,7 @@
     },
     {
       "media": {
-        "url": "http://thehill.com/sites/default/files/trumpdonald_080216gn.jpg",
+        "url": "https://thehill.com/sites/default/files/trumpdonald_080216gn.jpg",
         "caption": "",
         "credit": "The Hill"
       },
@@ -4926,7 +6592,7 @@
     },
     {
       "media": {
-        "url": "http://a57.foxnews.com/media2.foxnews.com/BrightCove/694940094001/2018/03/29/0/0/694940094001_5760373832001_5760348222001-vs.jpg?ve=1",
+        "url": "http://media2.foxnews.com/BrightCove/694940094001/2018/03/29/694940094001_5760373832001_5760348222001-vs.jpg",
         "caption": "",
         "credit": "Fox News"
       },
@@ -4938,6 +6604,40 @@
       "text": {
         "headline": "DOJ inspector general launches investigation of FBI, DOJ and possible abuse of FISA/surveillance powers, including with the Carter Page wiretaps. (Page)",
         "text": "<a href='http://www.foxnews.com/politics/2018/03/28/doj-inspector-general-investigates-alleged-fisa-abuses-by-doj-fbi.html' target='_blank'>Fox News / DOJ Inspector General reviews alleged FISA abuses by DOJ, FBI</a>"
+      },
+      "group": "Page"
+    },
+    {
+      "media": {
+        "url": "",
+        "caption": "",
+        "credit": "Judicial Watch"
+      },
+      "start_date": {
+        "month": "7",
+        "day": "21",
+        "year": "2018"
+      },
+      "text": {
+        "headline": "The FBI releases more than 400 pages of documents related to Carter Page wiretaps, showing agents believed Page was recruited by Russia. (Page)",
+        "text": "<a href='http://www.judicialwatch.org/wp-content/uploads/2018/07/Carter-Page-FISA-Documents.FOIA-Release-1.pdf' target='_blank'>Judicial Watch</a>"
+      },
+      "group": "Page"
+    },
+    {
+      "media": {
+        "url": "https://pbs.twimg.com/card_img/1048972288136114176/30co0oth?format=jpg&name=280x280",
+        "caption": "",
+        "credit": "Twitter"
+      },
+      "start_date": {
+        "month": "7",
+        "day": "22",
+        "year": "2018"
+      },
+      "text": {
+        "headline": "Page tells CNN that the idea of Russians trying to recruit him is \"totally unreasonable.\" (Page)",
+        "text": "<a href='https://twitter.com/CNN/status/1021022840215212033' target='_blank'>Twitter / CNN on Twitter</a>"
       },
       "group": "Page"
     },
@@ -5011,7 +6711,7 @@
     },
     {
       "media": {
-        "url": "http://media.breitbart.com/media/2015/09/Trump-Sessions2-Hahn.jpg",
+        "url": "https://media.breitbart.com/media/2015/09/Trump-Sessions2-Hahn.jpg",
         "caption": "",
         "credit": "Breitbart"
       },
@@ -5040,6 +6740,23 @@
       "text": {
         "headline": "Sessions may have met with Kislyak. (Sessions, Stone, Other)",
         "text": "<a href='http://www.cnn.com/2017/05/31/politics/congress-investigating-jeff-sessions-russian-ambassador-meeting/index.html' target='_blank'>CNN / First on CNN: Sources: Congress investigating another possible Sessions-Kislyak meeting</a>"
+      },
+      "group": "Sessions, Stone, Other"
+    },
+    {
+      "media": {
+        "url": "https://static01.nyt.com/images/2017/01/12/us/12intel/12intel-facebookJumbo.jpg",
+        "caption": "",
+        "credit": "New York Times"
+      },
+      "start_date": {
+        "month": "6",
+        "day": "20",
+        "year": "2016"
+      },
+      "text": {
+        "headline": "This date is given for the first entry in the publicly-released \"Trump dossier\" alleging Russian attempts to influence him. (Sessions, Stone, Other)",
+        "text": "<a href='https://www.nytimes.com/2017/01/11/us/politics/donald-trump-russia-intelligence.html?_r=0' target='_blank'>New York Times / How a Sensational, Unverified Dossier Became a Crisis for Donald Trump</a>"
       },
       "group": "Sessions, Stone, Other"
     },
@@ -5079,7 +6796,7 @@
     },
     {
       "media": {
-        "url": "http://media.breitbart.com/media/2016/08/DNC-Hack-Protest-AP-PhotoJohn-Minchillo.jpg",
+        "url": "https://media.breitbart.com/media/2016/08/DNC-Hack-Protest-AP-PhotoJohn-Minchillo.jpg",
         "caption": "",
         "credit": "Breitbart"
       },
@@ -5113,7 +6830,7 @@
     },
     {
       "media": {
-        "url": "https://abs.twimg.com/a/1529975731/icons/favicon.svg",
+        "url": "https://abs.twimg.com/a/1538597684/icons/favicon.svg",
         "caption": "",
         "credit": "Twitter"
       },
@@ -5130,7 +6847,7 @@
     },
     {
       "media": {
-        "url": "http://www.foxnews.com/content/dam/fox-news/logo/og-fn-foxnews.jpg",
+        "url": "http://static.foxnews.com/static/orion/styles/img/fox-news/og/og-fox-news.png",
         "caption": "",
         "credit": "Fox News"
       },
@@ -5147,7 +6864,7 @@
     },
     {
       "media": {
-        "url": "https://abs.twimg.com/a/1529975731/icons/favicon.svg",
+        "url": "https://abs.twimg.com/a/1538597684/icons/favicon.svg",
         "caption": "",
         "credit": "Twitter"
       },
@@ -5164,7 +6881,7 @@
     },
     {
       "media": {
-        "url": "https://abs.twimg.com/a/1529975731/icons/favicon.svg",
+        "url": "https://abs.twimg.com/a/1538597684/icons/favicon.svg",
         "caption": "",
         "credit": "Twitter"
       },
@@ -5181,7 +6898,7 @@
     },
     {
       "media": {
-        "url": "http://a57.foxnews.com/media2.foxnews.com/BrightCove/694940094001/2016/10/04/0/0/694940094001_5154506237001_100416-ff-wikileaks-1280.jpg?ve=1",
+        "url": "http://media2.foxnews.com/BrightCove/694940094001/2016/10/04/694940094001_5154506237001_100416-ff-wikileaks-1280.jpg",
         "caption": "",
         "credit": "Fox News"
       },
@@ -5243,7 +6960,7 @@
       },
       "text": {
         "headline": "Stone: I have back channel to Assange. (Sessions, Stone, Other)",
-        "text": "<a href='http://miami.cbslocal.com/2016/10/12/trump-ally-roger-stone-admits-back-channel-tie-to-wikileaks/' target='_blank'>CBS Miami / Trump Ally Roger Stone Admits ‘Back-Channel’ Tie To WikiLeaks</a>"
+        "text": "<a href='http://miami.cbslocal.com/2016/10/12/trump-ally-roger-stone-admits-back-channel-tie-to-wikileaks/' target='_blank'>CBS Miami / Trump Ally Roger Stone Admits ‘Back-Channel’ Tie To WikiLeaks « CBS Miami</a>"
       },
       "group": "Sessions, Stone, Other"
     },
@@ -5266,7 +6983,7 @@
     },
     {
       "media": {
-        "url": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iqNiVDEUTGy8/v0/1200x848.png",
+        "url": "",
         "caption": "",
         "credit": "Bloomberg"
       },
@@ -5277,7 +6994,7 @@
       },
       "text": {
         "headline": "Bloomberg report details Trump's digital strategy, including near total reliance on Facebook ads and data. (Sessions, Stone, Other)",
-        "text": "<a href='https://www.bloomberg.com/news/articles/2016-10-27/inside-the-trump-bunker-with-12-days-to-go' target='_blank'>Bloomberg / Inside the Trump Bunker, With 12 Days to Go</a>"
+        "text": "<a href='https://www.bloomberg.com/news/articles/2016-10-27/inside-the-trump-bunker-with-12-days-to-go' target='_blank'>Bloomberg / Are you a robot?</a>"
       },
       "group": "Sessions, Stone, Other"
     },
@@ -5300,6 +7017,74 @@
     },
     {
       "media": {
+        "url": "https://s2.reutersmedia.net/resources/r/?m=02&d=20161110&t=2&i=1161163568&w=1200&r=LYNXMPECA90WI",
+        "caption": "",
+        "credit": "Reuters"
+      },
+      "start_date": {
+        "month": "11",
+        "day": "10",
+        "year": "2016"
+      },
+      "text": {
+        "headline": "Senior Russian official: We had contacts with the Trump campaign. (Sessions, Stone, Other)",
+        "text": "<a href='http://www.reuters.com/article/us-usa-election-russia-trump-idUSKBN1351RJ' target='_blank'>Reuters / Russia says it was in touch with Trump's campaign during election</a>"
+      },
+      "group": "Sessions, Stone, Other"
+    },
+    {
+      "media": {
+        "url": "https://fortunedotcom.files.wordpress.com/2016/01/175662065.jpg",
+        "caption": "",
+        "credit": "Fortune"
+      },
+      "start_date": {
+        "month": "11",
+        "day": "11",
+        "year": "2016"
+      },
+      "text": {
+        "headline": "Facebook's Mark Zuckerberg says the idea that fake news from his site influenced the election is \"crazy.\" (Sessions, Stone, Other)",
+        "text": "<a href='http://fortune.com/2016/11/11/facebook-election-fake-news-mark-zuckerberg/' target='_blank'>Fortune / Mark Zuckerberg Says Fake News on Facebook Affecting the Election Is a 'Crazy Idea'</a>"
+      },
+      "group": "Sessions, Stone, Other"
+    },
+    {
+      "media": {
+        "url": "https://www.gannett-cdn.com/-mm-/3a4e143c4b4073c137b4b564cfc56230a04e432c/c=0-19-533-320/local/-/media/2016/04/02/USATODAY/USATODAY/635952151409450066-635944290246684859-AP-559049471065.jpg?width=3200&height=1680&fit=crop",
+        "caption": "",
+        "credit": "USA Today"
+      },
+      "start_date": {
+        "month": "11",
+        "day": "17",
+        "year": "2016"
+      },
+      "text": {
+        "headline": "Trump picks Sessions as his attorney general. (Sessions, Stone, Other)",
+        "text": "<a href='https://www.usatoday.com/story/news/politics/2016/11/17/jeff-sessions-leading-candidate-trump-attorney-general-choice/94043556/' target='_blank'>USA Today / Trump picks Jeff Sessions for AG, Pompeo for CIA chief</a>"
+      },
+      "group": "Sessions, Stone, Other"
+    },
+    {
+      "media": {
+        "url": "https://www.telegraph.co.uk/content/dam/news/2017/01/27/steele1-xlarge_trans_NvBQzQNjv4BqQ1tFcsyxA8kjPR8E8AJ4wZ5x6iyaJzFcE4AppPV2uXs.jpg",
+        "caption": "",
+        "credit": "The Telegraph"
+      },
+      "start_date": {
+        "month": "12",
+        "day": "26",
+        "year": "2016"
+      },
+      "text": {
+        "headline": "Former KGB leader connected to Trump dossier found dead in Moscow. (Sessions, Stone, Other)",
+        "text": "<a href='http://www.telegraph.co.uk/news/2017/01/27/mystery-death-ex-kgb-chief-linked-mi6-spys-dossier-donald-trump/' target='_blank'>The Telegraph / Mystery death of ex-KGB chief linked to MI6 spy's dossier on Donald Trump</a>"
+      },
+      "group": "Sessions, Stone, Other"
+    },
+    {
+      "media": {
         "url": "https://img.buzzfeed.com/buzzfeed-static/static/2017-01/11/15/campaign_images/buzzfeed-prod-fastlane-01/these-reports-allege-trump-has-deep-ties-to-russia-2-10287-1484167046-0_dblbig.jpg",
         "caption": "",
         "credit": "BuzzFeed"
@@ -5317,7 +7102,24 @@
     },
     {
       "media": {
-        "url": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iD6LOzuEmBHA/v0/1200x804.jpg",
+        "url": "https://www.washingtonpost.com/resizer/cG3pHgQDOUv3vOGXJqDAt2DeujY=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/IT4KUNBCLII6RFG25P45CEQVTQ.jpg",
+        "caption": "",
+        "credit": "Washington Post"
+      },
+      "start_date": {
+        "month": "1",
+        "day": "11",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "Blackwater founder Erik Prince meets with Kirill Dmitriev, head of a Russian-government backed fund who has ties to Putin, in Seychelles.This was reportedly to open a back channel between Moscow and the Trump campaign. Lebanese-American businessman George Nader reportedly helped arrange it. (NYT, WaPo) (Sessions, Stone, Other)",
+        "text": "<a href='https://www.washingtonpost.com/world/national-security/mueller-gathers-evidence-that-2016-seychelles-meeting-was-effort-to-establish-back-channel-to-kremlin/2018/03/07/b6a5fb8c-224b-11e8-94da-ebf9d112159c_story.html?utm_term=.e4698536d87e&amp;wpisrc=al_news__alert-politics--alert-national&amp;wpmk=1' target='_blank'>Washington Post / Mueller gathers evidence that 2017 Seychelles meeting was effort to establish back channel to Kremlin</a>"
+      },
+      "group": "Sessions, Stone, Other"
+    },
+    {
+      "media": {
+        "url": "",
         "caption": "",
         "credit": "Bloomberg"
       },
@@ -5328,7 +7130,24 @@
       },
       "text": {
         "headline": "Trump transition aide Anthony Scaramucci, hedge fund CEO, meets with Kirill Dmitriev of the Russian Direct Investment Fund in Davos. Length of meeting unclear. RDIF was under sanctions at time.  (Sessions, Stone, Other)",
-        "text": "<a href='https://www.bloomberg.com/news/articles/2017-01-17/in-davos-trump-aide-talks-deals-with-sanctioned-kremlin-fund' target='_blank'>Bloomberg / Trump Aide Talks Investment With Sanctioned Kremlin Fund</a>"
+        "text": "<a href='https://www.bloomberg.com/news/articles/2017-01-17/in-davos-trump-aide-talks-deals-with-sanctioned-kremlin-fund' target='_blank'>Bloomberg / Are you a robot?</a>"
+      },
+      "group": "Sessions, Stone, Other"
+    },
+    {
+      "media": {
+        "url": "https://www.russiamatters.org/sites/default/files/favicon_0.png",
+        "caption": "",
+        "credit": "Russia Matters"
+      },
+      "start_date": {
+        "month": "1",
+        "day": "17",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "Scaramucci tells Russian state news he thinks the Russian sanctions have had \"in some ways an opposite effect.\" (Sessions, Stone, Other)",
+        "text": "<a href='https://www.russiamatters.org/news/russia-review/russia-review-jan-13-20-2017' target='_blank'>Russia Matters / Russia in Review, Jan. 13-20, 2017</a>"
       },
       "group": "Sessions, Stone, Other"
     },
@@ -5351,6 +7170,23 @@
     },
     {
       "media": {
+        "url": "https://static01.nyt.com/images/2017/02/09/us/sub2-09SESSIONS/sub2-09SESSIONS-facebookJumbo.jpg",
+        "caption": "",
+        "credit": "New York Times"
+      },
+      "start_date": {
+        "month": "2",
+        "day": "8",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "Sessions confirmed as AG. (Sessions, Stone, Other)",
+        "text": "<a href='https://www.nytimes.com/2017/02/08/us/politics/jeff-sessions-attorney-general-confirmation.html?_r=0' target='_blank'>New York Times / Jeff Sessions Confirmed as Attorney General, Capping Bitter Battle</a>"
+      },
+      "group": "Sessions, Stone, Other"
+    },
+    {
+      "media": {
         "url": "https://www.washingtonpost.com/rf/image_1484w/2010-2019/WashingtonPost/2017/03/02/National-Security/Images/Private_Prisons_12839-45dba-0606.jpg?t=20170517",
         "caption": "",
         "credit": "Washington Post"
@@ -5368,7 +7204,7 @@
     },
     {
       "media": {
-        "url": "https://i.guim.co.uk/img/media/2a22e6331c15ff83b9f335fe05c31006e9a6fbd6/0_214_3500_2100/master/3500.jpg?w=1200&h=630&q=55&auto=format&usm=12&fit=crop&crop=faces%2Centropy&bm=normal&ba=bottom%2Cleft&blend64=aHR0cHM6Ly91cGxvYWRzLmd1aW0uY28udWsvMjAxOC8wMS8zMS9mYWNlYm9va19kZWZhdWx0LnBuZw&s=f1110ef11acd3bb09242f7e7903cd083",
+        "url": "https://i.guim.co.uk/img/media/2a22e6331c15ff83b9f335fe05c31006e9a6fbd6/0_214_3500_2100/master/3500.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&crop=faces%2Centropy&bm=normal&ba=bottom%2Cleft&blend64=aHR0cHM6Ly9hc3NldHMuZ3VpbS5jby51ay9pbWFnZXMvb3ZlcmxheXMvZDM1ODZhNWVmNTc4MTc1NmQyMWEzYjYzNWU1MTcxNDEvdGctZGVmYXVsdC5wbmc&s=f515453f01dd5fae79073cd61c675e29",
         "caption": "",
         "credit": "The Guardian"
       },
@@ -5385,7 +7221,7 @@
     },
     {
       "media": {
-        "url": "https://i.guim.co.uk/img/media/02e8f3cc442d156033b56d64d417157d062cca12/0_109_3474_2084/master/3474.jpg?w=1200&h=630&q=55&auto=format&usm=12&fit=crop&crop=faces%2Centropy&bm=normal&ba=bottom%2Cleft&blend64=aHR0cHM6Ly91cGxvYWRzLmd1aW0uY28udWsvMjAxOC8wMS8zMS9mYWNlYm9va19kZWZhdWx0LnBuZw&s=a1741404cd78671576b3e59742f21257",
+        "url": "https://i.guim.co.uk/img/media/02e8f3cc442d156033b56d64d417157d062cca12/0_109_3474_2084/master/3474.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&crop=faces%2Centropy&bm=normal&ba=bottom%2Cleft&blend64=aHR0cHM6Ly9hc3NldHMuZ3VpbS5jby51ay9pbWFnZXMvb3ZlcmxheXMvZDM1ODZhNWVmNTc4MTc1NmQyMWEzYjYzNWU1MTcxNDEvdGctZGVmYXVsdC5wbmc&s=6ef211e5ce2e76cc16b82422a9044db1",
         "caption": "",
         "credit": "The Guardian"
       },
@@ -5453,6 +7289,23 @@
     },
     {
       "media": {
+        "url": "https://static01.nyt.com/images/2018/01/05/us/politics/05dc-obstruct-1/05dc-obstruct-1-facebookJumbo.jpg",
+        "caption": "",
+        "credit": "New York Times"
+      },
+      "start_date": {
+        "month": "5",
+        "day": "5",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "NYT: A Sessions aide asked a congressional staffer if they had damaging information on Comey. (Sessions, Stone, Other)",
+        "text": "<a href='https://www.nytimes.com/2018/01/04/us/politics/trump-sessions-russia-mcgahn.html' target='_blank'>New York Times / Obstruction Inquiry Shows Trump’s Struggle to Keep Grip on Russia Investigation</a>"
+      },
+      "group": "Sessions, Stone, Other"
+    },
+    {
+      "media": {
         "url": "https://www.washingtonpost.com/rf/image_1484w/2010-2019/WashingtonPost/2017/05/19/National-Politics/Images/2017-05-18T183840Z_2105827798_RC139EC38D30_RTRMADP_3_USA-TRUMP-FBI.jpg?t=20170517",
         "caption": "",
         "credit": "Washington Post"
@@ -5465,6 +7318,23 @@
       "text": {
         "headline": "Deputy Attorney General Rod Rosenstein drafts a memo making a case for firing Comey, but only after he has been told that Comey is to be fired. It is not clear who directed him to write the memo. (Sessions, Stone, Other)",
         "text": "<a href='https://www.washingtonpost.com/powerpost/rosenstein-heads-back-to-capitol-hill-friday-to-brief-house-members/2017/05/19/e205b3f8-3c8c-11e7-9e48-c4f199710b69_story.html?utm_term=.4942da405a6e' target='_blank'>Washington Post / Rosenstein defends his controversial memo used to justify Trump’s firing of Comey</a>"
+      },
+      "group": "Sessions, Stone, Other"
+    },
+    {
+      "media": {
+        "url": "https://static01.nyt.com/images/2017/06/02/us/02sessions/02sessions-facebookJumbo.jpg",
+        "caption": "",
+        "credit": "New York Times"
+      },
+      "start_date": {
+        "month": "5",
+        "day": "12",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "On this date, Senators expected Comey to brief them on whether Sessions could be investigated for perjury. But Comey was fired before he could. (Sessions, Stone, Other)",
+        "text": "<a href='https://www.nytimes.com/2017/06/01/us/politics/democrats-sought-inquiry-of-testimony-by-sessions-at-his-confirmation-hearing.html' target='_blank'>New York Times / Democrats Sought Inquiry of Testimony by Sessions at His Confirmation Hearing</a>"
       },
       "group": "Sessions, Stone, Other"
     },
@@ -5555,6 +7425,23 @@
     },
     {
       "media": {
+        "url": "https://www.gannett-cdn.com/-mm-/e87c541f765d0af7054f3904fc2efbcd34d42ffe/c=0-0-1920-1080/local/-/media/2017/10/26/DetroitNews/B99591348Z.1_20171026115937_000_GE71N93DT.2-0.jpg?width=3200&height=1680&fit=crop",
+        "caption": "",
+        "credit": "Detriot News"
+      },
+      "start_date": {
+        "month": "7",
+        "day": "7",
+        "year": "2017"
+      },
+      "text": {
+        "headline": "Georgia officials erase key elections data, days after a lawsuit regarding security problems is filed. (Sessions, Stone, Other)",
+        "text": "<a href='http://www.detroitnews.com/story/news/nation/2017/10/26/election-security-georgia-data-wipe/107027152/' target='_blank'>Detriot News / Georgia election server wiped after suit filed</a>"
+      },
+      "group": "Sessions, Stone, Other"
+    },
+    {
+      "media": {
         "url": "https://static01.nyt.com/images/2017/07/20/us/20dc-transcript/20dc-prexy1-facebookJumbo.jpg",
         "caption": "",
         "credit": "New York Times"
@@ -5589,7 +7476,7 @@
     },
     {
       "media": {
-        "url": "https://www.gannett-cdn.com/-mm-/1d6a75b0afbc0f15147e91e5fb5444748d5f8b27/c=0-261-5146-3168&r=x1683&c=3200x1680/local/-/media/2017/06/26/USATODAY/USATODAY/636341097534206126-AP-TV-CNN-Retraction.jpg",
+        "url": "https://www.gannett-cdn.com/-mm-/ce8a24128be4956e8662b856d68215c5542dbf54/c=0-261-5146-3168/local/-/media/2017/06/26/USATODAY/USATODAY/636341097534206126-AP-TV-CNN-Retraction.jpg?width=3200&height=1680&fit=crop",
         "caption": "",
         "credit": "USA Today"
       },
@@ -5623,7 +7510,7 @@
     },
     {
       "media": {
-        "url": "https://cdni.rt.com/files/2017.07/article/5978ff82dda4c85e668b4568.jpg",
+        "url": "https://img.rt.com/files/2017.07/article/5978ff82dda4c85e668b4568.jpg",
         "caption": "",
         "credit": "RT"
       },
@@ -5640,7 +7527,7 @@
     },
     {
       "media": {
-        "url": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/id3MxF7sDIeY/v0/1200x675.jpg",
+        "url": "",
         "caption": "",
         "credit": "Bloomberg"
       },
@@ -5651,7 +7538,7 @@
       },
       "text": {
         "headline": "Over this weekend, incoming White House Chief of Staff John Kelly reportedly tells Sessions his job is safe. (Sessions, Stone, Other)",
-        "text": "<a href='https://www.bloomberg.com/news/articles/2017-08-03/kelly-is-said-to-assure-sessions-he-can-stay-as-attorney-general' target='_blank'>Bloomberg / Kelly Assures Sessions He Can Stay as Attorney General</a>"
+        "text": "<a href='https://www.bloomberg.com/news/articles/2017-08-03/kelly-is-said-to-assure-sessions-he-can-stay-as-attorney-general' target='_blank'>Bloomberg / Are you a robot?</a>"
       },
       "group": "Sessions, Stone, Other"
     },
@@ -5736,13 +7623,13 @@
       },
       "text": {
         "headline": "U.S. newly sanctions seven Russian oligarchs including Oleg Deripaska, who formerly worked with Manafort, and Viktor Vekselberg, who was at Trump's inauguration. (Sessions, Stone, Other)",
-        "text": "<a href='https://home.treasury.gov/news/press-releases/sm0338' target='_blank'>US Department of Treasury / Treasury Designates Russian Oligarchs, Officials, and Entities in Response to Worldwide Malign Activity</a>"
+        "text": "<a href='https://home.treasury.gov/news/press-releases/sm0338' target='_blank'>US Department of Treasury / U.S. Department of the Treasury</a>"
       },
       "group": "Sessions, Stone, Other"
     },
     {
       "media": {
-        "url": "https://i.guim.co.uk/img/media/c3b8809aff09983eb07fe924fa89f3d13d4fcd5b/0_0_3000_1800/master/3000.jpg?w=1200&h=630&q=55&auto=format&usm=12&fit=crop&crop=faces%2Centropy&bm=normal&ba=bottom%2Cleft&blend64=aHR0cHM6Ly91cGxvYWRzLmd1aW0uY28udWsvMjAxOC8wMS8zMS9mYWNlYm9va19kZWZhdWx0LnBuZw&s=6f2261962cdd508d63c611e5c8edca1d",
+        "url": "https://i.guim.co.uk/img/media/c3b8809aff09983eb07fe924fa89f3d13d4fcd5b/0_0_3000_1800/master/3000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&crop=faces%2Centropy&bm=normal&ba=bottom%2Cleft&blend64=aHR0cHM6Ly9hc3NldHMuZ3VpbS5jby51ay9pbWFnZXMvb3ZlcmxheXMvZDM1ODZhNWVmNTc4MTc1NmQyMWEzYjYzNWU1MTcxNDEvdGctZGVmYXVsdC5wbmc&s=5136d7c7c99b021d910897cba638ab98",
         "caption": "",
         "credit": "The Guardian"
       },

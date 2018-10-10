@@ -1,53 +1,76 @@
 USE TrumpRussia
 GO
 
-INSERT INTO MediaOutlet VALUES ('You Tube')
-INSERT INTO MediaOutlet VALUES ('The Daily Beast')
-INSERT INTO MediaOutlet VALUES ('Reuters')
-INSERT INTO MediaOutlet VALUES ('US Department of Justice')
-INSERT INTO MediaOutlet VALUES ('The Hill')
-INSERT INTO MediaOutlet VALUES ('Breitbart')
-INSERT INTO MediaOutlet VALUES ('Yahoo')
-INSERT INTO MediaOutlet VALUES ('Twitter')
-INSERT INTO MediaOutlet VALUES ('Page Six')
-INSERT INTO MediaOutlet VALUES ('US Department of State')
-INSERT INTO MediaOutlet VALUES ('The Independent')
-INSERT INTO MediaOutlet VALUES ('Federal Bureau of Investigation')
-INSERT INTO MediaOutlet VALUES ('The Smoking Gun')
-INSERT INTO MediaOutlet VALUES ('guccifer')
-INSERT INTO MediaOutlet VALUES ('House of Representatives')
-INSERT INTO MediaOutlet VALUES ('CNBC')
-INSERT INTO MediaOutlet VALUES ('Crowdstrike')
-INSERT INTO MediaOutlet VALUES ('ABC News')
-INSERT INTO MediaOutlet VALUES ('The Intercept')
-INSERT INTO MediaOutlet VALUES ('Media Matters')
-INSERT INTO MediaOutlet VALUES ('The Boston Globe')
-INSERT INTO MediaOutlet VALUES ('Politifact')
-INSERT INTO MediaOutlet VALUES ('America Online')
-INSERT INTO MediaOutlet VALUES ('Department of Homeland Security')
-INSERT INTO MediaOutlet VALUES ('The Guardian')
-INSERT INTO MediaOutlet VALUES ('Time')
-INSERT INTO MediaOutlet VALUES ('DocumentCloud')
-INSERT INTO MediaOutlet VALUES ('USA Today')
-INSERT INTO MediaOutlet VALUES ('NBC News')
-INSERT INTO MediaOutlet VALUES ('The Atlantic')
-INSERT INTO MediaOutlet VALUES ('PBS')
-INSERT INTO MediaOutlet VALUES ('Wikileaks')
-INSERT INTO MediaOutlet VALUES ('RT')
-INSERT INTO MediaOutlet VALUES ('LA Times')
-INSERT INTO MediaOutlet VALUES ('Foreign Policy')
-INSERT INTO MediaOutlet VALUES ('BBC')
-INSERT INTO MediaOutlet VALUES ('Washington Examiner')
-INSERT INTO MediaOutlet VALUES ('Fortune')
-INSERT INTO MediaOutlet VALUES ('Wired')
-INSERT INTO MediaOutlet VALUES ('US Department of Treasury')
-INSERT INTO MediaOutlet VALUES ('CBS Miami')
-INSERT INTO MediaOutlet VALUES ('US Senate')
-INSERT INTO MediaOutlet VALUES ('AJC')
-INSERT INTO MediaOutlet VALUES ('Kyiv Post')
-INSERT INTO MediaOutlet VALUES ('RBC')
-INSERT INTO MediaOutlet VALUES ('US Bankrupcy Court')
+--INSERT INTO MediaOutlet VALUES ('You Tube')
+--INSERT INTO MediaOutlet VALUES ('The Daily Beast')
+--INSERT INTO MediaOutlet VALUES ('Reuters')
+--INSERT INTO MediaOutlet VALUES ('US Department of Justice')
+--INSERT INTO MediaOutlet VALUES ('The Hill')
+--INSERT INTO MediaOutlet VALUES ('Breitbart')
+--INSERT INTO MediaOutlet VALUES ('Yahoo')
+--INSERT INTO MediaOutlet VALUES ('Twitter')
+--INSERT INTO MediaOutlet VALUES ('Page Six')
+--INSERT INTO MediaOutlet VALUES ('US Department of State')
+--INSERT INTO MediaOutlet VALUES ('The Independent')
+--INSERT INTO MediaOutlet VALUES ('Federal Bureau of Investigation')
+--INSERT INTO MediaOutlet VALUES ('The Smoking Gun')
+--INSERT INTO MediaOutlet VALUES ('guccifer')
+--INSERT INTO MediaOutlet VALUES ('House of Representatives')
+--INSERT INTO MediaOutlet VALUES ('CNBC')
+--INSERT INTO MediaOutlet VALUES ('Crowdstrike')
+--INSERT INTO MediaOutlet VALUES ('ABC News')
+--INSERT INTO MediaOutlet VALUES ('The Intercept')
+--INSERT INTO MediaOutlet VALUES ('Media Matters')
+--INSERT INTO MediaOutlet VALUES ('The Boston Globe')
+--INSERT INTO MediaOutlet VALUES ('Politifact')
+--INSERT INTO MediaOutlet VALUES ('America Online')
+--INSERT INTO MediaOutlet VALUES ('Department of Homeland Security')
+--INSERT INTO MediaOutlet VALUES ('The Guardian')
+--INSERT INTO MediaOutlet VALUES ('Time')
+--INSERT INTO MediaOutlet VALUES ('DocumentCloud')
+--INSERT INTO MediaOutlet VALUES ('USA Today')
+--INSERT INTO MediaOutlet VALUES ('NBC News')
+--INSERT INTO MediaOutlet VALUES ('The Atlantic')
+--INSERT INTO MediaOutlet VALUES ('PBS')
+--INSERT INTO MediaOutlet VALUES ('Wikileaks')
+--INSERT INTO MediaOutlet VALUES ('RT')
+--INSERT INTO MediaOutlet VALUES ('LA Times')
+--INSERT INTO MediaOutlet VALUES ('Foreign Policy')
+--INSERT INTO MediaOutlet VALUES ('BBC')
+--INSERT INTO MediaOutlet VALUES ('Washington Examiner')
+--INSERT INTO MediaOutlet VALUES ('Fortune')
+--INSERT INTO MediaOutlet VALUES ('Wired')
+--INSERT INTO MediaOutlet VALUES ('US Department of Treasury')
+--INSERT INTO MediaOutlet VALUES ('CBS Miami')
+--INSERT INTO MediaOutlet VALUES ('US Senate')
+--INSERT INTO MediaOutlet VALUES ('AJC')
+--INSERT INTO MediaOutlet VALUES ('Kyiv Post')
+--INSERT INTO MediaOutlet VALUES ('RBC')
+--INSERT INTO MediaOutlet VALUES ('US Bankrupcy Court')
+--INSERT INTO MediaOutlet VALUES ('Weekly Standard')
+--INSERT INTO MediaOutlet VALUES ('NY Daily News')
+--INSERT INTO MediaOutlet VALUES ('CBS News')
+--INSERT INTO MediaOutlet VALUES ('Russia Matters')
+--INSERT INTO MediaOutlet VALUES ('Real Clear Politics')
+--INSERT INTO MediaOutlet VALUES ('Detriot News')
+--INSERT INTO MediaOutlet VALUES ('The Aspen Institute')
+--INSERT INTO MediaOutlet VALUES ('Judicial Watch')
+--INSERT INTO MediaOutlet VALUES ('The Telegraph')
+--INSERT INTO MediaOutlet VALUES ('Director of National Intelligence')
+--INSERT INTO MediaOutlet VALUES ('US Computer Emergency Readiness Team')
 
+UPDATE Story SET MediaOutletID = (SELECT ID FROM MediaOutlet WHERE Name = 'Weekly Standard') WHERE CHARINDEX('weeklystandard.com', link) > 0
+UPDATE Story SET MediaOutletID = (SELECT ID FROM MediaOutlet WHERE Name = 'NY Daily News') WHERE CHARINDEX('nydailynews.com', link) > 0
+UPDATE Story SET MediaOutletID = (SELECT ID FROM MediaOutlet WHERE Name = 'CBS News') WHERE CHARINDEX('cbsnews.com', link) > 0
+UPDATE Story SET MediaOutletID = (SELECT ID FROM MediaOutlet WHERE Name = 'Russia Matters') WHERE CHARINDEX('russiamatters.org', link) > 0
+UPDATE Story SET MediaOutletID = (SELECT ID FROM MediaOutlet WHERE Name = 'Real Clear Politics') WHERE CHARINDEX('realclearpolitics.com', link) > 0
+UPDATE Story SET MediaOutletID = (SELECT ID FROM MediaOutlet WHERE Name = 'Detriot News') WHERE CHARINDEX('detroitnews.com', link) > 0
+UPDATE Story SET MediaOutletID = (SELECT ID FROM MediaOutlet WHERE Name = 'The Aspen Institute') WHERE CHARINDEX('aspensecurityforum.org', link) > 0
+UPDATE Story SET MediaOutletID = (SELECT ID FROM MediaOutlet WHERE Name = 'Judicial Watch') WHERE CHARINDEX('judicialwatch.org', link) > 0
+UPDATE Story SET MediaOutletID = (SELECT ID FROM MediaOutlet WHERE Name = 'The Telegraph') WHERE CHARINDEX('telegraph.co.uk', link) > 0
+UPDATE Story SET MediaOutletID = (SELECT ID FROM MediaOutlet WHERE Name = 'US Computer Emergency Readiness Team') WHERE CHARINDEX('us-cert.gov', link) > 0
+UPDATE Story SET MediaOutletID = (SELECT ID FROM MediaOutlet WHERE Name = '') WHERE CHARINDEX('', link) > 0
+UPDATE Story SET MediaOutletID = (SELECT ID FROM MediaOutlet WHERE Name = '') WHERE CHARINDEX('', link) > 0
 
 UPDATE Story SET MediaOutletID = (SELECT ID FROM MediaOutlet WHERE Name = 'US Senate') WHERE CHARINDEX('senate.gov', link) > 0
 UPDATE Story SET MediaOutletID = (SELECT ID FROM MediaOutlet WHERE Name = 'AJC') WHERE CHARINDEX('ajc.com', link) > 0
@@ -106,4 +129,6 @@ UPDATE Story SET MediaOutletID = (SELECT ID FROM MediaOutlet WHERE Name = 'US De
 UPDATE Story SET MediaOutletID = (SELECT ID FROM MediaOutlet WHERE Name = 'The Hill') WHERE CHARINDEX('thehill.com', link) > 0
 UPDATE Story SET MediaOutletID = (SELECT ID FROM MediaOutlet WHERE Name = 'Breitbart') WHERE CHARINDEX('breitbart.com', link) > 0
 UPDATE Story SET MediaOutletID = (SELECT ID FROM MediaOutlet WHERE Name = 'Yahoo') WHERE CHARINDEX('yahoo.com', link) > 0
+
+
 
