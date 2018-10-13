@@ -1,4 +1,6 @@
 
+var dateChart;
+
 var mediaOutletChart;
 var topicMemberChart;
 
@@ -9,6 +11,13 @@ var searchGroup;
 
 d3.json("data/stories.json", function (err, data) {
 
+    // year month, day
+    data.forEach(function (d) {
+        var parts = d.date.split("/");
+        d.date = new Date(Number(parts[2]), Number(parts[0]) - 1, Number(parts[1]));
+        d.year = Number(parts[2]);
+    });
+
     console.table(data);
     facts = crossfilter(data);
 
@@ -17,22 +26,23 @@ d3.json("data/stories.json", function (err, data) {
         .dimension(facts)
         .group(all);    
 
-    /* var changeDateDim = facts.dimension(function (d) { return d.sourceDate; });
-    var changeDateGroup = changeDateDim.group(d3.time.day);
-    changeDateChart = dc.barChart("#dc-chart-changeDate")
-        .dimension(changeDateDim)
-        .group(changeDateGroup)
-        //.x(d3.time.scale().domain([new Date(2013, 2, 15), new Date(2018, 3, 31)]))
-        .x(d3.time.scale().domain([new Date(2016, 2, 15), new Date(2018, 6, 15)]))
-        .xUnits(d3.time.day)
-        .width(leftWidth)
+    var dateDim = facts.dimension(function (d) { return d.year; });
+    var dateGroup = dateDim.group().reduceCount(function(d) {return d.year;});
+    dateChart = dc.barChart("#dc-chart-date")
+        .dimension(dateDim)
+        .group(dateGroup)
+        .x(d3.scale.linear().domain([2012.5, 2018.5]))
+        .centerBar(true)
+        .width(400)
         .height(140)
-        .margins({ top: 15, right: 20, bottom: 20, left: 40 })
+        .margins({ top: 15, right: 20, bottom: 20, left: 60 })
+        .ordinalColors(['#9ecae1'])
         .elasticY(true)
-        .filter([new Date(2016, 2, 25), new Date(2018, 6, 10)]) // Months are zero based
-    changeDateChart.yAxis().ticks(5);
-    changeDateChart.xAxis().ticks(5); */
+    dateChart.yAxis().ticks(6);
+
+    dateChart.xAxis().tickFormat(d3.format("d")); // need "2005" not "2,005" 
     
+
     let col1Width = 200;
 
     mediaOutletChart = new RowChart(facts, "mediaOutlet", col1Width, 40);

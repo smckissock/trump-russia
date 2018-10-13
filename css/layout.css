@@ -2,7 +2,7 @@
     --bar-width: 200px;
 
     --phone-width: 50rem;
-    /* --max-width: 1100px; */
+    --max-width: 1366px; 
 }
 
 body {
@@ -14,11 +14,11 @@ body {
     display: grid;
     grid-template-areas: 
         "title      title       title" 
-        "date       date        story" 
+        "date       date        date" 
         "topic      mediaOutlet story" 
         "footer     footer      footer"; 
     grid-template-columns: var(--bar-width) var(--bar-width) 1fr;
-    grid-template-rows: 3rem 10rem auto 1rem;
+    grid-template-rows: 5rem 10rem auto 1rem;
     grid-gap: .5em;
     margin: 0px;
     height: 100vh;
