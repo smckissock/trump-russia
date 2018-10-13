@@ -454,3 +454,5 @@ INSERT INTO Story VALUES ((SELECT ID FROM Topic WHERE Name = 'Investigations'), 
 INSERT INTO Story VALUES ((SELECT ID FROM Topic WHERE Name = 'Trump'), 'As NYT reports that WH Counsel McGahn spoke with Mueller&#39;s team, Trump tweets that he allowed those interviews.', 'https://twitter.com/realDonaldTrump/status/1030940529037651968', '8/18/2018 12:00:00 AM', '2018 August 18', 1, '', '', '', '', '')
 INSERT INTO Story VALUES ((SELECT ID FROM Topic WHERE Name = 'Trump'), 'The president writes that the Mueller investigation makes Joseph McCarthy look like a baby.', 'https://twitter.com/realDonaldTrump/status/1031154974942810114', '8/19/2018 12:00:00 AM', '2018 August 19', 1, '', '', '', '', '')
 INSERT INTO Story VALUES ((SELECT ID FROM Topic WHERE Name = 'Investigations'), 'Microsoft announces Russian hackers attempted to target conservative think tanks that advocated tougher action against Russia.', 'https://www.nytimes.com/2018/08/21/us/politics/russia-cyber-hack.html?emc=edit_th_180821&amp;nl=todaysheadlines&amp;nlid=678426250821', '8/21/2018 12:00:00 AM', '2018 August 21', 1, '', '', '', '', '')
+
+

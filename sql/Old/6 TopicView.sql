@@ -23,6 +23,6 @@ FROM Story s
 JOIN Topic t ON s.TopicID = t.ID
 JOIN MediaOutlet m ON m.ID = s.MediaOutletID
 
-
+sp_help 'TopicView'
 
 -- SELECT * FROM TopicView ORDER By TopicID, Date
