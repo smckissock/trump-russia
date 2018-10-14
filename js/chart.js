@@ -2,7 +2,7 @@
 var dateChart;
 
 var mediaOutletChart;
-var topicMemberChart;
+var topicChart;
 
 var facts;
 var searchDim;
@@ -11,10 +11,8 @@ var searchGroup;
 
 d3.json("data/stories.json", function (err, data) {
 
-    // year month, day
     data.forEach(function (d) {
         var parts = d.date.split("/");
-        d.date = new Date(Number(parts[2]), Number(parts[0]) - 1, Number(parts[1]));
         d.year = Number(parts[2]);
     });
 
@@ -66,10 +64,17 @@ d3.json("data/stories.json", function (err, data) {
 
 
 function storyResult(d) {
-    //let pad = "0000"
-    //let ans = pad.substring(0, pad.length - d.stories.length) + d.stories;
+    
+    return `
+        <div class="story">
+            <h3>${d.description}</h3>
+            <div class="story-details"><b>${d.topic}</b>  ${d.mediaOutlet}  ${d.date}</div>
+            <a href="${d.link}" target="_blank">${d.headline}</a>
+        </div>
+    `;
+}
 
-    return d.description;
+
 
 /*     let classes =  "class='conflict-summary' " + ans + " onclick='conflictPopup(\"" + d.slug + "\")' ";
     
@@ -86,7 +91,7 @@ function storyResult(d) {
         description = "<p class='conflict-description'>" + d.description + "</p>";
 
     return "<div " + classes + ">" + "<div class='conflict-header'>" + familyMemberPhotos(d) + title + "</div>" + stories + description + "</div>"; */
-}
+//}
 
 
 function dateToYMD(date) {

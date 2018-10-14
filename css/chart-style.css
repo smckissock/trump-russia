@@ -9,6 +9,14 @@ h2 {
     margin-left: 1rem;
 }
 
+h3 {
+    font-size: 1.0em;
+    margin-top: 1rem;
+    margin-bottom: .1rem;
+    margin-left: 1rem;
+}
+
+
 h4 {
     margin-top: .1rem;
     margin-bottom: .2rem;
@@ -20,6 +28,14 @@ p {
     margin-left: 1rem;
 }
 
+
+a {
+    font-size: .8em;
+    margin-top: 1rem;
+    margin-bottom: .2rem;
+    margin-left: 1rem;
+}
+
 ul {
     list-style: none;
 }
@@ -28,8 +44,16 @@ li {
     margin: 1.8rem 0;
 }
 
-
+.story-details {
+    font-size: .8em;
+    margin-left: 1rem;
+}
 .note {
     font-size: .8em;
     font-style: italic;
 }
+
+.story:hover{
+    background-color: #cee2ed;
+    cursor:pointer;
+ }
