@@ -1,6 +1,6 @@
 body {
     font-family: Sans-Serif;
-    color: dimgrey;
+    color: #404040;
 }
 
 h2 {
@@ -52,6 +52,33 @@ li {
     font-size: .8em;
     font-style: italic;
 }
+
+.story {
+    margin: .5rem .1rem .5rem .1rem;
+}
+
+.story-image {
+    float: left;
+}
+
+h3.story-title {
+    font-size: .9em;
+    margin: .0rem .1rem .1rem .3rem;
+}
+
+.story-body {
+    overflow: auto;
+}
+
+.story-details {
+    margin: .2rem .2rem .2rem .2rem;  
+}
+
+.story-link {
+    margin: .5rem .2rem .5rem .2rem;  
+    text-decoration: none;
+}
+
 
 .story:hover{
     background-color: #cee2ed;

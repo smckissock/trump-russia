@@ -66,10 +66,13 @@ d3.json("data/stories.json", function (err, data) {
 function storyResult(d) {
     
     return `
-        <div class="story">
-            <h3>${d.description}</h3>
-            <div class="story-details"><b>${d.topic}</b>  ${d.mediaOutlet}  ${d.date}</div>
-            <a href="${d.link}" target="_blank">${d.headline}</a>
+        <div class="story" onclick="window.open('${d.link}')">
+            <img class="story-image" src="${d.image}" height="80" width="140">
+            <div class="story-body">
+                <h3 class="story-title">${d.date} ${d.description}</h3>
+                <h5 class="story-details"><b>${d.topic}</b></h5>
+                <a class="story-link" href="${d.link}" target="_blank">${d.mediaOutlet} - ${d.headline}</a>
+            </div>    
         </div>
     `;
 }
