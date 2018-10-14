@@ -33,9 +33,9 @@ d3.json("data/stories.json", function (err, data) {
         .group(dateGroup)
         .x(d3.scale.linear().domain([2012.5, 2018.5]))
         .centerBar(true)
-        .width(400)
+        .width(420)
         .height(140)
-        .margins({ top: 15, right: 20, bottom: 20, left: 60 })
+        .margins({ top: 15, right: 20, bottom: 20, left: 30 })
         .ordinalColors(['#9ecae1'])
         .elasticY(true)
     dateChart.yAxis().ticks(6);
@@ -48,28 +48,30 @@ d3.json("data/stories.json", function (err, data) {
     mediaOutletChart = new RowChart(facts, "mediaOutlet", col1Width, 40);
     topicChart = new RowChart(facts, "topic", col1Width, 40);
      
-/*     dataTable = dc.dataTable("#dc-chart-dataGrid");
-    var tableDim = facts.dimension(function(d) { return +d.Id; });
+    dataTable = dc.dataTable("#dc-chart-dataGrid");
+    var tableDim = facts.dimension(function(d) { return +d.description; });
     dataTable
         .dimension(tableDim)
-        .group(d => conflictResult(d))
-        .sortBy(function(d) {
+        .group(d => storyResult(d))
+/*         .sortBy(function(d) {
             var pad = "0000"
             var ans = pad.substring(0, pad.length - d.stories.length) + d.stories;
             return ans;
-        })
+        }) */
         .size(1000)
-        .order(d3.descending); */
+        .order(d3.descending);
 
     dc.renderAll();  
 });
 
 
-function conflictResult(d) {
-    let pad = "0000"
-    let ans = pad.substring(0, pad.length - d.stories.length) + d.stories;
+function storyResult(d) {
+    //let pad = "0000"
+    //let ans = pad.substring(0, pad.length - d.stories.length) + d.stories;
 
-    let classes =  "class='conflict-summary' " + ans + " onclick='conflictPopup(\"" + d.slug + "\")' ";
+    return d.description;
+
+/*     let classes =  "class='conflict-summary' " + ans + " onclick='conflictPopup(\"" + d.slug + "\")' ";
     
     let title = "<span class='conflict-title'>" + d.name + "</span>";
 
@@ -83,7 +85,7 @@ function conflictResult(d) {
     if (d.description)
         description = "<p class='conflict-description'>" + d.description + "</p>";
 
-    return "<div " + classes + ">" + "<div class='conflict-header'>" + familyMemberPhotos(d) + title + "</div>" + stories + description + "</div>";
+    return "<div " + classes + ">" + "<div class='conflict-header'>" + familyMemberPhotos(d) + title + "</div>" + stories + description + "</div>"; */
 }
 
 
