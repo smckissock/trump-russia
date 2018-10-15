@@ -14,6 +14,7 @@ d3.json("data/stories.json", function (err, data) {
     data.forEach(function (d) {
         var parts = d.date.split("/");
         d.year = Number(parts[2]);
+        d.dateSort = parts[2] + "-" + parts[0].padStart(2, '0') + "-" + parts[1].padStart(2, '0');;
     });
 
     console.table(data);
@@ -47,16 +48,12 @@ d3.json("data/stories.json", function (err, data) {
     topicChart = new RowChart(facts, "topic", col1Width, 40);
      
     dataTable = dc.dataTable("#dc-chart-dataGrid");
-    var tableDim = facts.dimension(function(d) { return +d.description; });
+    var tableDim = facts.dimension(function(d) { return +d.dateSort; });
     dataTable
         .dimension(tableDim)
         .group(d => storyResult(d))
-/*         .sortBy(function(d) {
-            var pad = "0000"
-            var ans = pad.substring(0, pad.length - d.stories.length) + d.stories;
-            return ans;
-        }) */
-        .size(1000)
+        .sortBy(d => { return d.dateSort; })
+        .size(400)
         .order(d3.descending);
 
     dc.renderAll();  
@@ -64,37 +61,18 @@ d3.json("data/stories.json", function (err, data) {
 
 
 function storyResult(d) {
-    
+    // ${d.dateSort} thrown in at the top serves no purpose other than to get the correct sort order!
     return `
-        <div class="story" onclick="window.open('${d.link}')">
-            <img class="story-image" src="${d.image}" height="80" width="140">
-            <div class="story-body">
+        <div class="story" ${d.dateSort} onclick="window.open('${d.link}')">
+            <img class="story-image" src="${d.image}" height="80" width="120">
+            <div class="story-body"><h5 class="story-topic">${d.topic}</h5>
                 <h3 class="story-title">${d.date} ${d.description}</h3>
-                <h5 class="story-details"><b>${d.topic}</b></h5>
+                
                 <a class="story-link" href="${d.link}" target="_blank">${d.mediaOutlet} - ${d.headline}</a>
             </div>    
         </div>
     `;
 }
-
-
-
-/*     let classes =  "class='conflict-summary' " + ans + " onclick='conflictPopup(\"" + d.slug + "\")' ";
-    
-    let title = "<span class='conflict-title'>" + d.name + "</span>";
-
-    let stories = "<h5 class='conflict-stories'>No media accounts of this conflict</h5>";
-    if (d.stories == 1)
-        stories = "<h5 class='conflict-stories'>" + d.stories + " media account, from " + d.lastStory + "</h5>";
-    if (d.stories > 1)
-        stories = "<h5 class='conflict-stories'>" + d.stories + " media accounts, most recent " + d.lastStory + "</h5>";
-
-    let description = "";
-    if (d.description)
-        description = "<p class='conflict-description'>" + d.description + "</p>";
-
-    return "<div " + classes + ">" + "<div class='conflict-header'>" + familyMemberPhotos(d) + title + "</div>" + stories + description + "</div>"; */
-//}
 
 
 function dateToYMD(date) {

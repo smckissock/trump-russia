@@ -14,8 +14,8 @@ body {
     display: grid;
     grid-template-areas: 
         "title      title       title" 
-        "date       date        story" 
-        "topic      mediaOutlet story" 
+        "date       date        stories" 
+        "topic      mediaOutlet stories" 
         "footer     footer      footer"; 
     grid-template-columns: var(--bar-width) var(--bar-width) 1fr;
     grid-template-rows: 5rem 10rem auto 1rem;
@@ -41,8 +41,9 @@ body {
     grid-area: date;
 }
 
-.story {
-    grid-area: story;
+.stories {
+    grid-area: stories;
+    overflow: auto;
 }
 
 .topic {

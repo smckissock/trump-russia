@@ -62,7 +62,7 @@ li {
 }
 
 h3.story-title {
-    font-size: .9em;
+    font-size: .8em;
     margin: .0rem .1rem .1rem .3rem;
 }
 
@@ -70,17 +70,29 @@ h3.story-title {
     overflow: auto;
 }
 
-.story-details {
-    margin: .2rem .2rem .2rem .2rem;  
+.story-topic {
+    margin: .0rem .2rem .1em .2rem;  
+    font-weight: normal;
+    font-style: italic;
 }
 
 .story-link {
-    margin: .5rem .2rem .5rem .2rem;  
+    font-size: .7em;
+    margin: .5rem .2rem .2rem .2rem;  
     text-decoration: none;
+    line-height: .1rem;
 }
 
 
 .story:hover{
     background-color: #cee2ed;
     cursor:pointer;
+ }
+
+ a.tagline {
+    font-size: 1em;
+    margin-top: 1rem;
+    margin-bottom: .2rem;
+    margin-left: .3rem;
+    text-decoration: none; 
  }
