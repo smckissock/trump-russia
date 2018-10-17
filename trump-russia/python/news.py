@@ -37,8 +37,8 @@ def import_story(id, url):
 		cursor.execute("UPDATE Story SET Authors = ? WHERE ID = ?", ', '.join(article.authors), id)
 		conn.commit()
 		
-		#cursor.execute("UPDATE Story SET Keywords = ? WHERE ID = ?", article.keywords, id)
-		#conn.commit()
+		cursor.execute("UPDATE Story SET Keywords = ? WHERE ID = ?", article.keywords, id)
+		conn.commit()
 
 		cursor.execute("UPDATE Story SET Body = ? WHERE ID = ?", article.text, id)
 		conn.commit()

@@ -20,6 +20,11 @@ d3.json("data/stories.json", function (err, data) {
     console.table(data);
     facts = crossfilter(data);
 
+    searchDim = facts.dimension(function (d) {
+        return d.words;
+    });
+    searchGroup = searchDim.group().reduceCount();
+
     var all = facts.groupAll();
     dc.dataCount('.dc-data-count')
         .dimension(facts)
@@ -41,6 +46,28 @@ d3.json("data/stories.json", function (err, data) {
 
     dateChart.xAxis().tickFormat(d3.format("d")); // need "2005" not "2,005" 
     
+    d3.select("#search-input").on('keyup', function (event) {
+        searchTerm = document.getElementById("search-input").value;
+        setword(searchTerm);
+    });
+
+    function setword(wd) {
+        if (wd.length < 3) {
+            if (wd.length == 0)
+                showFilters();
+            searchDim.filter(null);
+            dc.redrawAll();  
+            return;
+        }
+        
+        var s = wd.toLowerCase();
+        searchDim.filter(function (d) {
+            return d.indexOf(s) !== -1;
+        });
+
+        //showFilters();
+        dc.redrawAll();
+    }
 
     let col1Width = 200;
 
@@ -56,7 +83,7 @@ d3.json("data/stories.json", function (err, data) {
         .size(400)
         .order(d3.descending);
 
-    dc.renderAll();  
+    dc.renderAll();
 });
 
 

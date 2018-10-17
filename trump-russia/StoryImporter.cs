@@ -290,6 +290,7 @@ namespace TrumpRussia {
                         story.image = reader["Image"].ToString();
                         story.link = reader["Link"].ToString();
                         story.mediaOutlet = reader["MediaOutlet"].ToString();
+                        story.words = reader["AllWords"].ToString();
 
                         var date = reader["Date"].ToString();
                         story.date = date.Split(new char[] {' '})[0];

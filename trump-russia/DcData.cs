@@ -15,5 +15,6 @@ namespace TrumpRussia {
         public string link;
         public string mediaOutlet;
         public string date;
+        public string words;
     }
 }

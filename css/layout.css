@@ -14,7 +14,7 @@ body {
     display: grid;
     grid-template-areas: 
         "title      title       title" 
-        "date       date        stories" 
+        "date       date        searchBox" 
         "topic      mediaOutlet stories" 
         "footer     footer      footer"; 
     grid-template-columns: var(--bar-width) var(--bar-width) 1fr;
