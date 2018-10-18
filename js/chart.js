@@ -12,9 +12,17 @@ var searchGroup;
 d3.json("data/stories.json", function (err, data) {
 
     data.forEach(function (d) {
-        var parts = d.date.split("/");
-        d.year = Number(parts[2]);
-        d.dateSort = parts[2] + "-" + parts[0].padStart(2, '0') + "-" + parts[1].padStart(2, '0');;
+        let parts = d.date.split("/");
+        let year = Number(parts[2]);;
+        let month = Number(parts[0]);;
+        let quarter = Math.round((month / 4)) + 1;
+        
+        //d.quarterNum = ((year - 2013) * 4) + quarter; 
+        d.quarterNum = ((year - 2013) * 12) + month; 
+        d.quarter = year + " Qtr " + quarter;   
+        d.year = year;
+        
+        d.dateSort = parts[2] + "-" + parts[0].padStart(2, '0') + "-" + parts[1].padStart(2, '0');
     });
 
     console.table(data);
@@ -30,7 +38,7 @@ d3.json("data/stories.json", function (err, data) {
         .dimension(facts)
         .group(all);    
 
-    var dateDim = facts.dimension(function (d) { return d.year; });
+/*     var dateDim = facts.dimension(function (d) { return d.year; });
     var dateGroup = dateDim.group().reduceCount(function(d) {return d.year;});
     dateChart = dc.barChart("#dc-chart-date")
         .dimension(dateDim)
@@ -43,9 +51,25 @@ d3.json("data/stories.json", function (err, data) {
         .ordinalColors(['#9ecae1'])
         //.brushOn(false) // turns it off, but afterwards clicking doesn't filter!
         .elasticY(true)
-    dateChart.yAxis().ticks(6);
+    dateChart.yAxis().ticks(6); */
 
-    dateChart.xAxis().tickFormat(d3.format("d")); // need "2005" not "2,005" 
+    var dateDim = facts.dimension(function (d) { return d.quarterNum; });
+    var dateGroup = dateDim.group().reduceCount(function(d) {return d.quarterNum;});
+    dateChart = dc.barChart("#dc-chart-date")
+        .dimension(dateDim)
+        .group(dateGroup)
+        //.x(d3.scale.linear().domain([2012.5, 2018.5]))
+        .x(d3.scale.linear().domain([1, 23 * 4]))
+        .centerBar(true)
+        .width(900)
+        .height(140)
+        .margins({ top: 15, right: 20, bottom: 20, left: 30 })
+        .ordinalColors(['#9ecae1'])
+        //.brushOn(false) // turns it off, but afterwards clicking doesn't filter!
+        .elasticY(true)
+    //dateChart.yAxis().ticks(6); 
+
+    //dateChart.xAxis().tickFormat(d3.format("d")); // need "2005" not "2,005" 
     
     d3.select("#search-input").on('keyup', function (event) {
         searchTerm = document.getElementById("search-input").value;
