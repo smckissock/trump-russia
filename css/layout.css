@@ -1,5 +1,5 @@
 :root {
-    --bar-width: 200px;
+    --bar-width: 220px;
 
     --phone-width: 50rem;
     --max-width: 1366px; 
@@ -13,12 +13,14 @@ body {
 .container {
     display: grid;
     grid-template-areas: 
-        "title      title       title" 
-        "date       date        searchBox" 
-        "topic      mediaOutlet stories" 
-        "footer     footer      footer"; 
-    grid-template-columns: var(--bar-width) var(--bar-width) 1fr;
-    grid-template-rows: 5rem 10rem auto 1rem;
+        "title          title" 
+        "searchBox      searchBox" 
+        "date           date" 
+        "topic          stories" 
+        "mediaOutlet    stories" 
+        "footer         footer"; 
+    grid-template-columns: var(--bar-width) 1fr;
+    grid-template-rows: 5rem 2rem 8rem auto auto 1rem;
     grid-gap: .5em;
     margin: 0px;
     height: 100vh;
@@ -31,6 +33,7 @@ body {
 
 .title {
     grid-area: title;
+    text-align: center;
 }
 
 .search-box {

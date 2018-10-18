@@ -37,10 +37,11 @@ d3.json("data/stories.json", function (err, data) {
         .group(dateGroup)
         .x(d3.scale.linear().domain([2012.5, 2018.5]))
         .centerBar(true)
-        .width(420)
+        .width(900)
         .height(140)
         .margins({ top: 15, right: 20, bottom: 20, left: 30 })
         .ordinalColors(['#9ecae1'])
+        //.brushOn(false) // turns it off, but afterwards clicking doesn't filter!
         .elasticY(true)
     dateChart.yAxis().ticks(6);
 
@@ -72,7 +73,7 @@ d3.json("data/stories.json", function (err, data) {
     let col1Width = 200;
 
     mediaOutletChart = new RowChart(facts, "mediaOutlet", col1Width, 40);
-    topicChart = new RowChart(facts, "topic", col1Width, 40);
+    topicChart = new RowChart(facts, "topic", col1Width, 12);
      
     dataTable = dc.dataTable("#dc-chart-dataGrid");
     var tableDim = facts.dimension(function(d) { return +d.dateSort; });
