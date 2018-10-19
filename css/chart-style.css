@@ -48,16 +48,13 @@ h4 {
 p {
     color: var(--white-text);
     font-size: .8rem;
-
-    margin: .4rem .8rem 2rem .8rem;
+    margin: .4rem .8rem .2rem .8rem;
 }
 
 
 a {
     font-size: .8em;
-    margin-top: 1rem;
-    margin-bottom: .2rem;
-    margin-left: 1rem;
+    margin: 1rem 0rem .2rem .3rem;
 }
 
 ul {
@@ -88,6 +85,25 @@ li {
     padding: 5px 5px 5px 5px;
     background-color: var(--white-text);
 
+}
+
+span.example-label {
+    font-size: .65rem;
+    font-style: bold;
+    margin: .3rem 0rem .6rem 1.4rem;
+}
+
+.search-examples {
+    font-size: .9rem;
+    font-style: italic;
+    display: inline-block;
+
+}
+
+a.search-example {
+    display: inline;
+    text-decoration: none;
+    color: var(--blue-link);
 }
 
 .search-input {

@@ -1,6 +1,4 @@
-
 var dateChart;
-
 var mediaOutletChart;
 var topicChart;
 
@@ -73,26 +71,8 @@ d3.json("data/stories.json", function (err, data) {
     
     d3.select("#search-input").on('keyup', function (event) {
         searchTerm = document.getElementById("search-input").value;
-        setword(searchTerm);
+        setWord(searchTerm);
     });
-
-    function setword(wd) {
-        if (wd.length < 3) {
-            if (wd.length == 0)
-                showFilters();
-            searchDim.filter(null);
-            dc.redrawAll();  
-            return;
-        }
-        
-        var s = wd.toLowerCase();
-        searchDim.filter(function (d) {
-            return d.indexOf(s) !== -1;
-        });
-
-        //showFilters();
-        dc.redrawAll();
-    }
 
     let col1Width = 200;
 
@@ -111,6 +91,33 @@ d3.json("data/stories.json", function (err, data) {
     dc.renderAll();
 });
 
+function setWord(word) {
+    if (word.length < 3) {
+        if (word.length == 0)
+            showFilters();
+        searchDim.filter(null);
+        dc.redrawAll();  
+        return;
+    }
+    
+    var s = word.toLowerCase();
+    searchDim.filter(function (d) {
+        return d.indexOf(s) !== -1;
+    });
+
+    //showFilters();
+    dc.redrawAll();
+}
+
+
+function setSearch(term) {
+    d3.select("#search-input")
+        .attr("value", term);
+
+    setWord(term);    
+
+    //alert(term);
+}
 
 function storyResult(d) {
     // ${d.dateSort} thrown in at the top serves no purpose other than to get the correct sort order!
