@@ -2,7 +2,8 @@
     font-size: calc(0.5em + 1vw);
 
     --white-text: rgb(255, 255, 255);
-
+    --red-text: rgb(248, 48, 54);
+    
     --bar-width: 220px;
 
     --phone-width: 50rem;
@@ -25,8 +26,8 @@ body {
         "mediaOutlet    stories" 
         "footer         footer"; 
     grid-template-columns: var(--bar-width) 1fr;
-    grid-template-rows: 5rem 2rem 8rem auto auto 1rem;
-    grid-gap: .5em;
+    grid-template-rows: 5rem 3rem 8rem auto auto 1rem;
+    grid-gap: .1em;
     margin: 0px;
     height: 100vh;
     width: calc(100vw - 1.1rem); 
@@ -46,6 +47,8 @@ body {
 
 .search-box {
     grid-area: searchBox;
+    display: flex;
+    justify-content: center;
 }
 
 .date {

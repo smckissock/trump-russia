@@ -116,7 +116,7 @@ function storyResult(d) {
     // ${d.dateSort} thrown in at the top serves no purpose other than to get the correct sort order!
     return `
         <div class="story" ${d.dateSort} onclick="window.open('${d.link}')">
-            <img class="story-image" src="${d.image}" height="80" width="120">
+            <img class="story-image" src="${d.image}" height="90" width="120">
             <div class="story-body"><h5 class="story-topic">${d.topic}</h5>
                 <h3 class="story-title">${d.date} ${d.description}</h3>
                 

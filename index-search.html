@@ -23,35 +23,36 @@
     <div class="container">
         <div class="title">
             <h1>Timeline of everything Russia, Trump and the Investigations</h1>
-            <p>by Lisa Desjardins, edited by Erika Hendry of the<a class="tagline" href="https://docs.google.com/spreadsheets/d/1utamO_EzX9VMyTKqWGF4x2upqohYCRYIdzyrx6YEyyk/edit#gid=0" target="_blank">PBS NewsHour</a></p> 
+            <p class="byline" >by Lisa Desjardins, edited by Erika Hendry of the<a class="byline" href="https://docs.google.com/spreadsheets/d/1utamO_EzX9VMyTKqWGF4x2upqohYCRYIdzyrx6YEyyk/edit#gid=0" target="_blank">PBS NewsHour</a></p> 
         </div> 
 
-        <div class='date' id='dc-chart-date'>
+        <div class="date" id="dc-chart-date">
             <!-- <div><span class="chart-title">Year</span></div> -->
         </div>
 
-        <div class='search-box'>
-            <div class='search-container'>
-                <span class="search-title">Search</span> 
-                <input id="search-input" class="search-input" placeholder='example: "crowdstrike"'>
+        <div class="search-box">
+            <div class="search-container">
+                <p class="search-p">
+                    <input id="search-input" class="search-input" placeholder="Search for a person, company, city, etc..">
+                </p>
             </div>
         </div>
 
-        <div class='topic' id='dc-chart-topic'>
+        <div class="topic" id="dc-chart-topic">
             <div>
                 <span class="chart-title">Topic</span>
                 <a class="reset" href="javascript:topicChart.filterAll();dc.redrawAll();" style="display: none;">Reset</a>
             </div>
         </div>
 
-        <div class='mediaOutlet' id='dc-chart-mediaOutlet'>
+        <div class="mediaOutlet" id="dc-chart-mediaOutlet">
             <div>
                 <span class="chart-title">Media Outlet</span>
                 <a class="reset" href="javascript:mediaOutletChart.filterAll();dc.redrawAll();" style="display: none;">Reset</a>
             </div>
         </div>
 
-        <div class='stories' id='dc-chart-dataGrid'></div>
+        <div class="stories" id="dc-chart-dataGrid"></div>
         
         <div class="footer">
             Creative Commons Attribution 4.0 International License: You are welcome to use this data for free. In exchange, we ask only that you share with us how you put it to use.
