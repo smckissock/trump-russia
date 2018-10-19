@@ -70,6 +70,12 @@ d3.json("data/stories.json", function (err, data) {
     //dateChart.xAxis().tickFormat(d3.format("d")); // need "2005" not "2,005" 
     
     d3.select("#search-input").on('keyup', function (event) {
+        var keycode = (event.keyCode ? event.keyCode : event.which);
+        if(keycode == '13'){
+            alert('You pressed a "enter" key in textbox'); 
+        }
+
+
         searchTerm = document.getElementById("search-input").value;
         setWord(searchTerm);
     });

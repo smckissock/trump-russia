@@ -8,6 +8,7 @@ namespace TrumpRussia {
 
     // For DC
     class story {
+        public string id;
         public string description;
         public string headline;
         public string topic;
@@ -15,6 +16,8 @@ namespace TrumpRussia {
         public string link;
         public string mediaOutlet;
         public string date;
+        public string quarter;
+        public string quarterNum;
         public string words;
     }
 }

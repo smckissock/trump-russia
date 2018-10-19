@@ -17,7 +17,12 @@ cursor = conn.cursor()
 
 def import_story(id, body):
 
-        #sents=sent_tokenize(body)
+        sentences = sent_tokenize(body)
+        #print(sents)
+        for sentence in sentences:
+                cursor.execute("INSERT INTO Sentence VALUES (?, ?)", id, sentence)
+                conn.commit()
+        
         #words=[word_tokenize(sent) for sent in sents]
         #print(words)
         #print(len(words))

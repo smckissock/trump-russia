@@ -12,6 +12,7 @@ using Newtonsoft.Json;
 
 namespace TrumpRussia {
 
+
     class RawStory {
         public string Year;
         public string Day;
@@ -284,6 +285,7 @@ namespace TrumpRussia {
                                         
                     while (reader.Read()) {
                         var story = new story();
+                        story.id = reader["StoryID"].ToString();
                         story.description = reader["Description"].ToString();
                         story.headline = reader["Title"].ToString();
                         story.topic = reader["Topic"].ToString();
@@ -297,6 +299,8 @@ namespace TrumpRussia {
 
                         stories.Add(story);
                         storyCount++;
+
+                        WriteSentences(reader["StoryID"].ToString());
                     }
                 }
             }
@@ -304,6 +308,21 @@ namespace TrumpRussia {
 
             WriteStoriesToJson(outputFileName, stories);
             return storyCount;
+        }
+
+
+        // Write a json file with an array of sentences for each story
+        private static void WriteSentences(string storyId) {
+            var sentences = new List<string>();
+
+            var reader = SqlUtil.Query("SELECT Text FROM Sentence WHERE StoryID = " + storyId);
+            while (reader.Read()) {
+                sentences.Add(reader["Text"].ToString());
+            }
+
+            string json = JsonConvert.SerializeObject(sentences);
+            var niceJson = Newtonsoft.Json.Linq.JToken.Parse(json).ToString();
+            System.IO.File.WriteAllText("c:\\trump-russia\\data\\stories\\" + storyId + ".json", niceJson);
         }
 
         private static void WriteStoriesToJson(string outputFileName, List<story> stories) {
