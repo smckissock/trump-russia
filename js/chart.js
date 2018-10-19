@@ -63,6 +63,7 @@ d3.json("data/stories.json", function (err, data) {
         .height(140)
         .margins({ top: 15, right: 20, bottom: 20, left: 30 })
         .ordinalColors(['#9ecae1'])
+        .yAxisLabel('Media Accounts')
         //.brushOn(false) // turns it off, but afterwards clicking doesn't filter!
         .elasticY(true)
     //dateChart.yAxis().ticks(6); 
@@ -70,12 +71,6 @@ d3.json("data/stories.json", function (err, data) {
     //dateChart.xAxis().tickFormat(d3.format("d")); // need "2005" not "2,005" 
     
     d3.select("#search-input").on('keyup', function (event) {
-        var keycode = (event.keyCode ? event.keyCode : event.which);
-        if(keycode == '13'){
-            alert('You pressed a "enter" key in textbox'); 
-        }
-
-
         searchTerm = document.getElementById("search-input").value;
         setWord(searchTerm);
     });
@@ -133,10 +128,19 @@ function storyResult(d) {
             <div class="story-body"><h5 class="story-topic">${d.topic}</h5>
                 <h3 class="story-title">${d.date} ${d.description}</h3>
                 
-                <a class="story-link" href="${d.link}" target="_blank">${d.mediaOutlet} - ${d.headline}</a>
+                <p class="story-headline">${headline(d.mediaOutlet, d.headline)}</p>
             </div>    
         </div>
     `;
+
+    // <a class="story-link" href="${d.link}" target="_blank">${d.mediaOutlet} - ${d.headline}</a>
+}
+
+function headline(mediaOutlet, headline) {
+    if (headline != "") 
+        return mediaOutlet + " - " + headline;
+    return     
+        mediaOutlet;
 }
 
 

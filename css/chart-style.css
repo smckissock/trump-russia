@@ -137,11 +137,11 @@ h3.story-title {
     color: var(--red-text);
 }
 
-.story-link {
+p.story-headline {
+    color: var(--blue-text);
     font-size: .7em;
     margin: .5rem .2rem .2rem .2rem;  
     text-decoration: none;
-    line-height: .1rem;
 }
 
 
@@ -163,4 +163,8 @@ h3.story-title {
 
  a:hover {
      text-decoration: underline;
+ }
+
+ .y-axis-label {
+     font-size: 11px;
  }
