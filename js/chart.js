@@ -1,12 +1,12 @@
-var dateChart;
-var mediaOutletChart;
-var topicChart;
+let dateChart;
+let mediaOutletChart;
+let topicChart;
 
-var facts;
-var searchDim;
-var searchGroup;
+let facts;
+let searchDim;
+let searchGroup;
 
-var searchTerm = "";
+let searchTerm = "";
 
 
 d3.json("data/stories.json", function (err, data) {
@@ -24,19 +24,20 @@ d3.json("data/stories.json", function (err, data) {
     console.table(data);
     facts = crossfilter(data);
 
-    searchDim = facts.dimension(function (d) {
-        return d.words;
-    });
+    //searchDim = facts.dimension(function (d) {
+    //    return d.words;
+    //});
+    searchDim = facts.dimension( d => { return d.words; });
     searchGroup = searchDim.group().reduceCount();
 
-    var all = facts.groupAll();
+    let all = facts.groupAll();
     dc.dataCount('.dc-data-count')
         .dimension(facts)
         .group(all);    
 
 
-    var dateDim = facts.dimension(function (d) { return d.monthNum; });
-    var dateGroup = dateDim.group().reduceCount(function(d) {return d.monthNum;});
+    let dateDim = facts.dimension(function (d) { return d.monthNum; });
+    let dateGroup = dateDim.group().reduceCount(function(d) {return d.monthNum;});
     dateChart = dc.barChart("#dc-chart-date")
         .dimension(dateDim)
         .group(dateGroup)
@@ -44,7 +45,7 @@ d3.json("data/stories.json", function (err, data) {
         //.centerBar(true)
         .width(900)
         .height(140)
-        .margins({ top: 15, right: 20, bottom: 20, left: 30 })
+        .margins({ top: 10, right: 20, bottom: 20, left: 30 })
         .ordinalColors(['#9ecae1'])
         .yAxisLabel('# Media Accounts')
         //.brushOn(false) // turns it off, but afterwards clicking doesn't filter!
@@ -75,7 +76,7 @@ d3.json("data/stories.json", function (err, data) {
     topicChart = new RowChart(facts, "topic", col1Width, 12);
         
     dataTable = dc.dataTable("#dc-chart-dataGrid");
-    var tableDim = facts.dimension(function(d) { return +d.dateSort; });
+    let tableDim = facts.dimension(function(d) { return +d.dateSort; });
     dataTable
         .dimension(tableDim)
         .group(d => storyResult(d))
@@ -88,7 +89,7 @@ d3.json("data/stories.json", function (err, data) {
 
 
 function setWord(word) {
-    searchTerm = word;
+    let searchTerm = word;
 
     if (word.length < 3) {
         if (word.length == 0)
@@ -96,15 +97,16 @@ function setWord(word) {
         searchDim.filter(null);
         dc.redrawAll();  
         return;
-    }
-    
-    var s = word.toLowerCase();
-    searchDim.filter(function (d) {
-        return d.indexOf(s) !== -1;
-    });
+    }    
+    let s = word.toLowerCase();
+    searchDim.filter( d => { return d.indexOf(s) !== -1 });
 
-    //showFilters();
+    showFilters();
     dc.redrawAll();
+}
+
+function showFilters() {
+    // todo
 }
 
 
@@ -113,41 +115,36 @@ function setSearch(term) {
         .attr("value", term);
 
     setWord(term);    
-
-    //alert(term);
 }
 
 function storyResult(d) {
     // ${d.dateSort} thrown in at the top serves no purpose other than to get the correct sort order!
     return `
         <div class="story" ${d.dateSort} onclick="window.open('${d.link}')">
-            <img class="story-image" src="${d.image}" height="90" width="120">
+            <img class="story-image" src="${d.image}" onerror="this.style.display='none'" height="90" width="120">
             <div class="story-body"><h5 class="story-topic">${d.topic}</h5>
                 <h3 class="story-title">${d.date} ${d.description}</h3>
-                
                 <p class="story-headline">${headline(d.mediaOutlet, d.headline)}</p>
                 <p class="story-headline">${getSentence(d)}</p>
             </div>    
         </div>
-    `;
-    // <a class="story-link" href="${d.link}" target="_blank">${d.mediaOutlet} - ${d.headline}</a>
+    `; 
 }
+
 
 function getSentence(d) {
     let result = "Not Found";
 
-    console.log("Search term: " + searchTerm);
+    //console.log("Search term: " + searchTerm);
     if (searchTerm.length < 3)
         return "";
 
     d.sentences.forEach(function (sentence) {
         var lower = sentence.toLowerCase();
         if (lower.includes(searchTerm)) {
-
             let start = lower.indexOf(searchTerm);
             let answer = insert(sentence, start + searchTerm.length, "</b>");
             answer = insert(answer, start, "<b>");
-
             result = '"' + answer + '"';
         } 
     });
@@ -167,9 +164,9 @@ function headline(mediaOutlet, headline) {
 
 
 function dateToYMD(date) {
-    var d = date.getDate();
-    var m = date.getMonth() + 1; // Month from 0 to 11
-    var y = date.getFullYear();
+    let d = date.getDate();
+    let m = date.getMonth() + 1; // Month from 0 to 11
+    let y = date.getFullYear();
     return '' + y + '-' + (m <= 9 ? '0' + m : m) + '-' + (d <= 9 ? '0' + d : d);
 }
 
@@ -181,23 +178,21 @@ function clearAll() {
     dc.renderAll();
 }
 
-
 function selectedConflicts() {
-    var conflicts = searchDim.top(100000);
-    var set = new Set(); 
+    let conflicts = searchDim.top(100000);
+    let set = new Set(); 
     conflicts.forEach(function(conflict) {
         set.add(conflict.name)
     });
     return set.size;
 }
 
-
 var RowChart = function (facts, attribute, width, maxItems, height) {
     // If height is supplied (very few items) use it, otherwise calculate
     if (!height)
         height = maxItems * 22;
     this.dim = facts.dimension(dc.pluck(attribute));
-    var chart = dc.rowChart("#dc-chart-" + attribute)
+    let chart = dc.rowChart("#dc-chart-" + attribute)
         .dimension(this.dim)
         .group(this.dim.group().reduceCount())
         .data(function (d) { return d.top(maxItems); })

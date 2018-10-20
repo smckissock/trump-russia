@@ -117,7 +117,7 @@ a.search-example {
 
 .story-image {
     object-fit: cover;
-    float: left;
+    float: right;
 }
 
 h3.story-title {
