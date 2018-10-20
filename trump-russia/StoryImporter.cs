@@ -300,7 +300,7 @@ namespace TrumpRussia {
                         stories.Add(story);
                         storyCount++;
 
-                        WriteSentences(reader["StoryID"].ToString());
+                        story.sentences = GetSentences(reader["StoryID"].ToString());
                     }
                 }
             }
@@ -312,17 +312,18 @@ namespace TrumpRussia {
 
 
         // Write a json file with an array of sentences for each story
-        private static void WriteSentences(string storyId) {
+        private static List<string> GetSentences(string storyId) {
             var sentences = new List<string>();
-
-            var reader = SqlUtil.Query("SELECT Text FROM Sentence WHERE StoryID = " + storyId);
-            while (reader.Read()) {
+            var reader = SqlUtil.Query("SELECT Text FROM Sentence WHERE StoryID = " + storyId + " ORDER BY LEN(Text) DESC");
+            while (reader.Read()) 
                 sentences.Add(reader["Text"].ToString());
-            }
 
-            string json = JsonConvert.SerializeObject(sentences);
-            var niceJson = Newtonsoft.Json.Linq.JToken.Parse(json).ToString();
-            System.IO.File.WriteAllText("c:\\trump-russia\\data\\stories\\" + storyId + ".json", niceJson);
+            reader.Close();
+            
+            return sentences;
+            //string json = JsonConvert.SerializeObject(sentences);
+            //var niceJson = Newtonsoft.Json.Linq.JToken.Parse(json).ToString();
+            //System.IO.File.WriteAllText("c:\\trump-russia\\data\\stories\\" + storyId + ".json", niceJson);
         }
 
         private static void WriteStoriesToJson(string outputFileName, List<story> stories) {

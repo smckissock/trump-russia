@@ -19,5 +19,7 @@ namespace TrumpRussia {
         public string quarter;
         public string quarterNum;
         public string words;
+
+        public List<string> sentences; 
     }
 }

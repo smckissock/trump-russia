@@ -6,6 +6,8 @@ var facts;
 var searchDim;
 var searchGroup;
 
+var searchTerm = "";
+
 
 d3.json("data/stories.json", function (err, data) {
 
@@ -23,7 +25,7 @@ d3.json("data/stories.json", function (err, data) {
         d.dateSort = parts[2] + "-" + parts[0].padStart(2, '0') + "-" + parts[1].padStart(2, '0');
     });
 
-    console.table(data);
+    //console.table(data);
     facts = crossfilter(data);
 
     searchDim = facts.dimension(function (d) {
@@ -93,6 +95,8 @@ d3.json("data/stories.json", function (err, data) {
 });
 
 function setWord(word) {
+    searchTerm = word;
+
     if (word.length < 3) {
         if (word.length == 0)
             showFilters();
@@ -129,11 +133,36 @@ function storyResult(d) {
                 <h3 class="story-title">${d.date} ${d.description}</h3>
                 
                 <p class="story-headline">${headline(d.mediaOutlet, d.headline)}</p>
+                <p class="story-headline">${getSentence(d)}</p>
             </div>    
         </div>
     `;
-
     // <a class="story-link" href="${d.link}" target="_blank">${d.mediaOutlet} - ${d.headline}</a>
+}
+
+function getSentence(d) {
+    let result = "Not Found";
+
+    console.log("Search term: " + searchTerm);
+    if (searchTerm.length < 3)
+        return "";
+
+    d.sentences.forEach(function (sentence) {
+        var lower = sentence.toLowerCase();
+        if (lower.includes(searchTerm)) {
+
+            let start = lower.indexOf(searchTerm);
+            let answer = insert(sentence, start + searchTerm.length, "</b>");
+            answer = insert(answer, start, "<b>");
+
+            result = '"' + answer + '"';
+        } 
+    });
+    return result;
+}
+
+function insert(str, index, value) {
+    return str.substr(0, index) + value + str.substr(index);
 }
 
 function headline(mediaOutlet, headline) {

@@ -1,17 +1,5 @@
-SELECT * FROM Story
-
-
-
-SELECT * FROM MediaOutlet -- 53
-
-
-
-SELECT * FROM Topic
-
-
-Topic 4
-
-
+USE Trump
+GO
 
 SELECT * FROM Story WHERE MediaOutletID = 53 AND TopicID = 4 
 
