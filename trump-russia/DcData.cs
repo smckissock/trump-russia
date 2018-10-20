@@ -16,8 +16,6 @@ namespace TrumpRussia {
         public string link;
         public string mediaOutlet;
         public string date;
-        public string quarter;
-        public string quarterNum;
         public string words;
 
         public List<string> sentences; 

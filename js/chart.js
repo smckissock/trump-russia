@@ -13,19 +13,15 @@ d3.json("data/stories.json", function (err, data) {
 
     data.forEach(function (d) {
         let parts = d.date.split("/");
-        let year = Number(parts[2]);;
-        let month = Number(parts[0]);;
-        let quarter = Math.round((month / 4)) + 1;
-        
-        //d.quarterNum = ((year - 2013) * 4) + quarter; 
-        d.quarterNum = ((year - 2013) * 12) + month; 
-        d.quarter = year + " Qtr " + quarter;   
-        d.year = year;
-        
         d.dateSort = parts[2] + "-" + parts[0].padStart(2, '0') + "-" + parts[1].padStart(2, '0');
+        
+        let year = Number(parts[2]);
+        let month = Number(parts[0]);
+
+        d.monthNum = ((year - 2013) * 12) + month;
     });
 
-    //console.table(data);
+    console.table(data);
     facts = crossfilter(data);
 
     searchDim = facts.dimension(function (d) {
@@ -38,39 +34,35 @@ d3.json("data/stories.json", function (err, data) {
         .dimension(facts)
         .group(all);    
 
-/*     var dateDim = facts.dimension(function (d) { return d.year; });
-    var dateGroup = dateDim.group().reduceCount(function(d) {return d.year;});
+
+    var dateDim = facts.dimension(function (d) { return d.monthNum; });
+    var dateGroup = dateDim.group().reduceCount(function(d) {return d.monthNum;});
     dateChart = dc.barChart("#dc-chart-date")
         .dimension(dateDim)
         .group(dateGroup)
-        .x(d3.scale.linear().domain([2012.5, 2018.5]))
-        .centerBar(true)
+        .x(d3.scale.linear().domain([4, (12 * 6) ]))
+        //.centerBar(true)
         .width(900)
         .height(140)
         .margins({ top: 15, right: 20, bottom: 20, left: 30 })
         .ordinalColors(['#9ecae1'])
+        .yAxisLabel('# Media Accounts')
         //.brushOn(false) // turns it off, but afterwards clicking doesn't filter!
         .elasticY(true)
-    dateChart.yAxis().ticks(6); */
+ 
+    dateChart.yAxis().ticks(3);        
+    dateChart.xAxis().ticks(12);    
 
-    var dateDim = facts.dimension(function (d) { return d.quarterNum; });
-    var dateGroup = dateDim.group().reduceCount(function(d) {return d.quarterNum;});
-    dateChart = dc.barChart("#dc-chart-date")
-        .dimension(dateDim)
-        .group(dateGroup)
-        //.x(d3.scale.linear().domain([2012.5, 2018.5]))
-        .x(d3.scale.linear().domain([1, 23 * 4]))
-        .centerBar(true)
-        .width(900)
-        .height(140)
-        .margins({ top: 15, right: 20, bottom: 20, left: 30 })
-        .ordinalColors(['#9ecae1'])
-        .yAxisLabel('Media Accounts')
-        //.brushOn(false) // turns it off, but afterwards clicking doesn't filter!
-        .elasticY(true)
-    //dateChart.yAxis().ticks(6); 
+    dateChart.xAxis().tickFormat(function (d) {
+        let monthNum = d;
+        // =ROUND(((C2 + 5)/12) + 2012, 0)
+        let year = Math.round(((monthNum + 5)/12) + 2012);        
+        // =C3-(D3-2013)*12
+        let month = monthNum - (year - 2013) * 12;
+        let quarter = Math.ceil(month / 12);
 
-    //dateChart.xAxis().tickFormat(d3.format("d")); // need "2005" not "2,005" 
+        return year + " Q" + quarter;
+    });
     
     d3.select("#search-input").on('keyup', function (event) {
         searchTerm = document.getElementById("search-input").value;
@@ -81,7 +73,7 @@ d3.json("data/stories.json", function (err, data) {
 
     mediaOutletChart = new RowChart(facts, "mediaOutlet", col1Width, 40);
     topicChart = new RowChart(facts, "topic", col1Width, 12);
-     
+        
     dataTable = dc.dataTable("#dc-chart-dataGrid");
     var tableDim = facts.dimension(function(d) { return +d.dateSort; });
     dataTable
@@ -93,6 +85,7 @@ d3.json("data/stories.json", function (err, data) {
 
     dc.renderAll();
 });
+
 
 function setWord(word) {
     searchTerm = word;
