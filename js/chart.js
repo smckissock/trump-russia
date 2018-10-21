@@ -6,11 +6,16 @@ let facts;
 let searchDim;
 let searchGroup;
 
-let searchTerm = "";
+let all;
+
+let allEventCount; 
+
+var searchTerm = "";
 
 
 d3.json("data/stories.json", function (err, data) {
-
+    allEventCount = data.length;
+    
     data.forEach(function (d) {
         let parts = d.date.split("/");
         d.dateSort = parts[2] + "-" + parts[0].padStart(2, '0') + "-" + parts[1].padStart(2, '0');
@@ -24,17 +29,13 @@ d3.json("data/stories.json", function (err, data) {
     console.table(data);
     facts = crossfilter(data);
 
-    //searchDim = facts.dimension(function (d) {
-    //    return d.words;
-    //});
-    searchDim = facts.dimension( d => { return d.words; });
-    searchGroup = searchDim.group().reduceCount();
-
-    let all = facts.groupAll();
+    all = facts.groupAll();
     dc.dataCount('.dc-data-count')
         .dimension(facts)
         .group(all);    
-
+        
+    searchDim = facts.dimension( d => { return d.words; });
+    searchGroup = searchDim.group().reduceCount();
 
     let dateDim = facts.dimension(function (d) { return d.monthNum; });
     let dateGroup = dateDim.group().reduceCount(function(d) {return d.monthNum;});
@@ -48,6 +49,7 @@ d3.json("data/stories.json", function (err, data) {
         .margins({ top: 10, right: 20, bottom: 20, left: 30 })
         .ordinalColors(['#9ecae1'])
         .yAxisLabel('# Media Accounts')
+        .on('filtered', showFilters)
         //.brushOn(false) // turns it off, but afterwards clicking doesn't filter!
         .elasticY(true)
  
@@ -85,11 +87,12 @@ d3.json("data/stories.json", function (err, data) {
         .order(d3.descending);
 
     dc.renderAll();
+    showFilters();
 });
 
 
 function setWord(word) {
-    let searchTerm = word;
+    searchTerm = word;
 
     if (word.length < 3) {
         if (word.length == 0)
@@ -106,7 +109,12 @@ function setWord(word) {
 }
 
 function showFilters() {
-    // todo
+
+    d3.select("#selected-events").text(all.value());
+    d3.select("#all-events").text(allEventCount);
+
+    //d3.select("#selected-stories").text(selectedConflicts());
+    //d3.select("#all-stories").text(allConflicts);
 }
 
 
@@ -202,7 +210,7 @@ var RowChart = function (facts, attribute, width, maxItems, height) {
         .elasticX(true)
         .ordinalColors(['#9ecae1']) // light blue
         .labelOffsetX(5)
-        //.on('filtered', showFilters)
+        .on('filtered', showFilters)
         .label(d => d.key);
 
     // Hacky way to hide x-axis    

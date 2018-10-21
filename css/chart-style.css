@@ -20,7 +20,7 @@ h1 {
 }
 
 .label {
-    font-family: kkurat, Arial, Helvetica, Verdana, sans-serif;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
 
 }
 
@@ -106,6 +106,17 @@ a.search-example {
     color: var(--blue-link);
 }
 
+.blue-link {
+    font-size: .8rem;
+    text-decoration: none;
+    color: var(--blue-link);
+}
+
+a.reset {
+    text-decoration: none;
+    color: var(--blue-link);
+}
+
 .search-input {
     width: 18rem;
     border: none;
@@ -148,15 +159,9 @@ p.story-headline {
     text-decoration: none;
 }
 
-
-.story:hover{
-    background-color: #cee2ed;
-    cursor:pointer;
- }
-
 .byline {
-    color: var(--white-text);
-
+    color: var(--red-text);
+    font-family: Arial, Helvetica, Verdana, sans-serif;
 }
 
  a.byline {
@@ -171,4 +176,10 @@ p.story-headline {
 
  .y-axis-label {
      font-size: 11px;
+ }
+
+
+ .dc-table-label:hover {
+    background-color: #cee2ed;
+    cursor:pointer;
  }

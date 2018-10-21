@@ -23,11 +23,12 @@ body {
         "title          title" 
         "searchBox      searchBox" 
         "date           date" 
+        "topic          filters" 
         "topic          stories" 
         "mediaOutlet    stories" 
         "footer         footer"; 
     grid-template-columns: var(--bar-width) 1fr;
-    grid-template-rows: 5rem 3.6rem 8rem auto auto 1rem;
+    grid-template-rows: 5rem 3.6rem 8rem 2rem auto auto 1rem;
     grid-gap: .1em;
     margin: 0px;
     height: 100vh;
@@ -63,6 +64,10 @@ body {
 
 .topic {
     grid-area: topic;
+}
+
+.filters {
+    grid-area: filters;
 }
 
 .mediaOutlet {
