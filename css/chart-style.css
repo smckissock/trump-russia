@@ -120,6 +120,10 @@ a.search-example {
     float: right;
 }
 
+.logo-image {
+    float: left;
+}
+
 h3.story-title {
     font-size: .8em;
     margin: .0rem .1rem .1rem .3rem;
