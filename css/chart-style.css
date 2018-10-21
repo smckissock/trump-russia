@@ -153,10 +153,22 @@ h3.story-title {
 }
 
 p.story-headline {
-    color: var(--blue-text);
+    color: var(--black-text);
     font-size: .7em;
-    margin: .5rem .2rem .2rem .2rem;  
+    margin: .3rem .2rem .1rem .2rem;  
     text-decoration: none;
+}
+
+p.story-excerpt {
+    color: var(--grey-text);
+    font-size: .7em;
+    margin: .2rem .2rem .2rem .2rem;  
+    text-decoration: none;
+}
+
+.selected-term {
+    color: var(--black-text);
+    font-weight: 700;
 }
 
 .byline {
@@ -176,6 +188,11 @@ p.story-headline {
 
  .y-axis-label {
      font-size: 11px;
+ }
+
+ .filters-label {
+     font-size: .8rem;
+     float: left;
  }
 
 

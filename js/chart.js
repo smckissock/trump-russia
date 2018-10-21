@@ -45,7 +45,7 @@ d3.json("data/stories.json", function (err, data) {
         .x(d3.scale.linear().domain([4, (12 * 6) ]))
         //.centerBar(true)
         .width(900)
-        .height(140)
+        .height(110)
         .margins({ top: 10, right: 20, bottom: 20, left: 30 })
         .ordinalColors(['#9ecae1'])
         .yAxisLabel('# Media Accounts')
@@ -109,19 +109,35 @@ function setWord(word) {
 }
 
 function showFilters() {
+    let filterStrings = [];
+    let charts = dc.chartRegistry.list();
+    charts.forEach(function (chart) {
+        chart.filters().forEach(function (filter) {
+            // Ugh, don't include date range for now, because I can't figure out how to get to underlying dates
+            if (!Array.isArray(filter))
+                filterStrings.push(filter);
+        })
+    })
 
+    let search = document.getElementById("search-input").value;
+    if (search.length < 4)
+        search = "";
+    else
+        search =  ' containing "' + search + '"';
+
+    let filterString = filterStrings.join(', ') + " " + search;
+    if (filterString.trim() == "")
+        filterString = "None";
+    
+    d3.select("#current-filters").text(filterString);
     d3.select("#selected-events").text(all.value());
     d3.select("#all-events").text(allEventCount);
-
-    //d3.select("#selected-stories").text(selectedConflicts());
-    //d3.select("#all-stories").text(allConflicts);
 }
 
 
 function setSearch(term) {
     d3.select("#search-input")
         .attr("value", term);
-
     setWord(term);    
 }
 
@@ -133,12 +149,11 @@ function storyResult(d) {
             <div class="story-body"><h5 class="story-topic">${d.topic}</h5>
                 <h3 class="story-title">${d.date} ${d.description}</h3>
                 <p class="story-headline">${headline(d.mediaOutlet, d.headline)}</p>
-                <p class="story-headline">${getSentence(d)}</p>
+                <p class="story-excerpt">${getSentence(d)}</p>
             </div>    
         </div>
     `; 
 }
-
 
 function getSentence(d) {
     let result = "Not Found";
@@ -151,8 +166,10 @@ function getSentence(d) {
         var lower = sentence.toLowerCase();
         if (lower.includes(searchTerm)) {
             let start = lower.indexOf(searchTerm);
-            let answer = insert(sentence, start + searchTerm.length, "</b>");
-            answer = insert(answer, start, "<b>");
+            let answer = insert(sentence, start + searchTerm.length, "</span>");
+            answer = insert(answer, start, "<span class='selected-term'>");
+            //let answer = insert(sentence, start + searchTerm.length, "</b>");
+            //answer = insert(answer, start, "<b>");
             result = '"' + answer + '"';
         } 
     });
@@ -168,14 +185,6 @@ function headline(mediaOutlet, headline) {
         return mediaOutlet + " - " + headline;
     return     
         mediaOutlet;
-}
-
-
-function dateToYMD(date) {
-    let d = date.getDate();
-    let m = date.getMonth() + 1; // Month from 0 to 11
-    let y = date.getFullYear();
-    return '' + y + '-' + (m <= 9 ? '0' + m : m) + '-' + (d <= 9 ? '0' + d : d);
 }
 
 function clearAll() {

@@ -4,6 +4,8 @@
     --white-text: rgb(255, 255, 255);
     --blue-link: rgb(98, 132, 171);
     --red-text: rgb(248, 48, 54);
+    --grey-text: rgb(105,105,105);
+    --black-text: rgb(19, 18, 14);
     
     --bar-width: 220px;
 
@@ -28,7 +30,7 @@ body {
         "mediaOutlet    stories" 
         "footer         footer"; 
     grid-template-columns: var(--bar-width) 1fr;
-    grid-template-rows: 5rem 3.6rem 8rem 2rem auto auto 1rem;
+    grid-template-rows: 5rem 3.6rem 120px 3rem auto auto 1rem;
     grid-gap: .1em;
     margin: 0px;
     height: 100vh;
