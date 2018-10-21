@@ -11,6 +11,7 @@ let all;
 let allEventCount; 
 
 var searchTerm = "";
+var cleanSearchTerm = ""
 
 
 d3.json("data/stories.json", function (err, data) {
@@ -26,7 +27,7 @@ d3.json("data/stories.json", function (err, data) {
         d.monthNum = ((year - 2013) * 12) + month;
     });
 
-    console.table(data);
+    //console.table(data);
     facts = crossfilter(data);
 
     all = facts.groupAll();
@@ -45,7 +46,7 @@ d3.json("data/stories.json", function (err, data) {
         .x(d3.scale.linear().domain([4, (12 * 6) ]))
         //.centerBar(true)
         .width(dateChartWidth())
-        .height(110)
+        .height(100)
         .margins({ top: 10, right: 20, bottom: 20, left: 30 })
         .ordinalColors(['#9ecae1'])
         .yAxisLabel('# Media Accounts')
@@ -55,7 +56,6 @@ d3.json("data/stories.json", function (err, data) {
  
     dateChart.yAxis().ticks(3);        
     dateChart.xAxis().ticks(12);    
-
 
     dateChart.xAxis().tickFormat(function (d) {
         let monthNum = d;
@@ -84,7 +84,7 @@ d3.json("data/stories.json", function (err, data) {
         .dimension(tableDim)
         .group(d => storyResult(d))
         .sortBy(d => { return d.dateSort; })
-        .size(400)
+        .size(100)
         .order(d3.descending);
 
     dc.renderAll();
@@ -97,14 +97,20 @@ function dateChartWidth() {
 }
 
 function resize() {
-    console.log("RESIZE");
     dateChart.width(dateChartWidth());
     dc.redrawAll();
 }
 
 
+function setSearch(term) {
+    d3.select("#search-input")
+        .attr("value", term);
+    setWord(term);    
+}
+
 function setWord(word) {
     searchTerm = word;
+    cleanSearchTerm = word.toLowerCase();
 
     if (word.length < 3) {
         if (word.length == 0)
@@ -113,8 +119,7 @@ function setWord(word) {
         dc.redrawAll();  
         return;
     }    
-    let s = word.toLowerCase();
-    searchDim.filter( d => { return d.indexOf(s) !== -1 });
+    searchDim.filter( d => { return d.indexOf(cleanSearchTerm) !== -1 });
 
     showFilters();
     dc.redrawAll();
@@ -147,12 +152,6 @@ function showFilters() {
 }
 
 
-function setSearch(term) {
-    d3.select("#search-input")
-        .attr("value", term);
-    setWord(term);    
-}
-
 function storyResult(d) {
     // ${d.dateSort} thrown in at the top serves no purpose other than to get the correct sort order!
     return `
@@ -167,6 +166,26 @@ function storyResult(d) {
     `; 
 }
 
+
+function getExampleTerms() {
+    let examples = 
+        ["Mandiant", "Goldstone", "Kaspersy", "Comey", "CrowdStrike", "McGahn", "Helsinki", "Sater", "Butina", "Veselnitskaya",
+        "Guccifer", "Prague", "Kislyak", "Wikileaks", "Magnitsky", "Lewandowski", "Podesta", "McCaskill", "Nunes", "Akhmetshin"]
+
+    let picked = new Set();
+    while (picked.size < 3 )
+        picked.add(examples[Math.floor(Math.random() * examples.length)]);    
+    let terms = Array.from(picked);
+
+    document.getElementById("examples-div").innerHTML = `
+    <span class="example-label">Click an example: </span>
+    <span><a class="search-example" href="javascript:setSearch('${terms[0]}')">${terms[0]}</a></span>
+    <span><a class="search-example" href="javascript:setSearch('${terms[1]}')">${terms[1]}</a></span>
+    <span><a class="search-example" href="javascript:setSearch('${terms[2]}')">${terms[2]}</a></span>
+    `;
+}
+
+
 function getSentence(d) {
     let result = "Not Found";
 
@@ -176,12 +195,10 @@ function getSentence(d) {
 
     d.sentences.forEach(function (sentence) {
         var lower = sentence.toLowerCase();
-        if (lower.includes(searchTerm)) {
-            let start = lower.indexOf(searchTerm);
+        if (lower.includes(cleanSearchTerm)) {
+            let start = lower.indexOf(cleanSearchTerm);
             let answer = insert(sentence, start + searchTerm.length, "</span>");
             answer = insert(answer, start, "<span class='selected-term'>");
-            //let answer = insert(sentence, start + searchTerm.length, "</b>");
-            //answer = insert(answer, start, "<b>");
             result = '"' + answer + '"';
         } 
     });
@@ -195,8 +212,8 @@ function insert(str, index, value) {
 function headline(mediaOutlet, headline) {
     if (headline != "") 
         return mediaOutlet + " - " + headline;
-    return     
-        mediaOutlet;
+    else    
+        return mediaOutlet;
 }
 
 function clearAll() {
@@ -206,16 +223,6 @@ function clearAll() {
     dc.filterAll();
     dc.renderAll();
 }
-
-function selectedConflicts() {
-    let conflicts = searchDim.top(100000);
-    let set = new Set(); 
-    conflicts.forEach(function(conflict) {
-        set.add(conflict.name)
-    });
-    return set.size;
-}
-
 
 var RowChart = function (facts, attribute, width, maxItems, height) {
     // If height is supplied (very few items) use it, otherwise calculate

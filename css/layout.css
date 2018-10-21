@@ -30,7 +30,7 @@ body {
         "mediaOutlet    stories" 
         "footer         footer"; 
     grid-template-columns: var(--bar-width) 1fr;
-    grid-template-rows: 5rem 3.6rem 120px 3rem auto auto 1rem;
+    grid-template-rows: 5rem 3.6rem 110px 3rem 225px auto 1rem;
     grid-gap: .1em;
     margin: 0px;
     height: 100vh;
@@ -68,6 +68,7 @@ body {
     grid-area: date;
 }
 
+
 .stories {
     grid-area: stories;
     overflow: auto;
@@ -83,6 +84,7 @@ body {
 
 .mediaOutlet {
     grid-area: mediaOutlet;
+    overflow: auto;
 }
 
 .footer {

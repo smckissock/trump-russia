@@ -80,6 +80,13 @@ li {
     background-color: rgb(231, 231, 231);
 }
 
+
+.chart-title {
+    font-size: .8rem;
+    font-weight: 500;
+    margin: .3rem 0rem .6rem .4rem;
+}
+
 .search-p {
     border-radius: 3px;
     padding: 5px 5px 5px 5px;
@@ -168,7 +175,7 @@ p.story-excerpt {
 
 .selected-term {
     color: var(--black-text);
-    font-weight: 700;
+    font-weight: 900;
 }
 
 .byline {

@@ -19,7 +19,8 @@
 </head>
 
 
-<body onresize="resize()">
+<body onresize="resize()" onload="getExampleTerms()">
+
     <div class="container">
         <div class="title">
             <!-- <a href="https://www.pbs.org/newshour"</><img class="logo-image" src="img/logo.jpeg" height="90" width="120"><a/> -->
@@ -35,11 +36,11 @@
                 <p class="search-p">
                     <input id="search-input" class="search-input" placeholder="Search for a person, company, city, etc..">
                 
-                    <div class="search-examples">       
-                        <span class="example-label">For example: </span>
-                        <span><a class="search-example" href="javascript:setSearch('goldstone')">goldstone</a></span>
-                        <span><a class="search-example" href="javascript:setSearch('crowdstrike')">crowdstrike</a></span>
-                        <span><a class="search-example" href="javascript:setSearch('kaspersky')">kaspersky</a></span>
+                    <div id="examples-div" class="search-examples">       
+                       <!--  <span class="example-label">Click an example: </span>
+                        <span><a class="search-example" href="javascript:setSearch('goldstone')">Goldstone</a></span>
+                        <span><a class="search-example" href="javascript:setSearch('CrowdStrike')">CrowdStrike</a></span>
+                        <span><a class="search-example" href="javascript:setSearch('kaspersky')">Kaspersky</a></span> -->
                     </div>  
                 </p>
             </div>

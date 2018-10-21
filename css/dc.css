@@ -194,6 +194,7 @@
 
 .dc-data-count {
   /* float: right; */
+  font-weight: 600;
   margin-top: 0px;
   margin-right: 15px;
   padding-top: 2px; 
