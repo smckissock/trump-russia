@@ -44,7 +44,7 @@ d3.json("data/stories.json", function (err, data) {
         .group(dateGroup)
         .x(d3.scale.linear().domain([4, (12 * 6) ]))
         //.centerBar(true)
-        .width(900)
+        .width(dateChartWidth())
         .height(110)
         .margins({ top: 10, right: 20, bottom: 20, left: 30 })
         .ordinalColors(['#9ecae1'])
@@ -55,6 +55,7 @@ d3.json("data/stories.json", function (err, data) {
  
     dateChart.yAxis().ticks(3);        
     dateChart.xAxis().ticks(12);    
+
 
     dateChart.xAxis().tickFormat(function (d) {
         let monthNum = d;
@@ -89,6 +90,17 @@ d3.json("data/stories.json", function (err, data) {
     dc.renderAll();
     showFilters();
 });
+
+
+function dateChartWidth() {
+    return window.innerWidth > 1180 ? 1180 : window.innerWidth - 20
+}
+
+function resize() {
+    console.log("RESIZE");
+    dateChart.width(dateChartWidth());
+    dc.redrawAll();
+}
 
 
 function setWord(word) {
@@ -203,6 +215,7 @@ function selectedConflicts() {
     });
     return set.size;
 }
+
 
 var RowChart = function (facts, attribute, width, maxItems, height) {
     // If height is supplied (very few items) use it, otherwise calculate

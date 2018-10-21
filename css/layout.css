@@ -41,6 +41,15 @@ body {
     border: 1px solid black;    
 }
 
+@media screen and (min-width: 1200px) {
+    :root {
+        font-size: 22px; 
+    }
+    .container {
+        width: 1200px; 
+    }
+}
+
 .title {
     font-family: "publico", Georgia, Times, "Times New Roman", serif;
     font-weight: 700;
