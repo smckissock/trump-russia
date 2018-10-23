@@ -5,18 +5,23 @@ let topicChart;
 let facts;
 let searchDim;
 let searchGroup;
-
 let all;
-
 let allEventCount; 
+
+let months;
+
 
 var searchTerm = "";
 var cleanSearchTerm = ""
 
 
+
 d3.json("data/stories.json", function (err, data) {
-    allEventCount = data.length;
-    
+    months = makeMonths();
+
+    months.forEach(m => {console.log(); });
+
+    allEventCount = data.length;    
     data.forEach(function (d) {
         let parts = d.date.split("/");
         d.dateSort = parts[2] + "-" + parts[0].padStart(2, '0') + "-" + parts[1].padStart(2, '0');
@@ -44,7 +49,7 @@ d3.json("data/stories.json", function (err, data) {
         .dimension(dateDim)
         .group(dateGroup)
         .x(d3.scale.linear().domain([4, (12 * 6) ]))
-        //.centerBar(true)
+        .centerBar(true)
         .width(dateChartWidth())
         .height(100)
         .margins({ top: 10, right: 20, bottom: 20, left: 30 })
@@ -58,14 +63,7 @@ d3.json("data/stories.json", function (err, data) {
     dateChart.xAxis().ticks(12);    
 
     dateChart.xAxis().tickFormat(function (d) {
-        let monthNum = d;
-        // =ROUND(((C2 + 5)/12) + 2012, 0)
-        let year = Math.round(((monthNum + 5)/12) + 2012);        
-        // =C3-(D3-2013)*12
-        let month = monthNum - (year - 2013) * 12;
-        let quarter = Math.ceil(month / 12);
-
-        return year + " Q" + quarter;
+        return months[d].year + " " + months[d].quarter;
     });
     
     d3.select("#search-input").on('keyup', function (event) {
@@ -166,7 +164,6 @@ function storyResult(d) {
     `; 
 }
 
-
 function getExampleTerms() {
     let examples = 
         ["Mandiant", "Goldstone", "Kaspersy", "Comey", "CrowdStrike", "McGahn", "Helsinki", "Sater", "Butina", "Veselnitskaya",
@@ -184,7 +181,6 @@ function getExampleTerms() {
     <span><a class="search-example" href="javascript:setSearch('${terms[2]}')">${terms[2]}</a></span>
     `;
 }
-
 
 function getSentence(d) {
     let result = "Not Found";
@@ -223,6 +219,33 @@ function clearAll() {
     dc.filterAll();
     dc.renderAll();
 }
+
+function makeMonths () {
+    const monthDefs = [
+        {month: "Jan", qtr: 1}, {month: "Feb", qtr: 1}, {month: "Mar", qtr: 1},
+        {month: "Apr", qtr: 2}, {month: "May", qtr: 2}, {month: "Jun", qtr: 2},
+        {month: "Jul", qtr: 3}, {month: "Aug", qtr: 3}, {month: "Sep", qtr: 3},
+        {month: "Oct", qtr: 4}, {month: "Nov", qtr: 4}, {month: "Dec", qtr: 4}
+    ];
+
+    let months = []
+    let year = 2013;
+    let monthId = 1;
+    while (year < 2020) {
+        monthDefs.forEach(function(m) {
+            let month = {};
+            month.monthId = monthId;
+            month.year = year;
+            month.quarter = "Q" + m.qtr;
+            month.month = m.month
+
+            months.push(month);
+            monthId++;
+        });
+        year++;
+    }
+    return months;
+} 
 
 var RowChart = function (facts, attribute, width, maxItems, height) {
     // If height is supplied (very few items) use it, otherwise calculate
