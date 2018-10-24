@@ -166,7 +166,7 @@ function storyResult(d) {
 
 function getExampleTerms() {
     let examples = 
-        ["Mandiant", "Goldstone", "Kaspersy", "Comey", "CrowdStrike", "McGahn", "Helsinki", "Sater", "Butina", "Veselnitskaya",
+        ["Mandiant", "Goldstone", "Kaspersky", "Comey", "CrowdStrike", "McGahn", "Helsinki", "Sater", "Butina", "Veselnitskaya",
         "Guccifer", "Prague", "Kislyak", "Wikileaks", "Magnitsky", "Lewandowski", "Podesta", "McCaskill", "Nunes", "Akhmetshin"]
 
     let picked = new Set();
