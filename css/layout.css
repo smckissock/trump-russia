@@ -30,7 +30,7 @@ body {
         "mediaOutlet    stories" 
         "footer         footer"; 
     grid-template-columns: var(--bar-width) 1fr;
-    grid-template-rows: 5rem 3.6rem 110px 3rem 225px auto 1rem;
+    grid-template-rows: 5rem 3.6rem 110px 3rem 225px auto 1px;
     grid-gap: .1em;
     margin: 0px;
     height: 100vh;
