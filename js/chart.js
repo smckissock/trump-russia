@@ -101,8 +101,9 @@ function resize() {
 
 
 function setSearch(term) {
-    d3.select("#search-input")
-        .attr("value", term);
+    document.getElementById("search-input").value = term;
+    //d3.select("#search-input")
+    //    .attr("value", term);
     setWord(term);    
 }
 
@@ -153,7 +154,7 @@ function showFilters() {
 function storyResult(d) {
     // ${d.dateSort} thrown in at the top serves no purpose other than to get the correct sort order!
     return `
-        <div class="story" ${d.dateSort} onclick="window.open('${d.link}')">
+        <div class="story" ${d.dateSort} onclick="window.open('${d.link}','_blank','noopener')">
             <img class="story-image" src="${d.image}" onerror="this.style.display='none'" height="90" width="120">
             <div class="story-body"><h5 class="story-topic">${d.topic}</h5>
                 <h3 class="story-title">${d.date} ${d.description}</h3>
